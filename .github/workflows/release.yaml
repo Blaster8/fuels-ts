@@ -39,60 +39,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-     - name: Ensure NPM access
-       run: npm whoami
-       env:
-         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Ensure NPM access
+        run: npm whoami
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-     - name: Build
-       run: pnpm build
-
-#      - name: Set branch name and changeset PR title
-#        run: |
-#          echo "CHANGESET_PR_TITLE=$(echo "ci(changesets): versioning packages for branch \`${{ github.ref_name }}\`")" >> $GITHUB_ENV
-#
-#      - name: Create Release Pull Request or Publish to npm
-#        id: changesets
-#        uses: FuelLabs/changesets-action@main
-#        with:
-#          publish: pnpm changeset:publish
-#          version: pnpm changeset:version-with-docs
-#          commit: "ci(changesets): versioning packages"
-#          title: ${{ env.CHANGESET_PR_TITLE }}
-#          createGithubReleases: aggregate
-#          githubReleaseName: v${{ env.BUILD_VERSION }}
-#          githubTagName: v${{ env.BUILD_VERSION }}
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
-#          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-#
-#      - name: Prettify changelog
-#        run: |
-#          git checkout master
-#          pnpm changeset:update-changelog
-#        env:
-#          GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
-#          RELEASE_TAG: v${{ env.BUILD_VERSION }}
-#          PUBLISHED: ${{ steps.changesets.outputs.published }}
-#
-#      - name: Release to @next tag on npm
-#        if: github.ref_name == 'master' && steps.changesets.outputs.published != 'true'
-#        run: |
-#          git checkout master
-#          pnpm changeset:next
-#          git add .changeset/fuel-labs-ci.md
-#          pnpm changeset version --snapshot next
-#          pnpm changeset publish --tag next
-#        env:
-#          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      # ensure docs are always deployed after merge of changeset PR
-#      - name: Get the last commit message and set env vars
-#        run: echo LAST_COMMIT_MSG=$(git --no-pager log -1 --pretty=%B) >> $GITHUB_ENV
+      - name: Build
+        run: pnpm build
 
       - name: Decides if Docs should be deployed
-#        if: github.ref_name == 'master' && startsWith(env.LAST_COMMIT_MSG, 'ci(changesets):')
         run: |
           CURRENT_TAG=$(git describe --tags --abbrev=0)
           echo $CURRENT_TAG
@@ -136,25 +91,3 @@ jobs:
           git commit -m "docs: API docs - v${{ env.BUILD_VERSION }}"
           git push
           git restore apps/docs/.gitignore
-
-#      # Upload assets to S3
-#      - uses: unfor19/install-aws-cli-action@v1.0.3
-#        if: steps.changesets.outputs.published != 'true'
-#        with:
-#          version: 2
-#          verbose: false
-#          arch: amd64
-#          rootdir: ""
-#          workdir: ""
-#      - uses: aws-actions/configure-aws-credentials@v1
-#        if: steps.changesets.outputs.published != 'true'
-#        with:
-#          aws-access-key-id: ${{ secrets.S3_CDN_ACCESS_KEY }}
-#          aws-secret-access-key: ${{ secrets.S3_CDN_SECRET_KEY }}
-#          aws-region: us-east-1
-#      - name: Upload assets to s3
-#        if: steps.changesets.outputs.published != 'true'
-#        run: |
-#          aws s3 cp ./packages/account/src/providers/assets/images/ s3://${S3_CDN_BUCKET}/assets/ --recursive
-#        env:
-#          S3_CDN_BUCKET: ${{ secrets.S3_CDN_BUCKET }}
