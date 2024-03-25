@@ -40,14 +40,14 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-#      - name: Ensure NPM access
-#        run: npm whoami
-#        env:
-#          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-#
-#      - name: Build
-#        run: pnpm build
-#
+     - name: Ensure NPM access
+       run: npm whoami
+       env:
+         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+     - name: Build
+       run: pnpm build
+
 #      - name: Set branch name and changeset PR title
 #        run: |
 #          echo "CHANGESET_PR_TITLE=$(echo "ci(changesets): versioning packages for branch \`${{ github.ref_name }}\`")" >> $GITHUB_ENV
