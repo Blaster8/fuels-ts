@@ -39,6 +39,14 @@ module.exports = {
     'class-methods-use-this': 'off',
     'no-plusplus': 'off',
     '@typescript-eslint/no-inferrable-types': 'off',
+    'import/extensions': [
+      'error',
+      {
+        js: 'ignorePackages',
+        json: 'always',
+        hex: 'never',
+      },
+    ],
     '@typescript-eslint/lines-between-class-members': [
       'error',
       'always',
