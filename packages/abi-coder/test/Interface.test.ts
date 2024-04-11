@@ -2,8 +2,8 @@
 import { BN } from '@fuel-ts/math';
 import { concat } from '@fuel-ts/utils';
 
-import { NumberCoder, WORD_SIZE, Interface } from '../src';
-import type { JsonAbiConfigurable } from '../src/json-abi';
+import { NumberCoder, WORD_SIZE, Interface } from '../src/index.js';
+import type { JsonAbiConfigurable } from '../src/json-abi.js';
 
 import exhaustiveExamplesAbi from './fixtures/forc-projects/exhaustive-examples/out/release/exhaustive-examples-abi.json';
 import {
@@ -25,7 +25,7 @@ import {
   U64_MAX_ENCODED,
   U8_MAX,
   U8_MAX_ENCODED,
-} from './utils/constants';
+} from './utils/constants.js';
 
 function encodeVectorFully(
   encodedData: Uint8Array[] | Uint8Array,

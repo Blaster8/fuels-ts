@@ -1,8 +1,8 @@
-import type { Provider, CoinQuantityLike } from '../providers';
-import type { WalletUnlocked } from '../wallet';
-import { Wallet } from '../wallet';
+import type { Provider, CoinQuantityLike } from '../providers/index.js';
+import type { WalletUnlocked } from '../wallet/index.js';
+import { Wallet } from '../wallet/index.js';
 
-import { seedTestWallet } from './seedTestWallet';
+import { seedTestWallet } from './seedTestWallet.js';
 
 export const generateTestWallet = async (
   provider: Provider,

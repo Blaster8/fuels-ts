@@ -11,11 +11,11 @@ import path from 'path';
 import { getPortPromise } from 'portfinder';
 import treeKill from 'tree-kill';
 
-import { Provider } from '../providers';
-import { Signer } from '../signer';
-import type { WalletUnlocked } from '../wallet';
+import { Provider } from '../providers/index.js';
+import { Signer } from '../signer/index.js';
+import type { WalletUnlocked } from '../wallet/index.js';
 
-import { generateTestWallet } from './generateTestWallet';
+import { generateTestWallet } from './generateTestWallet.js';
 
 const getFlagValueFromArgs = (args: string[], flag: string) => {
   const flagIndex = args.indexOf(flag);

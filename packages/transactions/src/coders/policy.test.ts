@@ -2,8 +2,8 @@ import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import { expectToThrowFuelError } from '@fuel-ts/errors/test-utils';
 import { bn } from '@fuel-ts/math';
 
-import type { Policy } from './policy';
-import { PoliciesCoder, PolicyType } from './policy';
+import type { Policy } from './policy.js';
+import { PoliciesCoder, PolicyType } from './policy.js';
 
 /**
  * @group node

@@ -1,4 +1,4 @@
-import { getWords } from './utils';
+import { getWords } from './utils.js';
 
 /**
  * @group node

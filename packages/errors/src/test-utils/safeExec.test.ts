@@ -1,4 +1,4 @@
-import { safeExec } from './safeExec';
+import { safeExec } from './safeExec.js';
 
 /**
  * @group node

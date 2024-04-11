@@ -1,8 +1,8 @@
 import type { Provider } from 'fuels';
 import { BaseAssetId, Contract } from 'fuels';
 
-import { DocSnippetProjectsEnum } from '../../../test/fixtures/forc-projects';
-import { createAndDeployContractFromProject, getTestWallet } from '../../utils';
+import { DocSnippetProjectsEnum } from '../../../test/fixtures/forc-projects/index.js';
+import { createAndDeployContractFromProject, getTestWallet } from '../../utils.js';
 
 /**
  * @group node

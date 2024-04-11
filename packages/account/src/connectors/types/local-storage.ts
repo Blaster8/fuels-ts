@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/require-await */
-import type { StorageAbstract } from '../../wallet-manager';
+import type { StorageAbstract } from '../../wallet-manager/index.js';
 
 export class LocalStorage implements StorageAbstract {
   private storage: Storage;

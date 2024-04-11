@@ -1,5 +1,5 @@
 import { Asset } from '../types'
-import { getAssetEth, getAssetFuel, getAssetWithNetwork, getDefaultChainId } from '../utils/network';
+import { getAssetEth, getAssetFuel, getAssetWithNetwork, getDefaultChainId } from '../utils/network.js';
 import { assets } from '../index'
 import { CHAIN_IDS } from '../../chains'
 

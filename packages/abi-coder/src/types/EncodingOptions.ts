@@ -1,4 +1,4 @@
-import type { EncodingVersion } from '../utils/constants';
+import type { EncodingVersion } from '../utils/constants.js';
 
 /**
  * These are configurable options to be used when encoding.

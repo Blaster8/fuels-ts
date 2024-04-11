@@ -1,3 +1,3 @@
-export * from './generateTestWallet';
-export * from './seedTestWallet';
-export * from './launchNode';
+export * from './generateTestWallet.js';
+export * from './seedTestWallet.js';
+export * from './launchNode.js';

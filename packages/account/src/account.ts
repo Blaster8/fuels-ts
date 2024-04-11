@@ -7,7 +7,7 @@ import type { BigNumberish, BN } from '@fuel-ts/math';
 import { bn } from '@fuel-ts/math';
 import { arrayify } from '@fuel-ts/utils';
 
-import type { FuelConnector } from './connectors';
+import type { FuelConnector } from './connectors/index.js';
 import type {
   TransactionRequestLike,
   CallResult,
@@ -23,14 +23,14 @@ import type {
   ProviderSendTxParams,
   TransactionResponse,
   EstimateTransactionParams,
-} from './providers';
+} from './providers/index.js';
 import {
   withdrawScript,
   ScriptTransactionRequest,
   transactionRequestify,
   addAmountToAsset,
-} from './providers';
-import { assembleTransferToContractScript } from './utils/formatTransferToContractScriptData';
+} from './providers/index.js';
+import { assembleTransferToContractScript } from './utils/formatTransferToContractScriptData.js';
 
 export type TxParamsType = Pick<
   ScriptTransactionRequestLike,

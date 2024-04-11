@@ -1,11 +1,14 @@
 import { hexlify } from '@fuel-ts/utils';
 import { readFileSync } from 'fs';
 
-import { AbiTypegenProjectsEnum, getTypegenForcProject } from '../../test/fixtures/forc-projects';
-import { ProgramTypeEnum } from '../types/enums/ProgramTypeEnum';
+import {
+  AbiTypegenProjectsEnum,
+  getTypegenForcProject,
+} from '../../test/fixtures/forc-projects/index.js';
+import { ProgramTypeEnum } from '../types/enums/ProgramTypeEnum.js';
 
-import { collectBinFilepaths } from './collectBinFilePaths';
-import * as validateBinFileMod from './validateBinFile';
+import { collectBinFilepaths } from './collectBinFilePaths.js';
+import * as validateBinFileMod from './validateBinFile.js';
 
 /**
  * @group node

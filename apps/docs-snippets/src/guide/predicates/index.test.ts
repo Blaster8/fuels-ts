@@ -4,7 +4,7 @@ import { FUEL_NETWORK_URL, Provider, Predicate } from 'fuels';
 import {
   DocSnippetProjectsEnum,
   getDocsSnippetsForcProject,
-} from '../../../test/fixtures/forc-projects';
+} from '../../../test/fixtures/forc-projects/index.js';
 
 /**
  * @group node

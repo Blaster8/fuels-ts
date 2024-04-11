@@ -12,7 +12,7 @@ import {
   FUEL_NETWORK_URL,
 } from 'fuels';
 
-import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../test/fixtures';
+import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../test/fixtures/index.js';
 
 /**
  * @group node

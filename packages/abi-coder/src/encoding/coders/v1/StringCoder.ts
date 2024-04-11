@@ -1,7 +1,7 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import { toUtf8Bytes, toUtf8String } from 'ethers';
 
-import { Coder } from '../AbstractCoder';
+import { Coder } from '../AbstractCoder.js';
 
 export class StringCoder<TLength extends number = number> extends Coder<string, string> {
   constructor(length: TLength) {

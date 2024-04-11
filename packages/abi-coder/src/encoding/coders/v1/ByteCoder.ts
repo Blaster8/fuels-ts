@@ -1,9 +1,9 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import { bn } from '@fuel-ts/math';
 
-import { WORD_SIZE } from '../../../utils/constants';
-import { Coder } from '../AbstractCoder';
-import { BigNumberCoder } from '../v0/BigNumberCoder';
+import { WORD_SIZE } from '../../../utils/constants.js';
+import { Coder } from '../AbstractCoder.js';
+import { BigNumberCoder } from '../v0/BigNumberCoder.js';
 
 export class ByteCoder extends Coder<number[], Uint8Array> {
   static memorySize = 1;

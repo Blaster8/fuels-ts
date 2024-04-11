@@ -1,9 +1,9 @@
 import { bn } from '@fuel-ts/math';
 import { clone } from 'ramda';
 
-import { SCRIPT_TX_REQUEST } from '../../../test/fixtures/transaction-request';
+import { SCRIPT_TX_REQUEST } from '../../../test/fixtures/transaction-request.js';
 
-import { hashTransaction } from './hash-transaction';
+import { hashTransaction } from './hash-transaction.js';
 
 /**
  * @group node

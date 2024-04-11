@@ -1,7 +1,7 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import { expectToThrowFuelError } from '@fuel-ts/errors/test-utils';
 
-import { StrSliceCoder } from './StrSliceCoder';
+import { StrSliceCoder } from './StrSliceCoder.js';
 
 /**
  * @group node

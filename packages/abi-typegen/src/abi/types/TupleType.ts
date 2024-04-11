@@ -1,9 +1,9 @@
-import { TargetEnum } from '../../types/enums/TargetEnum';
-import type { IType } from '../../types/interfaces/IType';
-import { findType } from '../../utils/findType';
-import { parseTypeArguments } from '../../utils/parseTypeArguments';
+import { TargetEnum } from '../../types/enums/TargetEnum.js';
+import type { IType } from '../../types/interfaces/IType.js';
+import { findType } from '../../utils/findType.js';
+import { parseTypeArguments } from '../../utils/parseTypeArguments.js';
 
-import { AType } from './AType';
+import { AType } from './AType.js';
 
 export class TupleType extends AType implements IType {
   // Note: a tuple can have more/less than 3x items (like the one bellow)

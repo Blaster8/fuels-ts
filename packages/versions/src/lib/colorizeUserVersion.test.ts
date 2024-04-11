@@ -1,6 +1,6 @@
 import { cyan, red, green } from 'chalk';
 
-import { colorizeUserVersion } from './colorizeUserVersion';
+import { colorizeUserVersion } from './colorizeUserVersion.js';
 
 /**
  * @group node

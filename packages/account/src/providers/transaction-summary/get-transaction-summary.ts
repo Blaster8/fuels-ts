@@ -6,14 +6,14 @@ import { arrayify } from '@fuel-ts/utils';
 import type {
   GqlGetTransactionsByOwnerQueryVariables,
   GqlPageInfo,
-} from '../__generated__/operations';
-import type Provider from '../provider';
-import type { TransactionRequest } from '../transaction-request';
-import type { TransactionResult } from '../transaction-response';
+} from '../__generated__/operations.js';
+import type Provider from '../provider.js';
+import type { TransactionRequest } from '../transaction-request/index.js';
+import type { TransactionResult } from '../transaction-response/index.js';
 
-import { assembleTransactionSummary } from './assemble-transaction-summary';
-import { processGqlReceipt } from './receipt';
-import type { AbiMap, TransactionSummary } from './types';
+import { assembleTransactionSummary } from './assemble-transaction-summary.js';
+import { processGqlReceipt } from './receipt.js';
+import type { AbiMap, TransactionSummary } from './types.js';
 
 /** @hidden */
 export interface GetTransactionSummaryParams {

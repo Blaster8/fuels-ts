@@ -1,10 +1,10 @@
-import type { IRawAbiTypeComponent } from '../../index';
-import type { TargetEnum } from '../../types/enums/TargetEnum';
-import type { IType } from '../../types/interfaces/IType';
-import { extractStructName } from '../../utils/extractStructName';
-import { findType } from '../../utils/findType';
+import type { IRawAbiTypeComponent } from '../../index.js';
+import type { TargetEnum } from '../../types/enums/TargetEnum.js';
+import type { IType } from '../../types/interfaces/IType.js';
+import { extractStructName } from '../../utils/extractStructName.js';
+import { findType } from '../../utils/findType.js';
 
-import { AType } from './AType';
+import { AType } from './AType.js';
 
 export class EnumType extends AType implements IType {
   public static swayType = 'enum MyEnumName';

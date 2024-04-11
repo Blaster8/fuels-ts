@@ -12,9 +12,9 @@ import {
   PANIC_DOC_URL,
 } from '@fuel-ts/transactions/configs';
 
-import type { GqlTransactionStatusFragmentFragment } from '../__generated__/operations';
-import type { TransactionResultReceipt } from '../transaction-response';
-import type { FailureStatus } from '../transaction-summary';
+import type { GqlTransactionStatusFragmentFragment } from '../__generated__/operations.js';
+import type { TransactionResultReceipt } from '../transaction-response/index.js';
+import type { FailureStatus } from '../transaction-summary/index.js';
 
 /**
  * Assembles an error message for a panic status.
@@ -64,7 +64,9 @@ export const assembleRevertError = (
 
       case FAILED_ASSERT_EQ_SIGNAL: {
         const sufix =
-          logs.length >= 2 ? ` comparing ${stringify(logs[1])} and ${stringify(logs[0])}.` : '.';
+          logs.length >= 2
+            ? ` comparing ${stringify(logs[1])} and ${stringify(logs[0])}.`
+            : './index.js';
 
         reason = 'assert_eq';
         errorMessage = `The transaction reverted because of an "assert_eq" statement${sufix}`;
@@ -73,7 +75,9 @@ export const assembleRevertError = (
 
       case FAILED_ASSERT_NE_SIGNAL: {
         const sufix =
-          logs.length >= 2 ? ` comparing ${stringify(logs[1])} and ${stringify(logs[0])}.` : '.';
+          logs.length >= 2
+            ? ` comparing ${stringify(logs[1])} and ${stringify(logs[0])}.`
+            : './index.js';
 
         reason = 'assert_ne';
         errorMessage = `The transaction reverted because of an "assert_ne" statement${sufix}`;

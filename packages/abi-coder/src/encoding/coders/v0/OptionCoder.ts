@@ -1,9 +1,9 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 
-import type { Coder } from '../AbstractCoder';
+import type { Coder } from '../AbstractCoder.js';
 
-import type { InputValueOf, DecodedValueOf } from './EnumCoder';
-import { EnumCoder } from './EnumCoder';
+import type { InputValueOf, DecodedValueOf } from './EnumCoder.js';
+import { EnumCoder } from './EnumCoder.js';
 
 type SwayOption<T> = { None: [] } | { Some: T };
 export type Option<T> = T | undefined;

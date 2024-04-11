@@ -3,10 +3,10 @@ import { expectToBeInRange } from '@fuel-ts/utils/test-utils';
 import type { BN, BigNumberish, WalletUnlocked } from 'fuels';
 import { toNumber, BaseAssetId, Script, Provider, Predicate, FUEL_NETWORK_URL } from 'fuels';
 
-import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../../test/fixtures';
-import type { Validation } from '../types/predicate';
+import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../../test/fixtures/index.js';
+import type { Validation } from '../types/predicate/index.js';
 
-import { fundPredicate } from './utils/predicate';
+import { fundPredicate } from './utils/predicate/index.js';
 
 /**
  * @group node

@@ -1,8 +1,8 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import { bn, toBytes } from '@fuel-ts/math';
 
-import type { EncodingOptions } from '../../../types/EncodingOptions';
-import { Coder } from '../AbstractCoder';
+import type { EncodingOptions } from '../../../types/EncodingOptions.js';
+import { Coder } from '../AbstractCoder.js';
 
 export class BooleanCoder extends Coder<boolean, boolean> {
   paddingLength: number;

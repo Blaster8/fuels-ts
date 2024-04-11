@@ -1,6 +1,6 @@
 import { arrayify, hexlify } from '@fuel-ts/utils';
 
-import { ByteArrayCoder } from './byte-array';
+import { ByteArrayCoder } from './byte-array.js';
 
 /**
  * @group node

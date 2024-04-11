@@ -2,8 +2,8 @@ import { readFileSync } from 'fs';
 import { Provider, FUEL_NETWORK_URL, Wallet, ContractFactory } from 'fuels';
 import { join } from 'path';
 
-import { DocSnippetProjectsEnum } from '../../../test/fixtures/forc-projects';
-import { getTestWallet } from '../../utils';
+import { DocSnippetProjectsEnum } from '../../../test/fixtures/forc-projects/index.js';
+import { getTestWallet } from '../../utils.js';
 
 /**
  * @group node

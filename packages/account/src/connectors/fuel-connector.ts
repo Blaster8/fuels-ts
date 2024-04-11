@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/require-await */
 import { EventEmitter } from 'events';
 
-import type { TransactionRequestLike } from '../providers';
-import type { Asset } from '../providers/assets/types';
+import type { Asset } from '../providers/assets/types.js';
+import type { TransactionRequestLike } from '../providers/index.js';
 
-import { FuelConnectorEventTypes } from './types';
+import { FuelConnectorEventTypes } from './types/index.js';
 import type {
   FuelConnectorEvents,
   ConnectorMetadata,
@@ -12,7 +12,7 @@ import type {
   Network,
   FuelEventArg,
   Version,
-} from './types';
+} from './types/index.js';
 
 /**
  * @name FuelConnector

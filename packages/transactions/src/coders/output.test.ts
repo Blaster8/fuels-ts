@@ -1,8 +1,8 @@
 import { bn } from '@fuel-ts/math';
 import { arrayify, hexlify } from '@fuel-ts/utils';
 
-import type { Output } from './output';
-import { OutputCoder, OutputType } from './output';
+import type { Output } from './output.js';
+import { OutputCoder, OutputType } from './output.js';
 
 const B256 = '0xd5579c46dfcc7f18207013e65b44e4cb4e2c2298f4ac457ba8f82743f31e930b';
 

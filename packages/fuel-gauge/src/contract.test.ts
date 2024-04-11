@@ -28,9 +28,9 @@ import {
   Predicate,
 } from 'fuels';
 
-import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../test/fixtures';
+import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../test/fixtures/index.js';
 
-import { createSetupConfig } from './utils';
+import { createSetupConfig } from './utils.js';
 
 const { binHexlified: predicateBytecode } = getFuelGaugeForcProject(
   FuelGaugeProjectsEnum.PREDICATE_TRUE

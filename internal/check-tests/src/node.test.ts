@@ -1,4 +1,4 @@
-import { testEach } from './index';
+import { testEach } from './index.js';
 
 /**
  * @group node

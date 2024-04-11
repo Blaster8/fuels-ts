@@ -1,6 +1,6 @@
-import type { IType } from '../../types/interfaces/IType';
+import type { IType } from '../../types/interfaces/IType.js';
 
-import { ArrayType } from './ArrayType';
+import { ArrayType } from './ArrayType.js';
 
 export class RawUntypedSlice extends ArrayType {
   public static swayType = 'raw untyped slice';

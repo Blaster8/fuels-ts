@@ -1,7 +1,7 @@
 import { Coder, NumberCoder } from '@fuel-ts/abi-coder';
 import { concat } from '@fuel-ts/utils';
 
-import { ByteArrayCoder } from './byte-array';
+import { ByteArrayCoder } from './byte-array.js';
 
 export type Witness = {
   /** Length of witness data byte array */

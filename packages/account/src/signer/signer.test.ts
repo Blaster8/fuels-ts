@@ -1,7 +1,7 @@
 import { sha256 } from '@fuel-ts/hasher';
 import { arrayify } from '@fuel-ts/utils';
 
-import { Signer } from './signer';
+import { Signer } from './signer.js';
 
 /**
  * @group node

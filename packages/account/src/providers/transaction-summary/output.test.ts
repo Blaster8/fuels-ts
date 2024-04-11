@@ -4,7 +4,7 @@ import {
   MOCK_OUTPUT_VARIABLE,
   MOCK_OUTPUT_CONTRACT_CREATED,
   MOCK_OUTPUT_COIN,
-} from '../../../test/fixtures/transaction-summary';
+} from '../../../test/fixtures/transaction-summary.js';
 
 import {
   getOutputsChange,
@@ -12,7 +12,7 @@ import {
   getOutputsContract,
   getOutputsContractCreated,
   getOutputsVariable,
-} from './output';
+} from './output.js';
 
 /**
  * @group node

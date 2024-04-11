@@ -14,7 +14,7 @@ import {
   FUEL_NETWORK_URL,
 } from 'fuels';
 
-import { getSetupContract } from './utils';
+import { getSetupContract } from './utils.js';
 
 const RUST_U8_MAX = 255;
 const RUST_U16_MAX = 65535;

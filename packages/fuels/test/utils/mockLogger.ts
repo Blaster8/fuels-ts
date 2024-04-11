@@ -1,4 +1,4 @@
-import * as logger from '../../src/cli/utils/logger';
+import * as logger from '../../src/cli/utils/logger.js';
 
 export function mockLogger() {
   const error = vi.spyOn(logger, 'error').mockReturnValue();

@@ -1,6 +1,6 @@
-import type { BN } from './bn';
-import { bn } from './bn';
-import type { BigNumberish } from './types';
+import type { BN } from './bn.js';
+import { bn } from './bn.js';
+import type { BigNumberish } from './types.js';
 
 export function max(...numbers: Array<BigNumberish>): BN {
   return numbers.reduce<BN>((prev, cur) => (bn(cur).gt(prev) ? bn(cur) : prev), bn(0));

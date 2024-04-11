@@ -1,9 +1,9 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 
-import { MAX_BYTES } from '../../../utils/constants';
-import { concatWithDynamicData } from '../../../utils/utilities';
-import type { TypesOfCoder } from '../AbstractCoder';
-import { Coder } from '../AbstractCoder';
+import { MAX_BYTES } from '../../../utils/constants.js';
+import { concatWithDynamicData } from '../../../utils/utilities.js';
+import type { TypesOfCoder } from '../AbstractCoder.js';
+import { Coder } from '../AbstractCoder.js';
 
 type InputValueOf<TCoder extends Coder> = Array<TypesOfCoder<TCoder>['Input']>;
 type DecodedValueOf<TCoder extends Coder> = Array<TypesOfCoder<TCoder>['Decoded']>;

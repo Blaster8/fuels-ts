@@ -4,7 +4,7 @@
  * Deeper tests are in ./bn.test.ts
  */
 
-import { format, formatUnits, toBytes, toHex, toNumber } from './functional';
+import { format, formatUnits, toBytes, toHex, toNumber } from './functional.js';
 
 /**
  * @group node

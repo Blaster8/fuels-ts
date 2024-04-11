@@ -1,7 +1,7 @@
-import { decompactProof, verifyProof } from './proofs';
-import { SparseMerkleTree } from './sparseMerkleTree';
-import type SparseCompactMerkleProof from './types/sparseCompactMerkleProof';
-import type SparseMerkleProof from './types/sparseMerkleProof';
+import { decompactProof, verifyProof } from './proofs.js';
+import { SparseMerkleTree } from './sparseMerkleTree.js';
+import type SparseCompactMerkleProof from './types/sparseCompactMerkleProof.js';
+import type SparseMerkleProof from './types/sparseMerkleProof.js';
 
 export class DeepSparseMerkleSubTree extends SparseMerkleTree {
   constructor(root: string) {

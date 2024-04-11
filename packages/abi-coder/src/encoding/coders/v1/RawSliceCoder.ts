@@ -1,12 +1,12 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import { bn } from '@fuel-ts/math';
 
-import { WORD_SIZE } from '../../../utils/constants';
-import { Coder } from '../AbstractCoder';
-import { ArrayCoder } from '../v0/ArrayCoder';
-import { BigNumberCoder } from '../v0/BigNumberCoder';
+import { WORD_SIZE } from '../../../utils/constants.js';
+import { Coder } from '../AbstractCoder.js';
+import { ArrayCoder } from '../v0/ArrayCoder.js';
+import { BigNumberCoder } from '../v0/BigNumberCoder.js';
 
-import { NumberCoder } from './NumberCoder';
+import { NumberCoder } from './NumberCoder.js';
 
 export class RawSliceCoder extends Coder<number[], number[]> {
   constructor() {

@@ -1,8 +1,8 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 
-import type { IRawAbiTypeRoot } from '../types/interfaces/IRawAbiType';
+import type { IRawAbiTypeRoot } from '../types/interfaces/IRawAbiType.js';
 
-import { supportedTypes } from './supportedTypes';
+import { supportedTypes } from './supportedTypes.js';
 
 export function makeType(params: { rawAbiType: IRawAbiTypeRoot }) {
   const { rawAbiType } = params;

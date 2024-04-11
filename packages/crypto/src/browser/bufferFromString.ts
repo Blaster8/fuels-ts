@@ -1,4 +1,4 @@
-import type { CryptoApi, Encoding } from '../types';
+import type { CryptoApi, Encoding } from '../types.js';
 
 export const bufferFromString: CryptoApi['bufferFromString'] = (
   string: string,

@@ -1,4 +1,4 @@
-import type { IRawAbiTypeRoot } from './IRawAbiType';
+import type { IRawAbiTypeRoot } from './IRawAbiType.js';
 
 export interface ITypeAttributes {
   inputLabel: string;

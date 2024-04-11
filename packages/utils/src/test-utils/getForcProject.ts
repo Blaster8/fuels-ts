@@ -1,8 +1,8 @@
 import { existsSync, readFileSync } from 'fs';
 import { join } from 'path';
 
-import { hexlify } from '../index';
-import { normalizeString } from '../utils/normalizeString';
+import { hexlify } from '../index.js';
+import { normalizeString } from '../utils/normalizeString.js';
 
 interface IGetForcProjectParams {
   projectDir: string;

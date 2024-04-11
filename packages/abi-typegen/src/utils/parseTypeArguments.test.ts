@@ -1,12 +1,12 @@
 import {
   AbiTypegenProjectsEnum,
   getTypegenForcProject,
-} from '../../test/fixtures/forc-projects/index';
-import { TargetEnum } from '../types/enums/TargetEnum';
-import type { IRawAbiTypeRoot, IRawAbiTypeComponent } from '../types/interfaces/IRawAbiType';
+} from '../../test/fixtures/forc-projects/index.js';
+import { TargetEnum } from '../types/enums/TargetEnum.js';
+import type { IRawAbiTypeRoot, IRawAbiTypeComponent } from '../types/interfaces/IRawAbiType.js';
 
-import { makeType } from './makeType';
-import { parseTypeArguments } from './parseTypeArguments';
+import { makeType } from './makeType.js';
+import { parseTypeArguments } from './parseTypeArguments.js';
 
 /*
   Sample ABI with components in both fashions:

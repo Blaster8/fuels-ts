@@ -1,13 +1,13 @@
 import { existsSync, readFileSync } from 'fs';
 
-import { resetDiskAndMocks } from '../utils/resetDiskAndMocks';
+import { resetDiskAndMocks } from '../utils/resetDiskAndMocks.js';
 import {
   bootstrapProject,
   resetConfigAndMocks,
   runBuild,
   runDeploy,
   runInit,
-} from '../utils/runCommands';
+} from '../utils/runCommands.js';
 
 /**
  * @group node

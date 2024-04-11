@@ -1,5 +1,5 @@
-import { StructType } from './StructType';
-import { VectorType } from './VectorType';
+import { StructType } from './StructType.js';
+import { VectorType } from './VectorType.js';
 
 /**
  * @group node

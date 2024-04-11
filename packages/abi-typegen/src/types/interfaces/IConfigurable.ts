@@ -1,5 +1,5 @@
-import type { IRawAbiConfigurable } from './IRawAbiConfigurable';
-import type { IType } from './IType';
+import type { IRawAbiConfigurable } from './IRawAbiConfigurable.js';
+import type { IType } from './IType.js';
 
 export interface IConfigurable {
   name: string;

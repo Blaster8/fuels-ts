@@ -1,7 +1,7 @@
-import walletManagerSpec from '../../../test/fixtures/wallet-manager-spec';
-import { Wallet } from '../../wallet';
+import walletManagerSpec from '../../../test/fixtures/wallet-manager-spec.js';
+import { Wallet } from '../../wallet/index.js';
 
-import { MnemonicVault } from './mnemonic-vault';
+import { MnemonicVault } from './mnemonic-vault.js';
 
 /**
  * @group node

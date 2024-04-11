@@ -1,5 +1,5 @@
-import { U256Type } from './U256Type';
-import { U64Type } from './U64Type';
+import { U256Type } from './U256Type.js';
+import { U64Type } from './U64Type.js';
 
 /**
  * @group node

@@ -1,5 +1,5 @@
-import { compareSystemVersions } from './compareSystemVersions';
-import * as getBuiltinVersionsMod from './getBuiltinVersions';
+import { compareSystemVersions } from './compareSystemVersions.js';
+import * as getBuiltinVersionsMod from './getBuiltinVersions.js';
 
 /**
  * @group node

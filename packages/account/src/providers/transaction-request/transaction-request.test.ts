@@ -6,15 +6,15 @@ import { TransactionType } from '@fuel-ts/transactions';
 import { concat, hexlify } from '@fuel-ts/utils';
 import { ASSET_A, ASSET_B } from '@fuel-ts/utils/test-utils';
 
-import { WalletUnlocked } from '../../wallet';
-import type { Coin } from '../coin';
-import type { CoinQuantity } from '../coin-quantity';
-import Provider from '../provider';
+import { WalletUnlocked } from '../../wallet/index.js';
+import type { CoinQuantity } from '../coin-quantity.js';
+import type { Coin } from '../coin.js';
+import Provider from '../provider.js';
 
-import type { CoinTransactionRequestInput } from './input';
-import { ScriptTransactionRequest } from './script-transaction-request';
-import type { TransactionRequestLike } from './types';
-import { transactionRequestify } from './utils';
+import type { CoinTransactionRequestInput } from './input.js';
+import { ScriptTransactionRequest } from './script-transaction-request.js';
+import type { TransactionRequestLike } from './types.js';
+import { transactionRequestify } from './utils.js';
 
 /**
  * @group node

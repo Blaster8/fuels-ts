@@ -1,7 +1,7 @@
-import type { IRawAbiTypeRoot } from '../../index';
-import type { IType } from '../../types/interfaces/IType';
+import type { IRawAbiTypeRoot } from '../../index.js';
+import type { IType } from '../../types/interfaces/IType.js';
 
-import { AType } from './AType';
+import { AType } from './AType.js';
 
 export class U8Type extends AType implements IType {
   public static swayType = 'u8';

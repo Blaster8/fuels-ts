@@ -2,9 +2,9 @@ import { generateTestWallet } from '@fuel-ts/account/test-utils';
 import type { BN, BigNumberish } from 'fuels';
 import { bn, Predicate, Wallet, Address, BaseAssetId, Provider, FUEL_NETWORK_URL } from 'fuels';
 
-import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../test/fixtures';
+import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../test/fixtures/index.js';
 
-import { getScript, getSetupContract } from './utils';
+import { getScript, getSetupContract } from './utils.js';
 
 const U32_VEC = [0, 1, 2];
 const VEC_IN_VEC = [

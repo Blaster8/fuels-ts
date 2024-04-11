@@ -25,7 +25,7 @@ import type {
   FailureStatus,
   SubmittedStatus,
   SqueezedOutStatus,
-} from '../../src';
+} from '../../src/index.js';
 
 export const MOCK_INPUT_COIN: InputCoin = {
   amount: bn(4999989993),

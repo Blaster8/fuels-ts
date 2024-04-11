@@ -3,12 +3,12 @@
  */
 describe('Configs', () => {
   it('exports FUEL_NETWORK_URL', async () => {
-    const configs = await import('./configs');
+    const configs = await import('./configs.js');
     expect(configs.FUEL_NETWORK_URL).toBe('http://127.0.0.1:4000/graphql');
   });
 
   it('exports FUEL_BETA_5_NETWORK_URL', async () => {
-    const configs = await import('./configs');
+    const configs = await import('./configs.js');
     expect(configs.FUEL_BETA_5_NETWORK_URL).toBe('https://beta-5.fuel.network/graphql');
   });
 });
@@ -33,7 +33,7 @@ describe('Configs - undefined process', () => {
     expect(typeof process).toBe('undefined');
     expect(process).toBeUndefined();
 
-    const configs = await import('./configs');
+    const configs = await import('./configs.js');
 
     expect(configs.FUEL_NETWORK_URL).toBe('http://127.0.0.1:4000/graphql');
   });
@@ -53,7 +53,7 @@ describe('Configs - overridden env', () => {
   });
 
   it('exports FUEL_NETWORK_URL with overridden env', async () => {
-    const configs = await import('./configs');
+    const configs = await import('./configs.js');
 
     expect(configs.FUEL_NETWORK_URL).toBe('some-other-network-url');
   });

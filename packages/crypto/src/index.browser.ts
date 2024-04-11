@@ -1,6 +1,6 @@
-import cryptoApi from './browser';
+import cryptoApi from './browser/index.js';
 
-export * from './types';
+export * from './types.js';
 
 export const {
   bufferFromString,

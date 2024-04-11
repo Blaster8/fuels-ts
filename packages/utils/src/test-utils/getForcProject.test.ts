@@ -1,7 +1,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 
-import * as utilsMod from '../index';
+import * as utilsMod from '../index.js';
 
 import {
   getForcProject,
@@ -12,7 +12,7 @@ import {
   getProjectStorageSlots,
   getProjectStorageSlotsPath,
   getProjectTempDir,
-} from './getForcProject';
+} from './getForcProject.js';
 
 vi.mock('path', async () => {
   const mod = await vi.importActual('path');

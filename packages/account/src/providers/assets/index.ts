@@ -1,6 +1,6 @@
-import { CHAIN_IDS } from '../chains';
+import { CHAIN_IDS } from '../chains.js';
 
-import type { Assets } from './types';
+import type { Assets } from './types.js';
 
 export const assets: Assets = [
   {
@@ -34,5 +34,5 @@ export const assets: Assets = [
   },
 ];
 
-export * from './utils';
-export * from './types';
+export * from './utils/index.js';
+export * from './types.js';

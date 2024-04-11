@@ -1,8 +1,8 @@
-import type { Asset } from '../../providers/assets/types';
-import type { FuelConnector } from '../fuel-connector';
+import type { Asset } from '../../providers/assets/types.js';
+import type { FuelConnector } from '../fuel-connector.js';
 
-import type { FuelConnectorEventTypes } from './connector-types';
-import type { Network } from './data-type';
+import type { FuelConnectorEventTypes } from './connector-types.js';
+import type { Network } from './data-type.js';
 
 /** **
  * ========================================================================================

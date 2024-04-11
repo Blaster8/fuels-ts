@@ -1,6 +1,6 @@
-import type { IType } from '../../types/interfaces/IType';
+import type { IType } from '../../types/interfaces/IType.js';
 
-import { U8Type } from './U8Type';
+import { U8Type } from './U8Type.js';
 
 export class U32Type extends U8Type implements IType {
   public static swayType = 'u32';

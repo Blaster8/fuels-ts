@@ -5,7 +5,7 @@ import { TransactionType, InputType, OutputType, TransactionCoder } from '@fuel-
 import { concat } from '@fuel-ts/utils';
 import { clone } from 'ramda';
 
-import type { TransactionRequest } from './types';
+import type { TransactionRequest } from './types.js';
 
 /**
  * Hash transaction request with sha256. [Read more](https://github.com/FuelLabs/fuel-specs/blob/master/specs/protocol/identifiers.md#transaction-id)

@@ -5,19 +5,19 @@ import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import { type BN } from '@fuel-ts/math';
 import { concat } from '@fuel-ts/utils';
 
-import { ByteArrayCoder } from './byte-array';
-import type { Input, InputContract } from './input';
-import { InputCoder, InputContractCoder } from './input';
-import type { Output, OutputContract } from './output';
-import { OutputCoder, OutputContractCoder } from './output';
-import type { Policy } from './policy';
-import { PoliciesCoder } from './policy';
-import { StorageSlotCoder } from './storage-slot';
-import type { StorageSlot } from './storage-slot';
-import type { TxPointer } from './tx-pointer';
-import { TxPointerCoder } from './tx-pointer';
-import type { Witness } from './witness';
-import { WitnessCoder } from './witness';
+import { ByteArrayCoder } from './byte-array.js';
+import type { Input, InputContract } from './input.js';
+import { InputCoder, InputContractCoder } from './input.js';
+import type { Output, OutputContract } from './output.js';
+import { OutputCoder, OutputContractCoder } from './output.js';
+import type { Policy } from './policy.js';
+import { PoliciesCoder } from './policy.js';
+import { StorageSlotCoder } from './storage-slot.js';
+import type { StorageSlot } from './storage-slot.js';
+import type { TxPointer } from './tx-pointer.js';
+import { TxPointerCoder } from './tx-pointer.js';
+import type { Witness } from './witness.js';
+import { WitnessCoder } from './witness.js';
 
 export enum TransactionType /* u8 */ {
   Script = 0,

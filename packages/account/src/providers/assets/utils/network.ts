@@ -1,5 +1,5 @@
-import { CHAIN_IDS } from '../../chains';
-import type { Asset, AssetEth, AssetFuel, NetworkEthereum, NetworkFuel } from '../types';
+import { CHAIN_IDS } from '../../chains.js';
+import type { Asset, AssetEth, AssetFuel, NetworkEthereum, NetworkFuel } from '../types.js';
 
 type Network = NetworkEthereum | NetworkFuel;
 export type NetworkTypes = NetworkEthereum['type'] | NetworkFuel['type'];

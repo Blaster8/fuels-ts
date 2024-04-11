@@ -2,10 +2,10 @@ import { Address } from '@fuel-ts/address';
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import type { AbstractAddress } from '@fuel-ts/interfaces';
 
-import { Mnemonic } from '../../mnemonic';
-import type { WalletUnlocked } from '../../wallet';
-import { Wallet } from '../../wallet';
-import type { Vault } from '../types';
+import { Mnemonic } from '../../mnemonic/index.js';
+import type { WalletUnlocked } from '../../wallet/index.js';
+import { Wallet } from '../../wallet/index.js';
+import type { Vault } from '../types.js';
 
 export interface MnemonicVaultOptions {
   secret?: string;

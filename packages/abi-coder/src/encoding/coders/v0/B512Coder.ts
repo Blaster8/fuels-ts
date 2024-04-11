@@ -2,8 +2,8 @@ import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import { bn, toHex } from '@fuel-ts/math';
 import { arrayify } from '@fuel-ts/utils';
 
-import { WORD_SIZE } from '../../../utils/constants';
-import { Coder } from '../AbstractCoder';
+import { WORD_SIZE } from '../../../utils/constants.js';
+import { Coder } from '../AbstractCoder.js';
 
 export class B512Coder extends Coder<string, string> {
   constructor() {

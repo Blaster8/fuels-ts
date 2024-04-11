@@ -1,10 +1,10 @@
 import type { BN, Provider, WalletLocked, WalletUnlocked } from 'fuels';
 import { BaseAssetId, Predicate } from 'fuels';
 
-import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../../test/fixtures';
-import type { Validation } from '../types/predicate';
+import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../../test/fixtures/index.js';
+import type { Validation } from '../types/predicate/index.js';
 
-import { fundPredicate, setupWallets } from './utils/predicate';
+import { fundPredicate, setupWallets } from './utils/predicate/index.js';
 
 /**
  * @group node

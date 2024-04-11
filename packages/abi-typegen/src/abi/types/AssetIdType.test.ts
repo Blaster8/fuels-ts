@@ -1,5 +1,5 @@
-import { AssetIdType } from './AssetIdType';
-import { BoolType } from './BoolType';
+import { AssetIdType } from './AssetIdType.js';
+import { BoolType } from './BoolType.js';
 
 /**
  * @group node

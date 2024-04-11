@@ -1,10 +1,10 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import { concatBytes } from '@fuel-ts/utils';
 
-import type { TypesOfCoder } from '../AbstractCoder';
-import { Coder } from '../AbstractCoder';
+import type { TypesOfCoder } from '../AbstractCoder.js';
+import { Coder } from '../AbstractCoder.js';
 
-import { OptionCoder } from './OptionCoder';
+import { OptionCoder } from './OptionCoder.js';
 
 type InputValueOf<TCoders extends Record<string, Coder>> = {
   [P in keyof TCoders]: TypesOfCoder<TCoders[P]>['Input'];

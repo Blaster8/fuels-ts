@@ -9,17 +9,20 @@ import type { TransactionScript } from '@fuel-ts/transactions';
 import { InputType, OutputType, TransactionType } from '@fuel-ts/transactions';
 import { arrayify, hexlify } from '@fuel-ts/utils';
 
-import type { GqlGasCosts } from '../__generated__/operations';
-import type { ChainInfo } from '../provider';
-import { calculateMetadataGasForTxScript, getMaxGas } from '../utils/gas';
+import type { GqlGasCosts } from '../__generated__/operations.js';
+import type { ChainInfo } from '../provider.js';
+import { calculateMetadataGasForTxScript, getMaxGas } from '../utils/gas.js';
 
-import { hashTransaction } from './hash-transaction';
-import type { ContractTransactionRequestInput } from './input';
-import type { ContractTransactionRequestOutput, VariableTransactionRequestOutput } from './output';
-import { returnZeroScript } from './scripts';
-import type { BaseTransactionRequestLike } from './transaction-request';
-import { BaseTransactionRequest } from './transaction-request';
-import type { JsonAbisFromAllCalls } from './types';
+import { hashTransaction } from './hash-transaction.js';
+import type { ContractTransactionRequestInput } from './input.js';
+import type {
+  ContractTransactionRequestOutput,
+  VariableTransactionRequestOutput,
+} from './output.js';
+import { returnZeroScript } from './scripts.js';
+import type { BaseTransactionRequestLike } from './transaction-request.js';
+import { BaseTransactionRequest } from './transaction-request.js';
+import type { JsonAbisFromAllCalls } from './types.js';
 
 /**
  * @hidden

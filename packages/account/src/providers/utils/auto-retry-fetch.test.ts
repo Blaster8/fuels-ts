@@ -1,7 +1,7 @@
 import { safeExec } from '@fuel-ts/errors/test-utils';
 
-import type { RetryOptions } from './auto-retry-fetch';
-import { autoRetryFetch, getWaitDelay } from './auto-retry-fetch';
+import type { RetryOptions } from './auto-retry-fetch.js';
+import { autoRetryFetch, getWaitDelay } from './auto-retry-fetch.js';
 
 /**
  * @group node

@@ -1,4 +1,4 @@
-import { urlJoin } from './url';
+import { urlJoin } from './url.js';
 
 /**
  * @group node

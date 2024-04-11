@@ -2,8 +2,8 @@ import { ASSET_A, ASSET_B } from '@fuel-ts/utils/test-utils';
 import type { Account, Contract, Provider } from 'fuels';
 import { BaseAssetId, Wallet } from 'fuels';
 
-import { DocSnippetProjectsEnum } from '../../../test/fixtures/forc-projects';
-import { createAndDeployContractFromProject, getTestWallet } from '../../utils';
+import { DocSnippetProjectsEnum } from '../../../test/fixtures/forc-projects/index.js';
+import { createAndDeployContractFromProject, getTestWallet } from '../../utils.js';
 
 /**
  * @group node

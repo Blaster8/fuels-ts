@@ -1,11 +1,11 @@
 import { bn } from '@fuel-ts/math';
 import { arrayify, hexlify } from '@fuel-ts/utils';
 
-import { InputType } from './input';
-import { OutputType } from './output';
-import { PolicyType } from './policy';
-import type { Transaction } from './transaction';
-import { TransactionCoder, TransactionType } from './transaction';
+import { InputType } from './input.js';
+import { OutputType } from './output.js';
+import { PolicyType } from './policy.js';
+import type { Transaction } from './transaction.js';
+import { TransactionCoder, TransactionType } from './transaction.js';
 
 const B256 = '0xd5579c46dfcc7f18207013e65b44e4cb4e2c2298f4ac457ba8f82743f31e930b';
 const U32 = 1000;

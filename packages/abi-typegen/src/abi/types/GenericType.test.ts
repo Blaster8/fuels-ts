@@ -1,5 +1,5 @@
-import { GenericType } from './GenericType';
-import { StructType } from './StructType';
+import { GenericType } from './GenericType.js';
+import { StructType } from './StructType.js';
 
 /**
  * @group node

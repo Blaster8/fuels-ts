@@ -1,4 +1,4 @@
-import { stringFromBuffer } from '..';
+import { stringFromBuffer } from '../src/index.js';
 
 /**
  * @group node

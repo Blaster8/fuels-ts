@@ -1,9 +1,9 @@
-import type { ResolvedAbiType } from '../../ResolvedAbiType';
-import type { EncodingOptions } from '../../types/EncodingOptions';
-import type { GetCoderFn } from '../../types/GetCoder';
-import { Coder } from '../coders/AbstractCoder';
+import type { ResolvedAbiType } from '../../ResolvedAbiType.js';
+import type { EncodingOptions } from '../../types/EncodingOptions.js';
+import type { GetCoderFn } from '../../types/GetCoder.js';
+import { Coder } from '../coders/AbstractCoder.js';
 
-import { getCoders } from './getCoders';
+import { getCoders } from './getCoders.js';
 
 const coderName = 'mock';
 

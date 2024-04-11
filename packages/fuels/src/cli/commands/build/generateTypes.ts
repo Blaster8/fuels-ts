@@ -3,10 +3,10 @@ import { runTypegen } from '@fuel-ts/abi-typegen/runTypegen';
 import { writeFileSync, mkdirSync } from 'fs';
 import { join } from 'path';
 
-import { getABIPaths } from '../../config/forcUtils';
-import { renderIndexTemplate } from '../../templates';
-import type { FuelsConfig } from '../../types';
-import { debug, log, loggingConfig } from '../../utils/logger';
+import { getABIPaths } from '../../config/forcUtils.js';
+import { renderIndexTemplate } from '../../templates/index.js';
+import type { FuelsConfig } from '../../types.js';
+import { debug, log, loggingConfig } from '../../utils/logger.js';
 
 async function generateTypesForProgramType(
   config: FuelsConfig,

@@ -1,4 +1,4 @@
-import type { IConfigurable } from '../../types/interfaces/IConfigurable';
+import type { IConfigurable } from '../../types/interfaces/IConfigurable.js';
 
 export function formatConfigurables(params: { configurables: IConfigurable[] }) {
   const { configurables } = params;

@@ -1,5 +1,5 @@
-import * as makeConfigurableMod from './makeConfigurable';
-import { parseConfigurables } from './parseConfigurables';
+import * as makeConfigurableMod from './makeConfigurable.js';
+import { parseConfigurables } from './parseConfigurables.js';
 
 /**
  * @group node

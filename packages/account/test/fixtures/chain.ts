@@ -1,4 +1,4 @@
-import type { GqlChainInfoFragmentFragment } from '../../src/providers/__generated__/operations';
+import type { GqlChainInfoFragmentFragment } from '../../src/providers/__generated__/operations.js';
 
 export const MOCK_CHAIN: GqlChainInfoFragmentFragment = {
   __typename: 'ChainInfo',

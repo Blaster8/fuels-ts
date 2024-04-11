@@ -5,11 +5,11 @@ import mkdirp from 'mkdirp';
 import { basename } from 'path';
 import rimraf from 'rimraf';
 
-import { AbiTypeGen } from './AbiTypeGen';
-import type { ProgramTypeEnum } from './types/enums/ProgramTypeEnum';
-import type { IFile } from './types/interfaces/IFile';
-import { collectBinFilepaths } from './utils/collectBinFilePaths';
-import { collectStorageSlotsFilepaths } from './utils/collectStorageSlotsFilePaths';
+import { AbiTypeGen } from './AbiTypeGen.js';
+import type { ProgramTypeEnum } from './types/enums/ProgramTypeEnum.js';
+import type { IFile } from './types/interfaces/IFile.js';
+import { collectBinFilepaths } from './utils/collectBinFilePaths.js';
+import { collectStorageSlotsFilepaths } from './utils/collectStorageSlotsFilePaths.js';
 
 export interface IGenerateFilesParams {
   cwd: string;

@@ -1,4 +1,4 @@
-export { english } from './words/english';
+export { english } from './words/english.js';
 
 export enum Language {
   'english' = 'english',

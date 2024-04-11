@@ -1,3 +1,3 @@
-export * from './network';
-export * from './resolveIconPaths';
-export * from './url';
+export * from './network.js';
+export * from './resolveIconPaths.js';
+export * from './url.js';

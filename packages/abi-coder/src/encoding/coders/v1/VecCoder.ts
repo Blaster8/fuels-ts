@@ -2,11 +2,11 @@ import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import { bn } from '@fuel-ts/math';
 import { concatBytes } from '@fuel-ts/utils';
 
-import { MAX_BYTES, WORD_SIZE } from '../../../utils/constants';
-import { chunkByLength } from '../../../utils/utilities';
-import type { TypesOfCoder } from '../AbstractCoder';
-import { Coder } from '../AbstractCoder';
-import { BigNumberCoder } from '../v0/BigNumberCoder';
+import { MAX_BYTES, WORD_SIZE } from '../../../utils/constants.js';
+import { chunkByLength } from '../../../utils/utilities.js';
+import type { TypesOfCoder } from '../AbstractCoder.js';
+import { Coder } from '../AbstractCoder.js';
+import { BigNumberCoder } from '../v0/BigNumberCoder.js';
 
 type InputValueOf<TCoder extends Coder> = Array<TypesOfCoder<TCoder>['Input']>;
 type DecodedValueOf<TCoder extends Coder> = Array<TypesOfCoder<TCoder>['Decoded']>;

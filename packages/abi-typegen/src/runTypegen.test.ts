@@ -7,10 +7,10 @@ import { join } from 'path';
 import {
   AbiTypegenProjectsEnum,
   getTypegenForcProject,
-} from '../test/fixtures/forc-projects/index';
+} from '../test/fixtures/forc-projects/index.js';
 
-import { runTypegen } from './runTypegen';
-import { ProgramTypeEnum } from './types/enums/ProgramTypeEnum';
+import { runTypegen } from './runTypegen.js';
+import { ProgramTypeEnum } from './types/enums/ProgramTypeEnum.js';
 
 /**
  * @group node

@@ -1,12 +1,12 @@
 import {
   AbiTypegenProjectsEnum,
   getTypegenForcProject,
-} from '../../../test/fixtures/forc-projects/index';
-import type { IRawAbiTypeRoot } from '../../types/interfaces/IRawAbiType';
-import type { IType } from '../../types/interfaces/IType';
-import * as findTypeMod from '../../utils/findType';
+} from '../../../test/fixtures/forc-projects/index.js';
+import type { IRawAbiTypeRoot } from '../../types/interfaces/IRawAbiType.js';
+import type { IType } from '../../types/interfaces/IType.js';
+import * as findTypeMod from '../../utils/findType.js';
 
-import { Configurable } from './Configurable';
+import { Configurable } from './Configurable.js';
 
 /**
  * @group node

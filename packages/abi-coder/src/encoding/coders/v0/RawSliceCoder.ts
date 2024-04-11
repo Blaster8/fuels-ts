@@ -1,12 +1,12 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 
-import type { Uint8ArrayWithDynamicData } from '../../../utils/utilities';
-import { BASE_RAW_SLICE_OFFSET, concatWithDynamicData } from '../../../utils/utilities';
-import { Coder } from '../AbstractCoder';
+import type { Uint8ArrayWithDynamicData } from '../../../utils/utilities.js';
+import { BASE_RAW_SLICE_OFFSET, concatWithDynamicData } from '../../../utils/utilities.js';
+import { Coder } from '../AbstractCoder.js';
 
-import { ArrayCoder } from './ArrayCoder';
-import { BigNumberCoder } from './BigNumberCoder';
-import { NumberCoder } from './NumberCoder';
+import { ArrayCoder } from './ArrayCoder.js';
+import { BigNumberCoder } from './BigNumberCoder.js';
+import { NumberCoder } from './NumberCoder.js';
 
 export class RawSliceCoder extends Coder<number[], number[]> {
   constructor() {

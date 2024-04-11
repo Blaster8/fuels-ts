@@ -1,7 +1,7 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 
-import type { ResolvedAbiType } from '../ResolvedAbiType';
-import type { JsonAbi, JsonAbiArgument, JsonAbiFunction, JsonAbiType } from '../types/JsonAbi';
+import type { ResolvedAbiType } from '../ResolvedAbiType.js';
+import type { JsonAbi, JsonAbiArgument, JsonAbiFunction, JsonAbiType } from '../types/JsonAbi.js';
 
 /**
  * Find a function by name in the ABI.

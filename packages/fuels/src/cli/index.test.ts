@@ -1,4 +1,4 @@
-import { fuelsConfig } from '../../test/fixtures/fuels.config';
+import { fuelsConfig } from '../../test/fixtures/fuels.config.js';
 
 import type {
   CommandEvent,
@@ -8,8 +8,8 @@ import type {
   FuelsConfig,
   OptionsFunction,
   UserFuelsConfig,
-} from './index';
-import { createConfig } from './index';
+} from './index.js';
+import { createConfig } from './index.js';
 
 /**
  * @group node

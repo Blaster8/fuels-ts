@@ -1,7 +1,7 @@
 import type { Command } from 'commander';
 
-import type { Commands } from '../types';
-import { error } from '../utils/logger';
+import type { Commands } from '../types.js';
+import { error } from '../utils/logger.js';
 
 export function withProgram<CType extends Commands>(
   program: Command,

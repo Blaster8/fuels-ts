@@ -2,7 +2,7 @@ import type { JsonAbi } from '@fuel-ts/abi-coder';
 import { Account, Wallet, Provider } from '@fuel-ts/account';
 import { FUEL_NETWORK_URL } from '@fuel-ts/account/configs';
 
-import Contract from './contract';
+import Contract from './contract.js';
 
 const CONTRACT_ID = '0x0101010101010101010101010101010101010101010101010101010101010101';
 const ABI: JsonAbi = {

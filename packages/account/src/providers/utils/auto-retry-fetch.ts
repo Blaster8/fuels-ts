@@ -1,6 +1,6 @@
-import type { ProviderOptions } from '../provider';
+import type { ProviderOptions } from '../provider.js';
 
-import { sleep } from './sleep';
+import { sleep } from './sleep.js';
 
 type Backoff = 'linear' | 'exponential' | 'fixed';
 

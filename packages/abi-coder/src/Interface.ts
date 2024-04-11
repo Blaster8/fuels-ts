@@ -3,12 +3,12 @@ import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import type { BytesLike } from '@fuel-ts/interfaces';
 import { arrayify } from '@fuel-ts/utils';
 
-import { AbiCoder } from './AbiCoder';
-import { FunctionFragment } from './FunctionFragment';
-import type { InputValue } from './encoding/coders/AbstractCoder';
-import type { JsonAbi, JsonAbiConfigurable } from './types/JsonAbi';
-import { ENCODING_V0 } from './utils/constants';
-import { findTypeById } from './utils/json-abi';
+import { AbiCoder } from './AbiCoder.js';
+import { FunctionFragment } from './FunctionFragment.js';
+import type { InputValue } from './encoding/coders/AbstractCoder.js';
+import type { JsonAbi, JsonAbiConfigurable } from './types/JsonAbi.js';
+import { ENCODING_V0 } from './utils/constants.js';
+import { findTypeById } from './utils/json-abi.js';
 
 export class Interface<TAbi extends JsonAbi = JsonAbi> {
   readonly functions!: Record<string, FunctionFragment>;

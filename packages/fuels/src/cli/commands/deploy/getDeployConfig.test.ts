@@ -1,4 +1,4 @@
-import { getDeployConfig } from './getDeployConfig';
+import { getDeployConfig } from './getDeployConfig.js';
 
 /**
  * @group node

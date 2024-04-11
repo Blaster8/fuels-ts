@@ -9,7 +9,7 @@ import type { BN } from '@fuel-ts/math';
 import type { ScriptRequest } from '@fuel-ts/program';
 import { arrayify } from '@fuel-ts/utils';
 
-import { ScriptInvocationScope } from './script-invocation-scope';
+import { ScriptInvocationScope } from './script-invocation-scope.js';
 
 /**
  * Represents the result of a script execution.

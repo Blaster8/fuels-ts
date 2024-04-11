@@ -1,6 +1,6 @@
 import { safeExec } from '@fuel-ts/errors/test-utils';
 
-import { readForcToml } from './forcUtils';
+import { readForcToml } from './forcUtils.js';
 
 /**
  * @group node

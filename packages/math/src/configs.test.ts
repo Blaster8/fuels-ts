@@ -10,7 +10,7 @@ import {
   DECIMAL_MWEI,
   DECIMAL_SZADO,
   DECIMAL_WEI,
-} from './configs';
+} from './configs.js';
 
 /**
  * @group node

@@ -1,4 +1,4 @@
-import type { StorageAbstract } from '../types';
+import type { StorageAbstract } from '../types.js';
 
 export class MemoryStorage implements StorageAbstract {
   storage = new Map<string, unknown>();

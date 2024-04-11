@@ -5,9 +5,9 @@ import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import type { AbstractAddress } from '@fuel-ts/interfaces';
 import { EventEmitter } from 'events';
 
-import type { WalletUnlocked } from '../wallet';
+import type { WalletUnlocked } from '../wallet/index.js';
 
-import { MemoryStorage } from './storages/memory-storage';
+import { MemoryStorage } from './storages/memory-storage.js';
 import type {
   StorageAbstract,
   WalletManagerAccount,
@@ -16,9 +16,9 @@ import type {
   WalletManagerOptions,
   WalletManagerState,
   Vault,
-} from './types';
-import { MnemonicVault } from './vaults/mnemonic-vault';
-import { PrivateKeyVault } from './vaults/privatekey-vault';
+} from './types.js';
+import { MnemonicVault } from './vaults/mnemonic-vault.js';
+import { PrivateKeyVault } from './vaults/privatekey-vault.js';
 
 const ERROR_MESSAGES = {
   invalid_vault_type: 'The provided Vault type is invalid.',

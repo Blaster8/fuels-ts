@@ -3,8 +3,8 @@ import type { B256Address } from '@fuel-ts/interfaces';
 import type { BN, BNInput } from '@fuel-ts/math';
 import type { Input, Output, Transaction, TransactionType } from '@fuel-ts/transactions';
 
-import type { GqlGetTransactionQuery } from '../__generated__/operations';
-import type { TransactionResultReceipt } from '../transaction-response';
+import type { GqlGetTransactionQuery } from '../__generated__/operations.js';
+import type { TransactionResultReceipt } from '../transaction-response/index.js';
 
 export type GqlTransaction = NonNullable<GqlGetTransactionQuery['transaction']>;
 

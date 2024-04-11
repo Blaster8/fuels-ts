@@ -1,9 +1,9 @@
 import { Address } from '@fuel-ts/address';
 
-import type { WalletUnlocked } from '../../wallet';
-import { Wallet } from '../../wallet';
+import type { WalletUnlocked } from '../../wallet/index.js';
+import { Wallet } from '../../wallet/index.js';
 
-import { PrivateKeyVault } from './privatekey-vault';
+import { PrivateKeyVault } from './privatekey-vault.js';
 
 /**
  * @group node

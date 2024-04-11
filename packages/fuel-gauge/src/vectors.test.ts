@@ -1,7 +1,7 @@
 import { bn, randomBytes, hexlify } from 'fuels';
 import type { BN, Contract } from 'fuels';
 
-import { getSetupContract } from './utils';
+import { getSetupContract } from './utils.js';
 
 const setupContract = getSetupContract('vectors');
 let contractInstance: Contract;

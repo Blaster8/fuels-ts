@@ -3,8 +3,8 @@ import { mkdirSync, writeFileSync } from 'fs';
 import { join } from 'path';
 import type { Options } from 'tsup';
 
-import { assets } from './src/providers/assets';
-import { resolveIconPaths } from './src/providers/assets/utils';
+import { assets } from './src/providers/assets/index.js';
+import { resolveIconPaths } from './src/providers/assets/utils/index.js';
 
 const configs: Options = {
   ...tsupDefaults,

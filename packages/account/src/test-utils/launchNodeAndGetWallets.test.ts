@@ -1,10 +1,10 @@
 import path from 'path';
 import { cwd } from 'process';
 
-import { Provider } from '../providers';
-import { WalletUnlocked } from '../wallet';
+import { Provider } from '../providers/index.js';
+import { WalletUnlocked } from '../wallet/index.js';
 
-import { launchNodeAndGetWallets } from './launchNode';
+import { launchNodeAndGetWallets } from './launchNode.js';
 
 /**
  * @group node

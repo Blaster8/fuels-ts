@@ -1,9 +1,9 @@
 // A set of useful helper methods for testing binary Merkle trees.
 import { hash } from '@fuel-ts/hasher';
 
-import { EMPTY } from '../common';
+import { EMPTY } from '../common/index.js';
 
-import Node from './types/node';
+import Node from './types/node.js';
 
 /**
  * Slice off the '0x' on each argument to simulate abi.encodePacked

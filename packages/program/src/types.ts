@@ -3,7 +3,7 @@ import type { CoinQuantity, CoinQuantityLike } from '@fuel-ts/account';
 import type { AbstractProgram, AbstractAddress, BytesLike } from '@fuel-ts/interfaces';
 import type { BigNumberish } from '@fuel-ts/math';
 
-import type { FunctionInvocationScope } from './functions/invocation-scope';
+import type { FunctionInvocationScope } from './functions/invocation-scope.js';
 
 /**
  * Represents a contract call.

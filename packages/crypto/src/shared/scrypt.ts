@@ -1,6 +1,6 @@
 import { scrypt as scryptNoble } from '@noble/hashes/scrypt';
 
-import type { IScryptParams } from '../types';
+import type { IScryptParams } from '../types.js';
 
 export const scrypt = (params: IScryptParams): Uint8Array => {
   const { password, salt, n, p, r, dklen } = params;

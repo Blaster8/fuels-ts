@@ -1,6 +1,6 @@
-import { resetDiskAndMocks } from '../../../test/utils/resetDiskAndMocks';
+import { resetDiskAndMocks } from '../../../test/utils/resetDiskAndMocks.js';
 
-import * as loggerMod from './logger';
+import * as loggerMod from './logger.js';
 
 /**
  * @group node

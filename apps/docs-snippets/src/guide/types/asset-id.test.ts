@@ -1,8 +1,8 @@
 import { Address } from 'fuels';
 import type { AssetId, Contract, B256Address } from 'fuels';
 
-import { DocSnippetProjectsEnum } from '../../../test/fixtures/forc-projects';
-import { createAndDeployContractFromProject } from '../../utils';
+import { DocSnippetProjectsEnum } from '../../../test/fixtures/forc-projects/index.js';
+import { createAndDeployContractFromProject } from '../../utils.js';
 
 /**
  * @group node

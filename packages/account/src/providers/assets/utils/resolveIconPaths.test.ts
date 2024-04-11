@@ -1,5 +1,5 @@
-import { resolveIconPaths } from './resolveIconPaths';
-import { assets } from '..';
+import { resolveIconPaths } from './resolveIconPaths.js';
+import { assets } from '../index.js';
 
 /**
  * @group node

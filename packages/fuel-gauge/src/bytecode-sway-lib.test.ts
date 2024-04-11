@@ -1,10 +1,10 @@
 import { FUEL_NETWORK_URL, Predicate, Provider, arrayify } from 'fuels';
 
-import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../test/fixtures';
-import { defaultPredicateAbi } from '../test/fixtures/abi/predicate';
-import { defaultPredicateBytecode } from '../test/fixtures/bytecode/predicate';
+import { defaultPredicateAbi } from '../test/fixtures/abi/predicate.js';
+import { defaultPredicateBytecode } from '../test/fixtures/bytecode/predicate.js';
+import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../test/fixtures/index.js';
 
-import { getSetupContract } from './utils';
+import { getSetupContract } from './utils.js';
 
 /**
  * @group node

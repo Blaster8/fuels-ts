@@ -1,7 +1,7 @@
-import { BoolType } from './BoolType';
-import { StdStringType } from './StdStringType';
-import { StrSliceType } from './StrSliceType';
-import { StrType } from './StrType';
+import { BoolType } from './BoolType.js';
+import { StdStringType } from './StdStringType.js';
+import { StrSliceType } from './StrSliceType.js';
+import { StrType } from './StrType.js';
 
 /**
  * @group node

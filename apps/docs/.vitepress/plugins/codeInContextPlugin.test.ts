@@ -5,7 +5,7 @@ import {
   shouldAddDivider,
   createDividerToken,
   CodeSnippetToken,
-} from './codeInContextPlugin';
+} from './codeInContextPlugin.js';
 import MarkdownIt from 'markdown-it';
 import Token from 'markdown-it/lib/token';
 

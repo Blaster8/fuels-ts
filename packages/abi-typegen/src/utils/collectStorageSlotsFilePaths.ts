@@ -1,7 +1,7 @@
 import { existsSync, readFileSync } from 'fs';
 
-import { ProgramTypeEnum } from '../types/enums/ProgramTypeEnum';
-import type { IFile } from '../types/interfaces/IFile';
+import { ProgramTypeEnum } from '../types/enums/ProgramTypeEnum.js';
+import type { IFile } from '../types/interfaces/IFile.js';
 
 export const collectStorageSlotsFilepaths = (params: {
   filepaths: string[];

@@ -1,4 +1,4 @@
-import { ZERO } from '../utils';
+import { ZERO } from '../utils.js';
 
 class SparseMerkleSolidityNode {
   digest: string;

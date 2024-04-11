@@ -16,7 +16,7 @@ import {
   clearFirst12BytesFromB256,
   isEvmAddress,
   padFirst12BytesOfEvmAddress,
-} from './utils';
+} from './utils.js';
 
 /**
  * `Address` provides a type safe wrapper for converting between different address formats

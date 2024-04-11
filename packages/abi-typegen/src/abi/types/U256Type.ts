@@ -1,6 +1,6 @@
-import type { IType } from '../../types/interfaces/IType';
+import type { IType } from '../../types/interfaces/IType.js';
 
-import { U64Type } from './U64Type';
+import { U64Type } from './U64Type.js';
 
 export class U256Type extends U64Type implements IType {
   public static swayType = 'u256';

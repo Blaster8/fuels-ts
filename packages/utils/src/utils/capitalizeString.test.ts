@@ -1,4 +1,4 @@
-import { capitalizeString } from './capitalizeString';
+import { capitalizeString } from './capitalizeString.js';
 
 /**
  * @group node

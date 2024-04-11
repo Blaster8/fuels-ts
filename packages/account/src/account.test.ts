@@ -6,13 +6,13 @@ import type { BN } from '@fuel-ts/math';
 import { bn } from '@fuel-ts/math';
 import { ASSET_A, ASSET_B } from '@fuel-ts/utils/test-utils';
 
-import { Account } from './account';
-import { FUEL_NETWORK_URL } from './configs';
-import { ScriptTransactionRequest, Provider } from './providers';
-import * as providersMod from './providers';
-import type { Coin, CoinQuantity, Message, Resource } from './providers';
-import { generateTestWallet, seedTestWallet } from './test-utils';
-import { Wallet } from './wallet';
+import { Account } from './account.js';
+import { FUEL_NETWORK_URL } from './configs.js';
+import { ScriptTransactionRequest, Provider } from './providers/index.js';
+import * as providersMod from './providers/index.js';
+import type { Coin, CoinQuantity, Message, Resource } from './providers/index.js';
+import { generateTestWallet, seedTestWallet } from './test-utils/index.js';
+import { Wallet } from './wallet/index.js';
 
 let provider: Provider;
 let gasPrice: BN;

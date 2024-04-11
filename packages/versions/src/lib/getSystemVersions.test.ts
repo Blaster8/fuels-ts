@@ -1,6 +1,6 @@
 import * as childProcessMod from 'child_process';
 
-import { getSystemVersions } from './getSystemVersions';
+import { getSystemVersions } from './getSystemVersions.js';
 
 vi.mock('child_process', async () => {
   const mod = await vi.importActual('child_process');

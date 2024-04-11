@@ -5,15 +5,15 @@ import type { TransactionCreate } from '@fuel-ts/transactions';
 import { TransactionType, OutputType } from '@fuel-ts/transactions';
 import { arrayify, hexlify } from '@fuel-ts/utils';
 
-import type { GqlGasCosts } from '../__generated__/operations';
-import { calculateMetadataGasForTxCreate } from '../utils/gas';
+import type { GqlGasCosts } from '../__generated__/operations.js';
+import { calculateMetadataGasForTxCreate } from '../utils/gas.js';
 
-import { hashTransaction } from './hash-transaction';
-import type { ContractCreatedTransactionRequestOutput } from './output';
-import type { TransactionRequestStorageSlot } from './storage-slot';
-import { storageSlotify } from './storage-slot';
-import { BaseTransactionRequest } from './transaction-request';
-import type { BaseTransactionRequestLike } from './transaction-request';
+import { hashTransaction } from './hash-transaction.js';
+import type { ContractCreatedTransactionRequestOutput } from './output.js';
+import type { TransactionRequestStorageSlot } from './storage-slot.js';
+import { storageSlotify } from './storage-slot.js';
+import { BaseTransactionRequest } from './transaction-request.js';
+import type { BaseTransactionRequestLike } from './transaction-request.js';
 
 /**
  * @hidden

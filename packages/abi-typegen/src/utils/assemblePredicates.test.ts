@@ -1,10 +1,10 @@
-import { getNewAbiTypegen } from '../../test/utils/getNewAbiTypegen';
-import * as renderCommonTemplateMod from '../templates/common/common';
-import * as renderIndexTemplateMod from '../templates/common/index';
-import * as renderFactoryTemplateMod from '../templates/predicate/factory';
-import { ProgramTypeEnum } from '../types/enums/ProgramTypeEnum';
+import { getNewAbiTypegen } from '../../test/utils/getNewAbiTypegen.js';
+import * as renderCommonTemplateMod from '../templates/common/common.js';
+import * as renderIndexTemplateMod from '../templates/common/index.js';
+import * as renderFactoryTemplateMod from '../templates/predicate/factory.js';
+import { ProgramTypeEnum } from '../types/enums/ProgramTypeEnum.js';
 
-import { assemblePredicates } from './assemblePredicates';
+import { assemblePredicates } from './assemblePredicates.js';
 
 /**
  * @group node

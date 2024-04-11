@@ -1,6 +1,6 @@
-import type { CryptoApi } from '../types';
+import type { CryptoApi } from '../types.js';
 
-import { crypto } from './crypto';
+import { crypto } from './crypto.js';
 
 export const encryptJsonWalletData: CryptoApi['encryptJsonWalletData'] = async (
   data: Uint8Array,

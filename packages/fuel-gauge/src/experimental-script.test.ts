@@ -2,7 +2,7 @@ import { readFileSync } from 'fs';
 import { Script, bn } from 'fuels';
 import { join } from 'path';
 
-import { createWallet } from './utils';
+import { createWallet } from './utils.js';
 
 let echoScript: Script;
 let printScript: Script;

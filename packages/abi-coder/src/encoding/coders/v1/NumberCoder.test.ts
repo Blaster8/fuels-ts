@@ -1,9 +1,9 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import { expectToThrowFuelError } from '@fuel-ts/errors/test-utils';
 
-import { U8_MAX, U16_MAX, U32_MAX } from '../../../../test/utils/constants';
+import { U8_MAX, U16_MAX, U32_MAX } from '../../../../test/utils/constants.js';
 
-import { NumberCoder } from './NumberCoder';
+import { NumberCoder } from './NumberCoder.js';
 
 /**
  * @group node

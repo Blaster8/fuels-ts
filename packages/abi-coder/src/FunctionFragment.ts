@@ -5,25 +5,25 @@ import type { BytesLike } from '@fuel-ts/interfaces';
 import { bn } from '@fuel-ts/math';
 import { arrayify } from '@fuel-ts/utils';
 
-import { AbiCoder } from './AbiCoder';
-import { ResolvedAbiType } from './ResolvedAbiType';
-import type { DecodedValue, InputValue } from './encoding/coders/AbstractCoder';
-import { ByteCoder } from './encoding/coders/v0/ByteCoder';
-import { TupleCoder } from './encoding/coders/v0/TupleCoder';
-import { VecCoder } from './encoding/coders/v0/VecCoder';
-import { StdStringCoder } from './encoding/coders/v1/StdStringCoder';
-import { TupleCoder as TupleCoderV1 } from './encoding/coders/v1/TupleCoder';
+import { AbiCoder } from './AbiCoder.js';
+import { ResolvedAbiType } from './ResolvedAbiType.js';
+import type { DecodedValue, InputValue } from './encoding/coders/AbstractCoder.js';
+import { ByteCoder } from './encoding/coders/v0/ByteCoder.js';
+import { TupleCoder } from './encoding/coders/v0/TupleCoder.js';
+import { VecCoder } from './encoding/coders/v0/VecCoder.js';
+import { StdStringCoder } from './encoding/coders/v1/StdStringCoder.js';
+import { TupleCoder as TupleCoderV1 } from './encoding/coders/v1/TupleCoder.js';
 import type {
   JsonAbi,
   JsonAbiArgument,
   JsonAbiFunction,
   JsonAbiFunctionAttribute,
-} from './types/JsonAbi';
-import type { EncodingVersion } from './utils/constants';
-import { ENCODING_V0, ENCODING_V1, OPTION_CODER_TYPE } from './utils/constants';
-import { findFunctionByName, findNonEmptyInputs, findTypeById } from './utils/json-abi';
-import type { Uint8ArrayWithDynamicData } from './utils/utilities';
-import { isHeapType, isPointerType, unpackDynamicData } from './utils/utilities';
+} from './types/JsonAbi.js';
+import type { EncodingVersion } from './utils/constants.js';
+import { ENCODING_V0, ENCODING_V1, OPTION_CODER_TYPE } from './utils/constants.js';
+import { findFunctionByName, findNonEmptyInputs, findTypeById } from './utils/json-abi.js';
+import type { Uint8ArrayWithDynamicData } from './utils/utilities.js';
+import { isHeapType, isPointerType, unpackDynamicData } from './utils/utilities.js';
 
 export class FunctionFragment<
   TAbi extends JsonAbi = JsonAbi,

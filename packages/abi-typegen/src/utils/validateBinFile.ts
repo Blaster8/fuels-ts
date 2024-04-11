@@ -1,6 +1,6 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 
-import { ProgramTypeEnum } from '../types/enums/ProgramTypeEnum';
+import { ProgramTypeEnum } from '../types/enums/ProgramTypeEnum.js';
 
 const upperFirst = (s: string): string => s[0].toUpperCase() + s.slice(1);
 

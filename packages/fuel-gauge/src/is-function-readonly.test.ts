@@ -1,6 +1,6 @@
-import { FuelGaugeProjectsEnum } from '../test/fixtures';
+import { FuelGaugeProjectsEnum } from '../test/fixtures/index.js';
 
-import { getSetupContract } from './utils';
+import { getSetupContract } from './utils.js';
 
 /**
  * @group node

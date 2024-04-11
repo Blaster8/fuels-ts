@@ -6,8 +6,8 @@ import type {
   GraphqlTransactionStatus,
   Time,
   TransactionSummary,
-} from './types';
-import { TransactionStatus } from './types';
+} from './types.js';
+import { TransactionStatus } from './types.js';
 
 /** @hidden */
 export const getTransactionStatusName = (gqlStatus: GqlTransactionStatusesNames) => {

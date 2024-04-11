@@ -1,9 +1,9 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import { expectToThrowFuelError } from '@fuel-ts/errors/test-utils';
 
-import type { Uint8ArrayWithDynamicData } from '../../../utils/utilities';
+import type { Uint8ArrayWithDynamicData } from '../../../utils/utilities.js';
 
-import { StdStringCoder } from './StdStringCoder';
+import { StdStringCoder } from './StdStringCoder.js';
 
 /**
  * @group node

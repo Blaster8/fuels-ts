@@ -1,6 +1,6 @@
 import type { BytesLike } from '@fuel-ts/interfaces';
 
-import { arrayify } from './arrayify';
+import { arrayify } from './arrayify.js';
 
 const HexCharacters: string = '0123456789abcdef';
 

@@ -1,6 +1,6 @@
-import type { Abi } from '../../abi/Abi';
-import { ProgramTypeEnum } from '../../types/enums/ProgramTypeEnum';
-import { renderHbsTemplate } from '../renderHbsTemplate';
+import type { Abi } from '../../abi/Abi.js';
+import { ProgramTypeEnum } from '../../types/enums/ProgramTypeEnum.js';
+import { renderHbsTemplate } from '../renderHbsTemplate.js';
 
 import indexTemplate from './index.hbs';
 

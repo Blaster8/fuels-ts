@@ -1,6 +1,6 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 
-import type { IType } from '../types/interfaces/IType';
+import type { IType } from '../types/interfaces/IType.js';
 
 export function findType(params: { types: IType[]; typeId: number }) {
   const { types, typeId } = params;

@@ -1,6 +1,6 @@
 import { safeExec } from '@fuel-ts/errors/test-utils';
 
-import { normalizeString } from './normalizeString';
+import { normalizeString } from './normalizeString.js';
 
 /**
  * @group node

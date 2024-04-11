@@ -1,4 +1,4 @@
-import { DateTime } from './date-time';
+import { DateTime } from './date-time.js';
 
 const now = {
   tai64: '4611686020108779339',

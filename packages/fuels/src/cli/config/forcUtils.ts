@@ -3,7 +3,7 @@ import camelCase from 'lodash.camelcase';
 import { join } from 'path';
 import toml from 'toml';
 
-import type { FuelsConfig } from '../types';
+import type { FuelsConfig } from '../types.js';
 
 export type ForcToml = {
   project: {

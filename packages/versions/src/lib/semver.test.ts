@@ -1,4 +1,4 @@
-import { eq, gt, majorEq, minorEq, patchEq } from './semver';
+import { eq, gt, majorEq, minorEq, patchEq } from './semver.js';
 
 /**
  * @group node

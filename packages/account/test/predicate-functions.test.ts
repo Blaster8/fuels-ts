@@ -1,9 +1,9 @@
-import { FUEL_NETWORK_URL } from '../src/configs';
-import { Predicate } from '../src/predicate';
-import { Provider } from '../src/providers';
+import { FUEL_NETWORK_URL } from '../src/configs.js';
+import { Predicate } from '../src/predicate/index.js';
+import { Provider } from '../src/providers/index.js';
 
-import { predicateAbi } from './fixtures/predicate-abi';
-import { predicateBytecode } from './fixtures/predicate-bytecode';
+import { predicateAbi } from './fixtures/predicate-abi.js';
+import { predicateBytecode } from './fixtures/predicate-bytecode.js';
 
 /**
  * @group node

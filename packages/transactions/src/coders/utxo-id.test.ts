@@ -1,7 +1,7 @@
 import { arrayify, hexlify } from '@fuel-ts/utils';
 
-import type { UtxoId } from './utxo-id';
-import { UtxoIdCoder } from './utxo-id';
+import type { UtxoId } from './utxo-id.js';
+import { UtxoIdCoder } from './utxo-id.js';
 
 const B256 = '0xd5579c46dfcc7f18207013e65b44e4cb4e2c2298f4ac457ba8f82743f31e930b';
 

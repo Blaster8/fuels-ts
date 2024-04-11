@@ -1,5 +1,5 @@
-import { getBuiltinVersions } from './getBuiltinVersions';
-import { gt, eq } from './semver';
+import { getBuiltinVersions } from './getBuiltinVersions.js';
+import { gt, eq } from './semver.js';
 
 export interface ICompareVersionsParams {
   systemForcVersion: string;

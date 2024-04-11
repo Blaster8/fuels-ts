@@ -1,8 +1,8 @@
 import { versions } from '@fuel-ts/versions';
 import { Command, Option } from 'commander';
 
-import { runTypegen } from './runTypegen';
-import { ProgramTypeEnum } from './types/enums/ProgramTypeEnum';
+import { runTypegen } from './runTypegen.js';
+import { ProgramTypeEnum } from './types/enums/ProgramTypeEnum.js';
 
 export interface ICliParams {
   inputs: string[];

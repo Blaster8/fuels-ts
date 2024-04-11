@@ -9,9 +9,9 @@ import {
   FUEL_NETWORK_URL,
 } from 'fuels';
 
-import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../../test/fixtures';
+import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../../test/fixtures/index.js';
 
-import { fundPredicate, assertBalance } from './utils/predicate';
+import { fundPredicate, assertBalance } from './utils/predicate/index.js';
 
 /**
  * @group node

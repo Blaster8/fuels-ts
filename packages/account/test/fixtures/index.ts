@@ -1,2 +1,2 @@
-export * from './messageProof';
-export * from './messageStatus';
+export * from './messageProof.js';
+export * from './messageStatus.js';

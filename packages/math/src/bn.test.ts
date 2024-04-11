@@ -1,6 +1,6 @@
-import type { BN } from './bn';
-import { bn } from './bn';
-import type { BigNumberish } from './types';
+import type { BN } from './bn.js';
+import { bn } from './bn.js';
+import type { BigNumberish } from './types.js';
 
 /**
  * @group node

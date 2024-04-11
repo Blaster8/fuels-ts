@@ -1,6 +1,6 @@
-import { mockVersions } from '../../test/utils/mockVersions';
+import { mockVersions } from '../../test/utils/mockVersions.js';
 
-import { renderHbsTemplate } from './renderHbsTemplate';
+import { renderHbsTemplate } from './renderHbsTemplate.js';
 
 /**
  * @group node

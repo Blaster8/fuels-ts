@@ -1,7 +1,7 @@
-import type { ResolvedAbiType } from '../../ResolvedAbiType';
-import type { EncodingOptions } from '../../types/EncodingOptions';
-import type { GetCoderFn } from '../../types/GetCoder';
-import type { Coder } from '../coders/AbstractCoder';
+import type { ResolvedAbiType } from '../../ResolvedAbiType.js';
+import type { EncodingOptions } from '../../types/EncodingOptions.js';
+import type { GetCoderFn } from '../../types/GetCoder.js';
+import type { Coder } from '../coders/AbstractCoder.js';
 
 /**
  * @param components - types array to create coders for.

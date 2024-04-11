@@ -1,8 +1,8 @@
 import * as getSystemForcMod from '@fuel-ts/versions/cli';
 
-import { mockLogger } from '../../../../test/utils/mockLogger';
+import { mockLogger } from '../../../../test/utils/mockLogger.js';
 
-import { shouldUseBuiltinForc } from './shouldUseBuiltinForc';
+import { shouldUseBuiltinForc } from './shouldUseBuiltinForc.js';
 
 /**
  * @group node

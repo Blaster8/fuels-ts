@@ -1,11 +1,11 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 
-import type { GetCoderFn } from '../../types/GetCoder';
-import type { EncodingVersion } from '../../utils/constants';
-import { ENCODING_V0, ENCODING_V1 } from '../../utils/constants';
+import type { GetCoderFn } from '../../types/GetCoder.js';
+import type { EncodingVersion } from '../../utils/constants.js';
+import { ENCODING_V0, ENCODING_V1 } from '../../utils/constants.js';
 
-import { getCoder as getCoderV0 } from './getCoderV0';
-import { getCoder as getCoderV1 } from './getCoderV1';
+import { getCoder as getCoderV0 } from './getCoderV0.js';
+import { getCoder as getCoderV1 } from './getCoderV1.js';
 
 /**
  * Retrieves the appropriate encoding function for a given encoding version.

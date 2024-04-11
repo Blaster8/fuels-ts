@@ -1,10 +1,10 @@
 import { safeExec } from '@fuel-ts/errors/test-utils';
 
-import type { IRawAbiTypeRoot } from '../types/interfaces/IRawAbiType';
-import type { IType } from '../types/interfaces/IType';
+import type { IRawAbiTypeRoot } from '../types/interfaces/IRawAbiType.js';
+import type { IType } from '../types/interfaces/IType.js';
 
-import { findType } from './findType';
-import { makeType } from './makeType';
+import { findType } from './findType.js';
+import { makeType } from './makeType.js';
 
 /**
  * @group node

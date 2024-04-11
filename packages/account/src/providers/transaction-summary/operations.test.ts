@@ -22,14 +22,14 @@ import {
   MOCK_RECEIPT_SCRIPT_RESULT,
   MOCK_RECEIPT_TRANSFER_OUT,
   MOCK_TRANSACTION_RAWPAYLOAD,
-} from '../../../test/fixtures/transaction-summary';
+} from '../../../test/fixtures/transaction-summary.js';
 import type {
   TransactionResultMessageOutReceipt,
   TransactionResultReceipt,
   TransactionResultTransferOutReceipt,
-} from '../transaction-response';
+} from '../transaction-response/index.js';
 
-import { getInputAccountAddress, getInputsCoin } from './input';
+import { getInputAccountAddress, getInputsCoin } from './input.js';
 import {
   addOperation,
   getContractCallOperations,
@@ -45,9 +45,9 @@ import {
   isTypeCreate,
   isTypeMint,
   isTypeScript,
-} from './operations';
-import type { Operation } from './types';
-import { AddressType, OperationName, TransactionTypeName, ChainName } from './types';
+} from './operations.js';
+import type { Operation } from './types.js';
+import { AddressType, OperationName, TransactionTypeName, ChainName } from './types.js';
 
 /**
  * @group node

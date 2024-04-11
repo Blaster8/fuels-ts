@@ -10,8 +10,8 @@ import { safeExec } from '@fuel-ts/errors/test-utils';
 import type { BN } from 'fuels';
 import { ContractFactory, Provider, toHex, BaseAssetId, Wallet, FUEL_NETWORK_URL } from 'fuels';
 
-import { SampleAbi__factory } from './sway-programs-api';
 import bytecode from './sway-programs-api/contracts/SampleAbi.hex';
+import { SampleAbi__factory } from './sway-programs-api/index.js';
 
 let gasPrice: BN;
 
@@ -95,7 +95,7 @@ describe('ExampleContract', () => {
     };
 
     // #region using-generated-files
-    // #context import { SampleAbi__factory } from './sway-programs-api';
+    // #context import { SampleAbi__factory } from './sway-programs-api.js';
     // #context import contractsIds from './sway-programs-api/contract-ids.json';
 
     // #context /**

@@ -1,4 +1,4 @@
-import { tsupDefaults } from './src';
+import { tsupDefaults } from './src/index.js';
 
 export default {
   ...tsupDefaults,

@@ -1,11 +1,11 @@
 import * as chokidar from 'chokidar';
 
-import * as buildMod from '../../src/cli/commands/build/index';
-import * as deployMod from '../../src/cli/commands/deploy/index';
-import { mockStartFuelCore } from '../utils/mockAutoStartFuelCore';
-import { mockLogger } from '../utils/mockLogger';
-import { resetDiskAndMocks } from '../utils/resetDiskAndMocks';
-import { runInit, runDev, bootstrapProject, resetConfigAndMocks } from '../utils/runCommands';
+import * as buildMod from '../../src/cli/commands/build/index.js';
+import * as deployMod from '../../src/cli/commands/deploy/index.js';
+import { mockStartFuelCore } from '../utils/mockAutoStartFuelCore.js';
+import { mockLogger } from '../utils/mockLogger.js';
+import { resetDiskAndMocks } from '../utils/resetDiskAndMocks.js';
+import { runInit, runDev, bootstrapProject, resetConfigAndMocks } from '../utils/runCommands.js';
 
 vi.mock('chokidar', async () => {
   const mod = await vi.importActual('chokidar');

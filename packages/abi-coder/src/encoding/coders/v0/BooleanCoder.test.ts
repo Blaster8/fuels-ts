@@ -1,7 +1,7 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import { expectToThrowFuelError } from '@fuel-ts/errors/test-utils';
 
-import { BooleanCoder } from './BooleanCoder';
+import { BooleanCoder } from './BooleanCoder.js';
 
 /**
  * @group node

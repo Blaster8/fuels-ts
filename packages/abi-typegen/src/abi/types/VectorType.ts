@@ -1,6 +1,6 @@
-import type { IType } from '../../types/interfaces/IType';
+import type { IType } from '../../types/interfaces/IType.js';
 
-import { ArrayType } from './ArrayType';
+import { ArrayType } from './ArrayType.js';
 
 export class VectorType extends ArrayType {
   public static swayType = 'struct Vec';

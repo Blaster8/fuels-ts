@@ -3,7 +3,7 @@ import type { BN, Contract } from 'fuels';
 import { bn } from 'fuels';
 import { join } from 'path';
 
-import { setup } from './utils';
+import { setup } from './utils.js';
 
 let contractInstance: Contract;
 let gasPrice: BN;

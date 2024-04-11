@@ -4,14 +4,14 @@ import { versions } from '@fuel-ts/versions';
 import { runVersions } from '@fuel-ts/versions/cli';
 import { Command, Option } from 'commander';
 
-import { build } from './cli/commands/build';
-import { deploy } from './cli/commands/deploy';
-import { dev } from './cli/commands/dev';
-import { init } from './cli/commands/init';
-import { withConfig } from './cli/commands/withConfig';
-import { withProgram } from './cli/commands/withProgram';
-import { Commands } from './cli/types';
-import { configureLogging } from './cli/utils/logger';
+import { build } from './cli/commands/build/index.js';
+import { deploy } from './cli/commands/deploy/index.js';
+import { dev } from './cli/commands/dev/index.js';
+import { init } from './cli/commands/init/index.js';
+import { withConfig } from './cli/commands/withConfig.js';
+import { withProgram } from './cli/commands/withProgram.js';
+import { Commands } from './cli/types.js';
+import { configureLogging } from './cli/utils/logger.js';
 
 export const onPreAction = (command: Command) => {
   const opts = command.opts();

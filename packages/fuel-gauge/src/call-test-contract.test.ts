@@ -1,9 +1,9 @@
 import { ASSET_A } from '@fuel-ts/utils/test-utils';
 import { BN, bn, toHex, BaseAssetId } from 'fuels';
 
-import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../test/fixtures';
+import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../test/fixtures/index.js';
 
-import { createSetupConfig } from './utils';
+import { createSetupConfig } from './utils.js';
 
 const { binHexlified, abiContents } = getFuelGaugeForcProject(
   FuelGaugeProjectsEnum.CALL_TEST_CONTRACT

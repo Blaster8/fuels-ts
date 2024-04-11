@@ -7,7 +7,7 @@ import * as arrayifyMod from '@fuel-ts/utils';
 import {
   assembleTransferToContractScript,
   formatTransferToContractScriptData,
-} from './formatTransferToContractScriptData';
+} from './formatTransferToContractScriptData.js';
 
 /**
  * @group node

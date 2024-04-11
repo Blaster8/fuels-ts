@@ -1,8 +1,8 @@
-import { eitherOr, runVersions } from './cli';
-import * as colorizeUserVersionMod from './lib/colorizeUserVersion';
-import * as compareSystemVersionsMod from './lib/compareSystemVersions';
-import * as getBuiltinVersionsMod from './lib/getBuiltinVersions';
-import * as getSystemVersionsMod from './lib/getSystemVersions';
+import { eitherOr, runVersions } from './cli.js';
+import * as colorizeUserVersionMod from './lib/colorizeUserVersion.js';
+import * as compareSystemVersionsMod from './lib/compareSystemVersions.js';
+import * as getBuiltinVersionsMod from './lib/getBuiltinVersions.js';
+import * as getSystemVersionsMod from './lib/getSystemVersions.js';
 
 /**
  * @group node

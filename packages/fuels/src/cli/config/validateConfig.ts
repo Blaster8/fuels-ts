@@ -1,6 +1,6 @@
 import * as yup from 'yup';
 
-import type { UserFuelsConfig } from '../types';
+import type { UserFuelsConfig } from '../types.js';
 
 const schema = yup
   .object({

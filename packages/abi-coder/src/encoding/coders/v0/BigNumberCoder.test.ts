@@ -2,9 +2,9 @@ import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import { expectToThrowFuelError } from '@fuel-ts/errors/test-utils';
 import { BN, bn } from '@fuel-ts/math';
 
-import { U16_MAX, U256_MAX, U32_MAX, U64_MAX, U8_MAX } from '../../../../test/utils/constants';
+import { U16_MAX, U256_MAX, U32_MAX, U64_MAX, U8_MAX } from '../../../../test/utils/constants.js';
 
-import { BigNumberCoder } from './BigNumberCoder';
+import { BigNumberCoder } from './BigNumberCoder.js';
 
 const generateArray = (length: number, value: number): Uint8Array =>
   new Uint8Array(length).fill(value);

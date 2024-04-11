@@ -1,9 +1,9 @@
 import { capitalizeString } from '@fuel-ts/utils';
 import type { Command } from 'commander';
 
-import { loadConfig } from '../config/loadConfig';
-import type { Commands, FuelsConfig, CommandEvent } from '../types';
-import { error, log } from '../utils/logger';
+import { loadConfig } from '../config/loadConfig.js';
+import type { Commands, FuelsConfig, CommandEvent } from '../types.js';
+import { error, log } from '../utils/logger.js';
 
 export const withConfigErrorHandler = async (err: Error, config?: FuelsConfig) => {
   error(err);

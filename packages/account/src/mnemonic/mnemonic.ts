@@ -5,16 +5,16 @@ import type { BytesLike } from '@fuel-ts/interfaces';
 import { arrayify, hexlify, concat } from '@fuel-ts/utils';
 import { dataSlice, pbkdf2, computeHmac, encodeBase58 } from 'ethers';
 
-import { english } from '../wordlists';
+import { english } from '../wordlists/index.js';
 
-import type { MnemonicPhrase } from './utils';
 import {
   entropyToMnemonicIndices,
   getWords,
   getPhrase,
   mnemonicWordsToEntropy,
   toUtf8Bytes,
-} from './utils';
+} from './utils.js';
+import type { MnemonicPhrase } from './utils.js';
 
 //
 // Constants

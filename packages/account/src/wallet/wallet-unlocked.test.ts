@@ -2,18 +2,22 @@ import { randomBytes } from '@fuel-ts/crypto';
 import { hashMessage } from '@fuel-ts/hasher';
 import type { BytesLike } from '@fuel-ts/interfaces';
 
-import walletSpec from '../../test/fixtures/wallet-spec';
-import { SCRIPT_TX_REQUEST, SIGNED_TX, PRIVATE_KEY } from '../../test/fixtures/wallet-unlocked';
-import { FUEL_NETWORK_URL } from '../configs';
-import * as providersMod from '../providers';
-import { Provider } from '../providers';
-import type { CallResult, TransactionResponse, TransactionRequestLike } from '../providers';
-import { Signer } from '../signer';
+import walletSpec from '../../test/fixtures/wallet-spec.js';
+import { SCRIPT_TX_REQUEST, SIGNED_TX, PRIVATE_KEY } from '../../test/fixtures/wallet-unlocked.js';
+import { FUEL_NETWORK_URL } from '../configs.js';
+import * as providersMod from '../providers/index.js';
+import { Provider } from '../providers/index.js';
+import type {
+  CallResult,
+  TransactionResponse,
+  TransactionRequestLike,
+} from '../providers/index.js';
+import { Signer } from '../signer/index.js';
 
-import { BaseWalletUnlocked } from './base-wallet-unlocked';
-import * as keystoreWMod from './keystore-wallet';
-import { Wallet } from './wallet';
-import { WalletLocked, WalletUnlocked } from './wallets';
+import { BaseWalletUnlocked } from './base-wallet-unlocked.js';
+import * as keystoreWMod from './keystore-wallet.js';
+import { Wallet } from './wallet.js';
+import { WalletLocked, WalletUnlocked } from './wallets.js';
 
 const { ScriptTransactionRequest } = providersMod;
 

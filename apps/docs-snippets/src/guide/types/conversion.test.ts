@@ -14,7 +14,7 @@ import {
 import {
   DocSnippetProjectsEnum,
   getDocsSnippetsForcProject,
-} from '../../../test/fixtures/forc-projects';
+} from '../../../test/fixtures/forc-projects/index.js';
 
 /**
  * @group node

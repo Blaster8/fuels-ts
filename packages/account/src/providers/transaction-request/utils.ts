@@ -1,9 +1,9 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import { TransactionType } from '@fuel-ts/transactions';
 
-import { CreateTransactionRequest } from './create-transaction-request';
-import { ScriptTransactionRequest } from './script-transaction-request';
-import type { TransactionRequestLike, TransactionRequest } from './types';
+import { CreateTransactionRequest } from './create-transaction-request.js';
+import { ScriptTransactionRequest } from './script-transaction-request.js';
+import type { TransactionRequestLike, TransactionRequest } from './types.js';
 
 /** @hidden */
 export const transactionRequestify = (obj: TransactionRequestLike): TransactionRequest => {

@@ -1,5 +1,5 @@
-import { DEFAULT_PRECISION, DEFAULT_MIN_PRECISION } from './configs';
-import type { ToFixedConfig } from './types';
+import { DEFAULT_PRECISION, DEFAULT_MIN_PRECISION } from './configs.js';
+import type { ToFixedConfig } from './types.js';
 
 export function toFixed(value?: string | number, options?: ToFixedConfig) {
   const { precision = DEFAULT_PRECISION, minPrecision = DEFAULT_MIN_PRECISION } = options || {};

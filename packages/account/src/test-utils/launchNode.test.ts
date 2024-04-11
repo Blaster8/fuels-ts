@@ -1,8 +1,8 @@
 import { safeExec } from '@fuel-ts/errors/test-utils';
 import * as childProcessMod from 'child_process';
 
-import type { LaunchNodeOptions } from './launchNode';
-import { killNode, launchNode } from './launchNode';
+import type { LaunchNodeOptions } from './launchNode.js';
+import { killNode, launchNode } from './launchNode.js';
 
 type ChildProcessWithoutNullStreams = childProcessMod.ChildProcessWithoutNullStreams;
 

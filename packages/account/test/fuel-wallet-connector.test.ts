@@ -7,15 +7,15 @@ import type { BN } from '@fuel-ts/math';
 import { bn } from '@fuel-ts/math';
 import { EventEmitter } from 'events';
 
-import type { ProviderOptions } from '../src';
-import { FUEL_NETWORK_URL } from '../src/configs';
-import { Fuel } from '../src/connectors/fuel';
-import { FuelConnectorEventType } from '../src/connectors/types';
-import { Provider, TransactionStatus } from '../src/providers';
-import { Wallet } from '../src/wallet';
+import { FUEL_NETWORK_URL } from '../src/configs.js';
+import { Fuel } from '../src/connectors/fuel.js';
+import { FuelConnectorEventType } from '../src/connectors/types/index.js';
+import type { ProviderOptions } from '../src/index.js';
+import { Provider, TransactionStatus } from '../src/providers/index.js';
+import { Wallet } from '../src/wallet/index.js';
 
-import { MockConnector } from './fixtures/mocked-connector';
-import { promiseCallback } from './fixtures/promise-callback';
+import { MockConnector } from './fixtures/mocked-connector.js';
+import { promiseCallback } from './fixtures/promise-callback.js';
 
 /**
  * @group node

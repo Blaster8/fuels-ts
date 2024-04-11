@@ -1,12 +1,12 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 
-import { Abi } from './abi/Abi';
-import { ProgramTypeEnum } from './types/enums/ProgramTypeEnum';
-import type { IFile } from './types/interfaces/IFile';
-import { assembleContracts } from './utils/assembleContracts';
-import { assemblePredicates } from './utils/assemblePredicates';
-import { assembleScripts } from './utils/assembleScripts';
-import { validateBinFile } from './utils/validateBinFile';
+import { Abi } from './abi/Abi.js';
+import { ProgramTypeEnum } from './types/enums/ProgramTypeEnum.js';
+import type { IFile } from './types/interfaces/IFile.js';
+import { assembleContracts } from './utils/assembleContracts.js';
+import { assemblePredicates } from './utils/assemblePredicates.js';
+import { assembleScripts } from './utils/assembleScripts.js';
+import { validateBinFile } from './utils/validateBinFile.js';
 
 /*
   Manages many instances of Abi

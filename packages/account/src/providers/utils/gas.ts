@@ -3,12 +3,12 @@ import { bn } from '@fuel-ts/math';
 import { ReceiptType, type Input } from '@fuel-ts/transactions';
 import { arrayify } from '@fuel-ts/utils';
 
-import type { GqlDependentCost, GqlGasCosts } from '../__generated__/operations';
-import type { TransactionRequestInput } from '../transaction-request';
+import type { GqlDependentCost, GqlGasCosts } from '../__generated__/operations.js';
+import type { TransactionRequestInput } from '../transaction-request/index.js';
 import type {
   TransactionResultReceipt,
   TransactionResultScriptResultReceipt,
-} from '../transaction-response';
+} from '../transaction-response/index.js';
 
 /** @hidden */
 export const calculatePriceWithFactor = (gas: BN, gasPrice: BN, priceFactor: BN): BN =>

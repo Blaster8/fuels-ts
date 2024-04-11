@@ -1,6 +1,6 @@
-import { bufferFromString } from '..';
+import { bufferFromString } from '../index.js';
 
-import { keccak256 as keccak } from './keccak256';
+import { keccak256 as keccak } from './keccak256.js';
 
 const data = bufferFromString('hashedKey');
 

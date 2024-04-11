@@ -1,10 +1,10 @@
 import { join } from 'path';
 
-import type { Abi } from '../abi/Abi';
-import type { IFile } from '../index';
-import { renderCommonTemplate } from '../templates/common/common';
-import { renderIndexTemplate } from '../templates/common/index';
-import { renderFactoryTemplate } from '../templates/predicate/factory';
+import type { Abi } from '../abi/Abi.js';
+import type { IFile } from '../index.js';
+import { renderCommonTemplate } from '../templates/common/common.js';
+import { renderIndexTemplate } from '../templates/common/index.js';
+import { renderFactoryTemplate } from '../templates/predicate/factory.js';
 
 /**
  * Render all Predicate-related templates and returns

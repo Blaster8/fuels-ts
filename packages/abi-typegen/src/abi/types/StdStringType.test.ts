@@ -1,5 +1,5 @@
-import { StdStringType } from './StdStringType';
-import { StructType } from './StructType';
+import { StdStringType } from './StdStringType.js';
+import { StructType } from './StructType.js';
 
 /**
  * @group node

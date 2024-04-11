@@ -1,8 +1,8 @@
 import { hash } from '@fuel-ts/hasher';
 import { toHex } from '@fuel-ts/math';
 
-import { DeepSparseMerkleSubTree } from './deepSparseMerkleSubTree';
-import { SparseMerkleTree } from './sparseMerkleTree';
+import { DeepSparseMerkleSubTree } from './deepSparseMerkleSubTree.js';
+import { SparseMerkleTree } from './sparseMerkleTree.js';
 
 /**
  * @group node

@@ -1,6 +1,6 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 
-import type { IRawAbiTypeRoot } from '../types/interfaces/IRawAbiType';
+import type { IRawAbiTypeRoot } from '../types/interfaces/IRawAbiType.js';
 
 export function extractStructName(params: { rawAbiType: IRawAbiTypeRoot; regex: RegExp }) {
   const { rawAbiType, regex } = params;

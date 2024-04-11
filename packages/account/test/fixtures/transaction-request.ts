@@ -1,4 +1,4 @@
-import { ScriptTransactionRequest } from '../../src/providers/transaction-request/script-transaction-request';
+import { ScriptTransactionRequest } from '../../src/providers/transaction-request/script-transaction-request.js';
 
 export const SCRIPT_TX_REQUEST = new ScriptTransactionRequest({
   gasLimit: 10_000,

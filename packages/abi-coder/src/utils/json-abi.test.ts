@@ -1,12 +1,12 @@
-import type { ResolvedAbiType } from '../ResolvedAbiType';
-import type { JsonAbi, JsonAbiArgument } from '../types/JsonAbi';
+import type { ResolvedAbiType } from '../ResolvedAbiType.js';
+import type { JsonAbi, JsonAbiArgument } from '../types/JsonAbi.js';
 
 import {
   findFunctionByName,
   findNonEmptyInputs,
   findTypeById,
   findVectorBufferArgument,
-} from './json-abi';
+} from './json-abi.js';
 
 const MOCK_ABI: JsonAbi = {
   types: [

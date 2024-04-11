@@ -1,7 +1,7 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import { bn, toBytes } from '@fuel-ts/math';
 
-import { Coder } from '../AbstractCoder';
+import { Coder } from '../AbstractCoder.js';
 
 export class BooleanCoder extends Coder<boolean, boolean> {
   constructor() {

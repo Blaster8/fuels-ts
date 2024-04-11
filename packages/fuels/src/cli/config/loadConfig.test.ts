@@ -6,12 +6,12 @@ import {
   bootstrapProject,
   resetConfigAndMocks,
   resetDiskAndMocks,
-} from '../../../test/utils/runCommands';
-import * as shouldUseBuiltinForcMod from '../commands/init/shouldUseBuiltinForc';
-import * as shouldUseBuiltinFuelCoreMod from '../commands/init/shouldUseBuiltinFuelCore';
-import type { FuelsConfig } from '../types';
+} from '../../../test/utils/runCommands.js';
+import * as shouldUseBuiltinForcMod from '../commands/init/shouldUseBuiltinForc.js';
+import * as shouldUseBuiltinFuelCoreMod from '../commands/init/shouldUseBuiltinFuelCore.js';
+import type { FuelsConfig } from '../types.js';
 
-import { loadConfig } from './loadConfig';
+import { loadConfig } from './loadConfig.js';
 
 /**
  * @group node

@@ -1,6 +1,6 @@
 import { bufferFromString } from '@fuel-ts/crypto';
 
-import { hashMessage, hash, uint64ToBytesBE, sha256 } from './hasher';
+import { hashMessage, hash, uint64ToBytesBE, sha256 } from './hasher.js';
 
 /**
  * @group node

@@ -4,9 +4,9 @@ import type { Account, Provider } from '@fuel-ts/account';
 import { Address } from '@fuel-ts/address';
 import type { AbstractAddress, AbstractContract, BytesLike } from '@fuel-ts/interfaces';
 
-import { FunctionInvocationScope } from './functions/invocation-scope';
-import { MultiCallInvocationScope } from './functions/multicall-scope';
-import type { InvokeFunction, InvokeFunctions } from './types';
+import { FunctionInvocationScope } from './functions/invocation-scope.js';
+import { MultiCallInvocationScope } from './functions/multicall-scope.js';
+import type { InvokeFunction, InvokeFunctions } from './types.js';
 
 /**
  * `Contract` provides a way to interact with the contract program type.

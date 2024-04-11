@@ -1,9 +1,9 @@
 import type { BN, InputValue, Provider, WalletLocked, WalletUnlocked } from 'fuels';
 import { BaseAssetId, Predicate } from 'fuels';
 
-import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../../test/fixtures';
+import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../../test/fixtures/index.js';
 
-import { setupWallets, fundPredicate } from './utils/predicate';
+import { setupWallets, fundPredicate } from './utils/predicate/index.js';
 
 /**
  * @group node

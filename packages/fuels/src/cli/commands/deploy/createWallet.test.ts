@@ -2,7 +2,7 @@ import { FUEL_NETWORK_URL } from '@fuel-ts/account/configs';
 import { ErrorCode } from '@fuel-ts/errors';
 import { expectToThrowFuelError, safeExec } from '@fuel-ts/errors/test-utils';
 
-import { createWallet } from './createWallet';
+import { createWallet } from './createWallet.js';
 
 /**
  * @group node

@@ -1,13 +1,13 @@
 import {
   AbiTypegenProjectsEnum,
   getTypegenForcProject,
-} from '../../../test/fixtures/forc-projects/index';
-import type { IRawAbiTypeRoot } from '../../index';
-import { findType } from '../../utils/findType';
-import { makeType } from '../../utils/makeType';
+} from '../../../test/fixtures/forc-projects/index.js';
+import type { IRawAbiTypeRoot } from '../../index.js';
+import { findType } from '../../utils/findType.js';
+import { makeType } from '../../utils/makeType.js';
 
-import { EnumType } from './EnumType';
-import { OptionType } from './OptionType';
+import { EnumType } from './EnumType.js';
+import { OptionType } from './OptionType.js';
 
 /**
  * @group node

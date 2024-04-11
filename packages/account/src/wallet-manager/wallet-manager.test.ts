@@ -1,13 +1,13 @@
 import { Address } from '@fuel-ts/address';
 import { hashMessage } from '@fuel-ts/hasher';
 
-import WalletManagerSpec from '../../test/fixtures/wallet-manager-spec';
-import { Signer } from '../signer';
-import { Wallet } from '../wallet';
+import WalletManagerSpec from '../../test/fixtures/wallet-manager-spec.js';
+import { Signer } from '../signer/index.js';
+import { Wallet } from '../wallet/index.js';
 
-import { MemoryStorage } from './storages/memory-storage';
-import type { VaultConfig } from './types';
-import { WalletManager } from './wallet-manager';
+import { MemoryStorage } from './storages/memory-storage.js';
+import type { VaultConfig } from './types.js';
+import { WalletManager } from './wallet-manager.js';
 
 /**
  * @group node

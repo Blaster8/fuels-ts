@@ -1,5 +1,5 @@
-import { getBuiltinVersions } from './getBuiltinVersions';
-import { majorEq, minorEq, patchEq } from './semver';
+import { getBuiltinVersions } from './getBuiltinVersions.js';
+import { majorEq, minorEq, patchEq } from './semver.js';
 
 export function checkFuelCoreVersionCompatibility(networkVersion: string) {
   const { FUEL_CORE: supportedVersion } = getBuiltinVersions();

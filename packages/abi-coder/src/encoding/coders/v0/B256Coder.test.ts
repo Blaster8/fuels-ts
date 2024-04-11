@@ -1,7 +1,7 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import { expectToThrowFuelError } from '@fuel-ts/errors/test-utils';
 
-import { B256Coder } from './B256Coder';
+import { B256Coder } from './B256Coder.js';
 
 /**
  * @group node

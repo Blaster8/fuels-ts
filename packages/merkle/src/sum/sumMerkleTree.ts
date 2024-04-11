@@ -3,8 +3,8 @@
 import { hash } from '@fuel-ts/hasher';
 import { bn, toHex } from '@fuel-ts/math';
 
-import Node from './types/node';
-import Proof from './types/proof';
+import Node from './types/node.js';
+import Proof from './types/proof.js';
 
 /**
  * Slice off the '0x' on each argument to simulate abi.encodePacked

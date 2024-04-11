@@ -1,8 +1,8 @@
-import type { IConfigurable } from '../types/interfaces/IConfigurable';
-import type { IRawAbiConfigurable } from '../types/interfaces/IRawAbiConfigurable';
-import type { IType } from '../types/interfaces/IType';
+import type { IConfigurable } from '../types/interfaces/IConfigurable.js';
+import type { IRawAbiConfigurable } from '../types/interfaces/IRawAbiConfigurable.js';
+import type { IType } from '../types/interfaces/IType.js';
 
-import { makeConfigurable } from './makeConfigurable';
+import { makeConfigurable } from './makeConfigurable.js';
 
 export function parseConfigurables(params: {
   types: IType[];

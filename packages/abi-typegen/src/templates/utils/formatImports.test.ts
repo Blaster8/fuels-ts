@@ -1,7 +1,7 @@
-import { BoolType } from '../../abi/types/BoolType';
-import { U8Type } from '../../abi/types/U8Type';
+import { BoolType } from '../../abi/types/BoolType.js';
+import { U8Type } from '../../abi/types/U8Type.js';
 
-import { formatImports } from './formatImports';
+import { formatImports } from './formatImports.js';
 
 /**
  * @group node

@@ -1,5 +1,5 @@
-import { B256Type } from './B256Type';
-import { BoolType } from './BoolType';
+import { B256Type } from './B256Type.js';
+import { BoolType } from './BoolType.js';
 
 /**
  * @group node

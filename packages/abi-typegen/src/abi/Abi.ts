@@ -1,14 +1,14 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import { normalizeString } from '@fuel-ts/utils';
 
-import type { ProgramTypeEnum } from '../types/enums/ProgramTypeEnum';
-import type { IConfigurable } from '../types/interfaces/IConfigurable';
-import type { IFunction } from '../types/interfaces/IFunction';
-import type { IRawAbi } from '../types/interfaces/IRawAbi';
-import type { IType } from '../types/interfaces/IType';
-import { parseConfigurables } from '../utils/parseConfigurables';
-import { parseFunctions } from '../utils/parseFunctions';
-import { parseTypes } from '../utils/parseTypes';
+import type { ProgramTypeEnum } from '../types/enums/ProgramTypeEnum.js';
+import type { IConfigurable } from '../types/interfaces/IConfigurable.js';
+import type { IFunction } from '../types/interfaces/IFunction.js';
+import type { IRawAbi } from '../types/interfaces/IRawAbi.js';
+import type { IType } from '../types/interfaces/IType.js';
+import { parseConfigurables } from '../utils/parseConfigurables.js';
+import { parseFunctions } from '../utils/parseFunctions.js';
+import { parseTypes } from '../utils/parseTypes.js';
 
 /*
   Manages many instances of Types and Functions

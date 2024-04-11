@@ -1,7 +1,7 @@
-import type { ResolvedAbiType } from '../ResolvedAbiType';
-import type { Coder } from '../encoding/coders/AbstractCoder';
+import type { ResolvedAbiType } from '../ResolvedAbiType.js';
+import type { Coder } from '../encoding/coders/AbstractCoder.js';
 
-import type { EncodingOptions } from './EncodingOptions';
+import type { EncodingOptions } from './EncodingOptions.js';
 
 /**
  * A function that can be used to obtain spec adhering coders.

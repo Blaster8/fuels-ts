@@ -1,8 +1,8 @@
 import { Address } from '@fuel-ts/address';
 import { bn } from '@fuel-ts/math';
 
-import type { GqlGetMessageProofQuery } from '../../src/providers/__generated__/operations';
-import type { MessageProof } from '../../src/providers/message';
+import type { GqlGetMessageProofQuery } from '../../src/providers/__generated__/operations.js';
+import type { MessageProof } from '../../src/providers/message.js';
 
 export const MESSAGE_PROOF_RAW_RESPONSE: GqlGetMessageProofQuery['messageProof'] = {
   __typename: 'MessageProof',

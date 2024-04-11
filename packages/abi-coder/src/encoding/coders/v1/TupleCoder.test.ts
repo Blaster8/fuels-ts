@@ -2,11 +2,11 @@ import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import { expectToThrowFuelError } from '@fuel-ts/errors/test-utils';
 import { bn } from '@fuel-ts/math';
 
-import { U64_MAX } from '../../../../test/utils/constants';
-import { BigNumberCoder } from '../v0/BigNumberCoder';
+import { U64_MAX } from '../../../../test/utils/constants.js';
+import { BigNumberCoder } from '../v0/BigNumberCoder.js';
 
-import { BooleanCoder } from './BooleanCoder';
-import { TupleCoder } from './TupleCoder';
+import { BooleanCoder } from './BooleanCoder.js';
+import { TupleCoder } from './TupleCoder.js';
 
 /**
  * @group node

@@ -1,8 +1,8 @@
-import type { TargetEnum } from '../types/enums/TargetEnum';
-import type { IRawAbiTypeComponent } from '../types/interfaces/IRawAbiType';
-import type { IType } from '../types/interfaces/IType';
+import type { TargetEnum } from '../types/enums/TargetEnum.js';
+import type { IRawAbiTypeComponent } from '../types/interfaces/IRawAbiType.js';
+import type { IType } from '../types/interfaces/IType.js';
 
-import { findType } from './findType';
+import { findType } from './findType.js';
 
 /*
   Recursively parses the given `typeArguments` node

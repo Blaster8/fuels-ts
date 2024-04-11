@@ -1,4 +1,4 @@
-import { formatConfigurables } from './formatConfigurables';
+import { formatConfigurables } from './formatConfigurables.js';
 
 /**
  * @group node

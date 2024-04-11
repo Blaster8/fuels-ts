@@ -1,8 +1,8 @@
-import { ResolvedAbiType } from './ResolvedAbiType';
-import type { DecodedValue, InputValue, Coder } from './encoding/coders/AbstractCoder';
-import { getCoderForEncoding } from './encoding/strategies/getCoderForEncoding';
-import type { EncodingOptions } from './types/EncodingOptions';
-import type { JsonAbi, JsonAbiArgument } from './types/JsonAbi';
+import { ResolvedAbiType } from './ResolvedAbiType.js';
+import type { DecodedValue, InputValue, Coder } from './encoding/coders/AbstractCoder.js';
+import { getCoderForEncoding } from './encoding/strategies/getCoderForEncoding.js';
+import type { EncodingOptions } from './types/EncodingOptions.js';
+import type { JsonAbi, JsonAbiArgument } from './types/JsonAbi.js';
 
 export abstract class AbiCoder {
   static getCoder(

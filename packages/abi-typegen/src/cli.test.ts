@@ -3,11 +3,11 @@ import { stderr } from 'process';
 import {
   AbiTypegenProjectsEnum,
   getTypegenForcProject,
-} from '../test/fixtures/forc-projects/index';
+} from '../test/fixtures/forc-projects/index.js';
 
-import { run, runCliAction } from './cli';
-import * as runTypegenMod from './runTypegen';
-import { ProgramTypeEnum } from './types/enums/ProgramTypeEnum';
+import { run, runCliAction } from './cli.js';
+import * as runTypegenMod from './runTypegen.js';
+import { ProgramTypeEnum } from './types/enums/ProgramTypeEnum.js';
 
 /**
  * @group node

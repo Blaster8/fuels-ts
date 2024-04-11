@@ -1,4 +1,4 @@
-import type SparseMerkleSolidityNode from './sparseMerkleSolidityNode';
+import type SparseMerkleSolidityNode from './sparseMerkleSolidityNode.js';
 
 class SparseCompactMerkleSolidityProof {
   SideNodes: string[];

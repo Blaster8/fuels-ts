@@ -1,2 +1,2 @@
-export * from './utils/createConfig';
-export * from './types';
+export { createConfig } from './utils/createConfig.js';
+export * from './types.js';

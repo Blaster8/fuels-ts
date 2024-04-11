@@ -1,7 +1,7 @@
 import type { AbstractAddress, BytesLike } from '@fuel-ts/interfaces';
 import type { BN } from '@fuel-ts/math';
 
-import type { GqlMessageState } from './__generated__/operations';
+import type { GqlMessageState } from './__generated__/operations.js';
 
 // #region Message-shape
 /**

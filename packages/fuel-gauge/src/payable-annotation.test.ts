@@ -1,9 +1,9 @@
 import type { Contract } from 'fuels';
 import { bn, BaseAssetId } from 'fuels';
 
-import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../test/fixtures';
+import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../test/fixtures/index.js';
 
-import { createSetupConfig } from './utils';
+import { createSetupConfig } from './utils.js';
 
 const { binHexlified: contractBytecode, abiContents: abiJSON } = getFuelGaugeForcProject(
   FuelGaugeProjectsEnum.PAYABLE_ANNOTATION

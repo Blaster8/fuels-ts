@@ -1,4 +1,4 @@
-import * as indexMod from './index';
+import * as indexMod from './index.js';
 
 /**
  * @group node

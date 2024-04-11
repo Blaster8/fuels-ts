@@ -1,11 +1,11 @@
 import * as findBinPathMod from '@fuel-ts/utils/cli-utils';
 import * as childProcessMod from 'child_process';
 
-import { fuelsConfig } from '../../../../test/fixtures/fuels.config';
-import { mockLogger } from '../../../../test/utils/mockLogger';
-import { configureLogging } from '../../utils/logger';
+import { fuelsConfig } from '../../../../test/fixtures/fuels.config.js';
+import { mockLogger } from '../../../../test/utils/mockLogger.js';
+import { configureLogging } from '../../utils/logger.js';
 
-import { buildSwayProgram } from './buildSwayProgram';
+import { buildSwayProgram } from './buildSwayProgram.js';
 
 vi.mock('child_process', async () => {
   const mod = await vi.importActual('child_process');

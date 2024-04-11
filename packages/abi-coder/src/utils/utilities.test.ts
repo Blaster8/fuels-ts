@@ -1,7 +1,7 @@
 import { concat } from '@fuel-ts/utils';
 
-import type { Uint8ArrayWithDynamicData } from './utilities';
-import { unpackDynamicData, concatWithDynamicData } from './utilities';
+import type { Uint8ArrayWithDynamicData } from './utilities.js';
+import { unpackDynamicData, concatWithDynamicData } from './utilities.js';
 
 /**
  * @group node

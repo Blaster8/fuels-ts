@@ -3,7 +3,7 @@
  * https://github.com/FuelLabs/fuel-specs/blob/master/src/abi/json-abi-format.md
  */
 
-import type { EncodingVersion } from '../utils/constants';
+import type { EncodingVersion } from '../utils/constants.js';
 
 export interface JsonAbi {
   readonly types: readonly JsonAbiType[];

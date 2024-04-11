@@ -3,12 +3,12 @@ import { bn } from '@fuel-ts/math';
 import { concat } from '@fuel-ts/utils';
 import { toUtf8Bytes, toUtf8String } from 'ethers';
 
-import { WORD_SIZE } from '../../../utils/constants';
-import type { Uint8ArrayWithDynamicData } from '../../../utils/utilities';
-import { BASE_VECTOR_OFFSET, concatWithDynamicData } from '../../../utils/utilities';
-import { Coder } from '../AbstractCoder';
+import { WORD_SIZE } from '../../../utils/constants.js';
+import type { Uint8ArrayWithDynamicData } from '../../../utils/utilities.js';
+import { BASE_VECTOR_OFFSET, concatWithDynamicData } from '../../../utils/utilities.js';
+import { Coder } from '../AbstractCoder.js';
 
-import { BigNumberCoder } from './BigNumberCoder';
+import { BigNumberCoder } from './BigNumberCoder.js';
 
 export class StdStringCoder extends Coder<string, string> {
   static memorySize = 1;

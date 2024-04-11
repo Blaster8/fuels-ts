@@ -1,12 +1,12 @@
 import { type Command } from 'commander';
 
-import type { FuelsConfig } from '../../types';
-import { log } from '../../utils/logger';
-import { deploy } from '../deploy';
-import { autoStartFuelCore } from '../dev/autoStartFuelCore';
+import type { FuelsConfig } from '../../types.js';
+import { log } from '../../utils/logger.js';
+import { deploy } from '../deploy/index.js';
+import { autoStartFuelCore } from '../dev/autoStartFuelCore.js';
 
-import { buildSwayPrograms } from './buildSwayPrograms';
-import { generateTypes } from './generateTypes';
+import { buildSwayPrograms } from './buildSwayPrograms.js';
+import { generateTypes } from './generateTypes.js';
 
 export async function build(config: FuelsConfig, program?: Command) {
   log('Building..');

@@ -3,7 +3,7 @@ import type { JsonAbi, Provider, WalletLocked, WalletUnlocked } from 'fuels';
 import { BaseAssetId, Predicate, bn } from 'fuels';
 import { join } from 'path';
 
-import { fundPredicate, setupWallets } from './predicate/utils/predicate';
+import { fundPredicate, setupWallets } from './predicate/utils/predicate/index.js';
 
 let wallet: WalletUnlocked;
 let receiver: WalletLocked;

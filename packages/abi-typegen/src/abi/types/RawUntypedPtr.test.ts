@@ -1,5 +1,5 @@
-import { RawUntypedPtr } from './RawUntypedPtr';
-import { U8Type } from './U8Type';
+import { RawUntypedPtr } from './RawUntypedPtr.js';
+import { U8Type } from './U8Type.js';
 
 /**
  * @group node

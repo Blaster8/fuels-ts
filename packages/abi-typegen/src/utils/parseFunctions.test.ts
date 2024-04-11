@@ -1,9 +1,9 @@
-import type { IRawAbiFunction } from '../types/interfaces/IRawAbiFunction';
-import type { IRawAbiTypeRoot } from '../types/interfaces/IRawAbiType';
-import type { IType } from '../types/interfaces/IType';
+import type { IRawAbiFunction } from '../types/interfaces/IRawAbiFunction.js';
+import type { IRawAbiTypeRoot } from '../types/interfaces/IRawAbiType.js';
+import type { IType } from '../types/interfaces/IType.js';
 
-import { makeType } from './makeType';
-import { parseFunctions } from './parseFunctions';
+import { makeType } from './makeType.js';
+import { parseFunctions } from './parseFunctions.js';
 
 /**
  * @group node

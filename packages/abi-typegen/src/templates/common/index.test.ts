@@ -1,14 +1,14 @@
 import {
   AbiTypegenProjectsEnum,
   getTypegenForcProject,
-} from '../../../test/fixtures/forc-projects/index';
+} from '../../../test/fixtures/forc-projects/index.js';
 import contractIndexTemplate from '../../../test/fixtures/templates/contract/index.hbs';
 import predicateIndexTemplate from '../../../test/fixtures/templates/predicate/index.hbs';
-import { mockVersions } from '../../../test/utils/mockVersions';
-import { Abi } from '../../abi/Abi';
-import { ProgramTypeEnum } from '../../types/enums/ProgramTypeEnum';
+import { mockVersions } from '../../../test/utils/mockVersions.js';
+import { Abi } from '../../abi/Abi.js';
+import { ProgramTypeEnum } from '../../types/enums/ProgramTypeEnum.js';
 
-import { renderIndexTemplate } from './index';
+import { renderIndexTemplate } from './index.js';
 
 /**
  * @group node

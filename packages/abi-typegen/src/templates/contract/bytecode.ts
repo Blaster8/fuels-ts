@@ -1,6 +1,6 @@
 import type { BytesLike } from '@fuel-ts/interfaces';
 
-import { renderHbsTemplate } from '../renderHbsTemplate';
+import { renderHbsTemplate } from '../renderHbsTemplate.js';
 
 import bytecodeTemplate from './bytecode.hbs';
 

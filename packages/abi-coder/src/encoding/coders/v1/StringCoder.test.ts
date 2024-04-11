@@ -1,7 +1,7 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import { expectToThrowFuelError } from '@fuel-ts/errors/test-utils';
 
-import { StringCoder } from './StringCoder';
+import { StringCoder } from './StringCoder.js';
 
 /**
  * @group node

@@ -1,8 +1,8 @@
 import type { AbstractAddress, BytesLike } from '@fuel-ts/interfaces';
 
-import type { Provider } from '../providers';
+import type { Provider } from '../providers/index.js';
 
-import { WalletLocked, WalletUnlocked } from './wallets';
+import { WalletLocked, WalletUnlocked } from './wallets.js';
 
 /**
  * `Wallet` provides methods to create locked and unlocked wallet instances.

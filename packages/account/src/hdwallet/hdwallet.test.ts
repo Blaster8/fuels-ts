@@ -1,6 +1,6 @@
-import HDWalletSpec from '../../test/fixtures/hdwallet-spec';
+import HDWalletSpec from '../../test/fixtures/hdwallet-spec.js';
 
-import HDWallet from './hdwallet';
+import HDWallet from './hdwallet.js';
 
 /**
  * @group node

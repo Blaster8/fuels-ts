@@ -1,15 +1,15 @@
 import { bold, green } from 'chalk';
 import CliTable from 'cli-table';
 
-import { colorizeUserVersion } from './lib/colorizeUserVersion';
-import { compareSystemVersions } from './lib/compareSystemVersions';
-import { fuelUpLink } from './lib/fuelUpLink';
-import { getBuiltinVersions } from './lib/getBuiltinVersions';
-import { getSystemVersions } from './lib/getSystemVersions';
+import { colorizeUserVersion } from './lib/colorizeUserVersion.js';
+import { compareSystemVersions } from './lib/compareSystemVersions.js';
+import { fuelUpLink } from './lib/fuelUpLink.js';
+import { getBuiltinVersions } from './lib/getBuiltinVersions.js';
+import { getSystemVersions } from './lib/getSystemVersions.js';
 
-export * from './lib/compareSystemVersions';
-export * from './lib/fuelUpLink';
-export * from './lib/getSystemVersions';
+export * from './lib/compareSystemVersions.js';
+export * from './lib/fuelUpLink.js';
+export * from './lib/getSystemVersions.js';
 
 export const eitherOr = (val1: string | null, val2: string) => val1 ?? val2;
 

@@ -1,6 +1,6 @@
-import { FuelError } from '../fuel-error';
+import { FuelError } from '../fuel-error.js';
 
-import { expectToThrowFuelError } from './expect-to-throw-fuel-error';
+import { expectToThrowFuelError } from './expect-to-throw-fuel-error.js';
 
 /**
  * @group node

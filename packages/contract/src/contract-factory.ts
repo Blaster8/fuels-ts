@@ -9,7 +9,7 @@ import { Contract } from '@fuel-ts/program';
 import type { StorageSlot } from '@fuel-ts/transactions';
 import { arrayify } from '@fuel-ts/utils';
 
-import { getContractId, getContractStorageRoot, hexlifyWithPrefix } from './util';
+import { getContractId, getContractStorageRoot, hexlifyWithPrefix } from './util.js';
 
 /**
  * Options for deploying a contract.

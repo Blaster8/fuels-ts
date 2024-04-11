@@ -1,8 +1,8 @@
 import { cpSync, existsSync, mkdirSync, rmSync } from 'fs';
 import { join, basename } from 'path';
 
-import { Commands } from '../../src';
-import { run } from '../../src/run';
+import { Commands } from '../../src/index.js';
+import { run } from '../../src/run.js';
 
 /**
  * Path and Directory utils

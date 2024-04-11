@@ -1,6 +1,6 @@
-import type { IFile, IRawAbiTypeRoot, IRawAbiConfigurable } from '../../src/index';
-import { AbiTypeGen } from '../../src/index';
-import { ProgramTypeEnum } from '../../src/types/enums/ProgramTypeEnum';
+import type { IFile, IRawAbiTypeRoot, IRawAbiConfigurable } from '../../src/index.js';
+import { AbiTypeGen } from '../../src/index.js';
+import { ProgramTypeEnum } from '../../src/types/enums/ProgramTypeEnum.js';
 
 export function getNewAbiTypegen(
   params: {

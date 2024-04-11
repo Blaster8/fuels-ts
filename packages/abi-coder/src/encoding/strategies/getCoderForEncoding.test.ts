@@ -1,8 +1,8 @@
-import { ENCODING_V0, ENCODING_V1 } from '../../utils/constants';
+import { ENCODING_V0, ENCODING_V1 } from '../../utils/constants.js';
 
-import { getCoderForEncoding } from './getCoderForEncoding';
-import { getCoder as getCoderV0 } from './getCoderV0';
-import { getCoder as getCoderV1 } from './getCoderV1';
+import { getCoderForEncoding } from './getCoderForEncoding.js';
+import { getCoder as getCoderV0 } from './getCoderV0.js';
+import { getCoder as getCoderV1 } from './getCoderV1.js';
 
 /**
  * @group node

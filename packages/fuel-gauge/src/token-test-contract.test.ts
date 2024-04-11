@@ -4,7 +4,7 @@ import { expectToThrowFuelError } from '@fuel-ts/errors/test-utils';
 import type { AssetId, BN } from 'fuels';
 import { toHex, Provider, Wallet, ContractFactory, bn, BaseAssetId, FUEL_NETWORK_URL } from 'fuels';
 
-import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../test/fixtures';
+import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../test/fixtures/index.js';
 
 const { binHexlified: bytecode, abiContents: abi } = getFuelGaugeForcProject(
   FuelGaugeProjectsEnum.TOKEN_CONTRACT

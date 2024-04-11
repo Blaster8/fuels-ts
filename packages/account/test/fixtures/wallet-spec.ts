@@ -1,4 +1,4 @@
-import { FUEL_NETWORK_URL } from '../../src/configs';
+import { FUEL_NETWORK_URL } from '../../src/configs.js';
 
 export default {
   mnemonic:

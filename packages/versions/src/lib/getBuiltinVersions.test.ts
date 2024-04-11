@@ -1,6 +1,6 @@
-import { readVersionsFromFiles } from '../../scripts/rewriteVersions';
+import { readVersionsFromFiles } from '../../scripts/rewriteVersions.js';
 
-import { getBuiltinVersions } from './getBuiltinVersions';
+import { getBuiltinVersions } from './getBuiltinVersions.js';
 
 /**
  * @group node

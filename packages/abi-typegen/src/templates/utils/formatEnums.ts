@@ -1,6 +1,6 @@
-import type { EnumType } from '../../abi/types/EnumType';
-import { TargetEnum } from '../../types/enums/TargetEnum';
-import type { IType } from '../../types/interfaces/IType';
+import type { EnumType } from '../../abi/types/EnumType.js';
+import { TargetEnum } from '../../types/enums/TargetEnum.js';
+import type { IType } from '../../types/interfaces/IType.js';
 
 export function formatEnums(params: { types: IType[] }) {
   const { types } = params;

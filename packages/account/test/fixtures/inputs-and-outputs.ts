@@ -12,7 +12,7 @@ import type {
   CoinTransactionRequestOutput,
   ContractTransactionRequestOutput,
   ChangeTransactionRequestOutput,
-} from '../../src';
+} from '../../src/index.js';
 
 export const MOCK_COIN_INPUT: InputCoin = {
   type: InputType.Coin,

@@ -17,22 +17,23 @@ import type { DocumentNode } from 'graphql';
 import { GraphQLClient } from 'graphql-request';
 import { clone } from 'ramda';
 
-import type { Predicate } from '../predicate';
+import type { Predicate } from '../predicate/index.js';
 
-import { getSdk as getOperationsSdk } from './__generated__/operations';
 import type {
   GqlChainInfoFragmentFragment,
   GqlGasCosts,
   GqlGetBlocksQueryVariables,
   GqlPeerInfo,
-} from './__generated__/operations';
-import type { Coin } from './coin';
-import type { CoinQuantity, CoinQuantityLike } from './coin-quantity';
-import { coinQuantityfy } from './coin-quantity';
-import { FuelGraphqlSubscriber } from './fuel-graphql-subscriber';
-import { MemoryCache } from './memory-cache';
-import type { Message, MessageCoin, MessageProof, MessageStatus } from './message';
-import type { ExcludeResourcesOption, Resource } from './resource';
+} from './__generated__/operations.js';
+import { getSdk as getOperationsSdk } from './__generated__/operations.js';
+import type { CoinQuantity, CoinQuantityLike } from './coin-quantity.js';
+import { coinQuantityfy } from './coin-quantity.js';
+import type { Coin } from './coin.js';
+import { FuelGraphqlSubscriber } from './fuel-graphql-subscriber.js';
+import { MemoryCache } from './memory-cache.js';
+import type { Message, MessageCoin, MessageProof, MessageStatus } from './message.js';
+import type { ExcludeResourcesOption, Resource } from './resource.js';
+import { transactionRequestify } from './transaction-request/index.js';
 import type {
   TransactionRequestLike,
   TransactionRequest,
@@ -40,19 +41,18 @@ import type {
   CoinTransactionRequestInput,
   ScriptTransactionRequest,
   JsonAbisFromAllCalls,
-} from './transaction-request';
-import { transactionRequestify } from './transaction-request';
-import type { TransactionResultReceipt } from './transaction-response';
-import { TransactionResponse } from './transaction-response';
-import { processGqlReceipt } from './transaction-summary/receipt';
+} from './transaction-request/index.js';
+import type { TransactionResultReceipt } from './transaction-response/index.js';
+import { TransactionResponse } from './transaction-response/index.js';
+import { processGqlReceipt } from './transaction-summary/receipt.js';
+import type { RetryOptions } from './utils/auto-retry-fetch.js';
+import { autoRetryFetch } from './utils/auto-retry-fetch.js';
 import {
   calculatePriceWithFactor,
   getGasUsedFromReceipts,
   getReceiptsWithMissingData,
-} from './utils';
-import type { RetryOptions } from './utils/auto-retry-fetch';
-import { autoRetryFetch } from './utils/auto-retry-fetch';
-import { mergeQuantities } from './utils/merge-quantities';
+} from './utils/index.js';
+import { mergeQuantities } from './utils/merge-quantities.js';
 
 const MAX_RETRIES = 10;
 

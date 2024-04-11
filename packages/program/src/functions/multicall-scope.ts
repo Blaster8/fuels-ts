@@ -2,8 +2,8 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import type { AbstractContract } from '@fuel-ts/interfaces';
 
-import { BaseInvocationScope } from './base-invocation-scope';
-import type { FunctionInvocationScope } from './invocation-scope';
+import { BaseInvocationScope } from './base-invocation-scope.js';
+import type { FunctionInvocationScope } from './invocation-scope.js';
 
 /**
  * Represents a scope for invoking multiple calls.

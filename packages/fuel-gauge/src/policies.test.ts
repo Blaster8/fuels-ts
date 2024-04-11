@@ -12,9 +12,9 @@ import {
   bn,
 } from 'fuels';
 
-import { getFuelGaugeForcProject, FuelGaugeProjectsEnum } from '../test/fixtures';
+import { getFuelGaugeForcProject, FuelGaugeProjectsEnum } from '../test/fixtures/index.js';
 
-import { createSetupConfig } from './utils';
+import { createSetupConfig } from './utils.js';
 
 /**
  * @group node

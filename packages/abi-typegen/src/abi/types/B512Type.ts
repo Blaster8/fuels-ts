@@ -1,4 +1,4 @@
-import { B256Type } from './B256Type';
+import { B256Type } from './B256Type.js';
 
 export class B512Type extends B256Type {
   public static swayType = 'struct B512';

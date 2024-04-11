@@ -1,5 +1,5 @@
-import { arrayify } from './arrayify';
-import { concat, concatBytes } from './concat';
+import { arrayify } from './arrayify.js';
+import { concat, concatBytes } from './concat.js';
 
 /**
  * @group node

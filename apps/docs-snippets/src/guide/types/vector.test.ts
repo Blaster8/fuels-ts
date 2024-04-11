@@ -3,8 +3,8 @@ import type { Contract } from 'fuels';
 import { BN, arrayify, getRandomB256 } from 'fuels';
 import { join } from 'path';
 
-import { DocSnippetProjectsEnum } from '../../../test/fixtures/forc-projects';
-import { createAndDeployContractFromProject } from '../../utils';
+import { DocSnippetProjectsEnum } from '../../../test/fixtures/forc-projects/index.js';
+import { createAndDeployContractFromProject } from '../../utils.js';
 
 /**
  * @group node

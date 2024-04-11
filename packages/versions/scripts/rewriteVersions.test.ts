@@ -5,7 +5,7 @@ import {
   readVersionsFromEnv,
   readVersionsFromFiles,
   rewriteVersions,
-} from './rewriteVersions';
+} from './rewriteVersions.js';
 
 vi.mock('fs', async () => {
   const mod = await vi.importActual('fs');

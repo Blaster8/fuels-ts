@@ -14,10 +14,10 @@ import { bn } from '@fuel-ts/math';
 import type { ReceiptScriptResult } from '@fuel-ts/transactions';
 import { ReceiptType } from '@fuel-ts/transactions';
 
-import { decodeContractCallScriptResult } from '../contract-call-script';
-import { callResultToInvocationResult } from '../script-request';
-import type { CallConfig, InvocationScopeLike } from '../types';
-import { getAbisFromAllCalls } from '../utils';
+import { decodeContractCallScriptResult } from '../contract-call-script.js';
+import { callResultToInvocationResult } from '../script-request.js';
+import type { CallConfig, InvocationScopeLike } from '../types.js';
+import { getAbisFromAllCalls } from '../utils.js';
 
 /**
  * Calculates the gas usage from a CallResult.

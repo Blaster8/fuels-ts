@@ -2,9 +2,9 @@ import { generateTestWallet } from '@fuel-ts/account/test-utils';
 import { bn, Predicate, Wallet, Address, BaseAssetId, Provider, FUEL_NETWORK_URL } from 'fuels';
 import type { BN, Contract } from 'fuels';
 
-import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../test/fixtures';
+import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../test/fixtures/index.js';
 
-import { getScript, getSetupContract } from './utils';
+import { getScript, getSetupContract } from './utils.js';
 
 type SomeEnum = {
   First?: boolean;

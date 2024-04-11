@@ -1,6 +1,6 @@
-import { mockLogger } from '../../../../test/utils/mockLogger';
+import { mockLogger } from '../../../../test/utils/mockLogger.js';
 
-import { onForcExit, onForcError } from './forcHandlers';
+import { onForcExit, onForcError } from './forcHandlers.js';
 
 /**
  * @group node

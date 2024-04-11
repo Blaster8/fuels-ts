@@ -1,6 +1,6 @@
 import { versions } from '@fuel-ts/versions';
 
-import { ErrorCode } from './error-codes';
+import { ErrorCode } from './error-codes.js';
 
 export class FuelError extends Error {
   static readonly CODES = ErrorCode;

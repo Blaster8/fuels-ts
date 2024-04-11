@@ -2,12 +2,12 @@
 /// A set of useful helper methods for testing and deploying Merkle trees.
 import { hash } from '@fuel-ts/hasher';
 
-import { compactProof } from './proofs';
-import { isLeaf, hashLeaf, hashNode, parseLeaf, parseNode } from './treeHasher';
-import type SparseCompactMerkleProof from './types/sparseCompactMerkleProof';
-import SparseMerkleProof from './types/sparseMerkleProof';
-import type { MapStore } from './utils';
-import { ZERO, MAX_HEIGHT, getBitAtFromMSB, reverseSideNodes, countCommonPrefix } from './utils';
+import { compactProof } from './proofs.js';
+import { isLeaf, hashLeaf, hashNode, parseLeaf, parseNode } from './treeHasher.js';
+import type SparseCompactMerkleProof from './types/sparseCompactMerkleProof.js';
+import SparseMerkleProof from './types/sparseMerkleProof.js';
+import type { MapStore } from './utils.js';
+import { ZERO, MAX_HEIGHT, getBitAtFromMSB, reverseSideNodes, countCommonPrefix } from './utils.js';
 
 export class SparseMerkleTree {
   ms: MapStore;

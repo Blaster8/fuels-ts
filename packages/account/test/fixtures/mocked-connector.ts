@@ -2,19 +2,19 @@
 
 import { setTimeout } from 'timers/promises';
 
+import { FUEL_NETWORK_URL } from '../../src/configs.js';
+import { FuelConnector } from '../../src/connectors/fuel-connector.js';
+import { FuelConnectorEventTypes } from '../../src/connectors/types/index.js';
 import type {
   TransactionRequestLike,
   WalletUnlocked,
   FuelABI,
   ConnectorMetadata,
   Network,
-} from '../../src';
-import { FUEL_NETWORK_URL } from '../../src/configs';
-import { FuelConnector } from '../../src/connectors/fuel-connector';
-import { FuelConnectorEventTypes } from '../../src/connectors/types';
-import type { Asset } from '../../src/providers/assets/types';
+} from '../../src/index.js';
+import type { Asset } from '../../src/providers/assets/types.js';
 
-import { generateAccounts } from './generate-accounts';
+import { generateAccounts } from './generate-accounts.js';
 
 type MockConnectorOptions = {
   name?: string;

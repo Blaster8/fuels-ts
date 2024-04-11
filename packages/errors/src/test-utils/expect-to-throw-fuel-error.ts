@@ -1,7 +1,7 @@
-import { ErrorCode } from '../error-codes';
-import type { FuelError } from '../fuel-error';
+import { ErrorCode } from '../error-codes.js';
+import type { FuelError } from '../fuel-error.js';
 
-import { safeExec } from './safeExec';
+import { safeExec } from './safeExec.js';
 
 type ExpectedFuelError = Partial<FuelError> & Required<Pick<FuelError, 'code'>>;
 

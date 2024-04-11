@@ -4,11 +4,11 @@ import type { TransactionType } from '@fuel-ts/transactions';
 import type {
   CreateTransactionRequest,
   CreateTransactionRequestLike,
-} from './create-transaction-request';
+} from './create-transaction-request.js';
 import type {
   ScriptTransactionRequest,
   ScriptTransactionRequestLike,
-} from './script-transaction-request';
+} from './script-transaction-request.js';
 
 export type TransactionRequest = ScriptTransactionRequest | CreateTransactionRequest;
 export type TransactionRequestLike =

@@ -1,4 +1,4 @@
-import { expectToBeInRange } from './expectToBeInRange';
+import { expectToBeInRange } from './expectToBeInRange.js';
 
 /**
  * @group node

@@ -1,7 +1,7 @@
-import type { IType } from '../../types/interfaces/IType';
-import { extractStructName } from '../../utils/extractStructName';
+import type { IType } from '../../types/interfaces/IType.js';
+import { extractStructName } from '../../utils/extractStructName.js';
 
-import { AType } from './AType';
+import { AType } from './AType.js';
 
 export class GenericType extends AType implements IType {
   public static swayType = 'generic T';

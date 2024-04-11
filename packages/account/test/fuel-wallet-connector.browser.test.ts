@@ -1,10 +1,10 @@
-import type { StorageAbstract } from '../src';
-import { Fuel } from '../src/connectors/fuel';
-import { LocalStorage } from '../src/connectors/types';
-import { dispatchFuelConnectorEvent } from '../src/connectors/utils';
+import { Fuel } from '../src/connectors/fuel.js';
+import { LocalStorage } from '../src/connectors/types/index.js';
+import { dispatchFuelConnectorEvent } from '../src/connectors/utils/index.js';
+import type { StorageAbstract } from '../src/index.js';
 
-import { MockConnector } from './fixtures/mocked-connector';
-import { promiseCallback } from './fixtures/promise-callback';
+import { MockConnector } from './fixtures/mocked-connector.js';
+import { promiseCallback } from './fixtures/promise-callback.js';
 
 /**
  * @group browser

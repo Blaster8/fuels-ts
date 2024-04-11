@@ -1,10 +1,10 @@
 import { findBinPath } from '@fuel-ts/utils/cli-utils';
 import { spawn } from 'child_process';
 
-import type { FuelsConfig } from '../../types';
-import { debug, loggingConfig } from '../../utils/logger';
+import type { FuelsConfig } from '../../types.js';
+import { debug, loggingConfig } from '../../utils/logger.js';
 
-import { onForcExit, onForcError } from './forcHandlers';
+import { onForcExit, onForcError } from './forcHandlers.js';
 
 export const buildSwayProgram = async (config: FuelsConfig, path: string) => {
   debug('Building Sway program', path);

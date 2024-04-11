@@ -1,5 +1,5 @@
-import type { GqlReceiptFragmentFragment } from '../../src/providers/__generated__/operations';
-import { GqlReceiptType } from '../../src/providers/__generated__/operations';
+import type { GqlReceiptFragmentFragment } from '../../src/providers/__generated__/operations.js';
+import { GqlReceiptType } from '../../src/providers/__generated__/operations.js';
 
 export const MOCK_GQL_RECEIPT_FRAGMENT: GqlReceiptFragmentFragment = {
   receiptType: GqlReceiptType.Call,

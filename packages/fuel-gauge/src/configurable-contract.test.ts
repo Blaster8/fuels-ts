@@ -2,7 +2,7 @@ import { generateTestWallet } from '@fuel-ts/account/test-utils';
 import type { CoinQuantityLike, WalletUnlocked } from 'fuels';
 import { BN, ContractFactory, BaseAssetId, Provider, getRandomB256, FUEL_NETWORK_URL } from 'fuels';
 
-import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../test/fixtures';
+import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../test/fixtures/index.js';
 
 const defaultValues = {
   U8: 10,

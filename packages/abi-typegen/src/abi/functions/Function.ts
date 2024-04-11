@@ -1,8 +1,8 @@
-import type { IFunction, IRawAbiFunction, IFunctionAttributes } from '../../index';
-import { TargetEnum } from '../../types/enums/TargetEnum';
-import type { IType } from '../../types/interfaces/IType';
-import { findType } from '../../utils/findType';
-import { parseTypeArguments } from '../../utils/parseTypeArguments';
+import type { IFunction, IRawAbiFunction, IFunctionAttributes } from '../../index.js';
+import { TargetEnum } from '../../types/enums/TargetEnum.js';
+import type { IType } from '../../types/interfaces/IType.js';
+import { findType } from '../../utils/findType.js';
+import { parseTypeArguments } from '../../utils/parseTypeArguments.js';
 
 export class Function implements IFunction {
   public name: string;

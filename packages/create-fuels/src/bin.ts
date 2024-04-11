@@ -2,7 +2,7 @@
 import chalk from 'chalk';
 import { log } from 'console';
 
-import { runScaffoldCli, setupProgram } from './cli';
+import { runScaffoldCli, setupProgram } from './cli.js';
 
 runScaffoldCli({
   program: setupProgram(),

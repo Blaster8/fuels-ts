@@ -1,15 +1,15 @@
 import { existsSync, readFileSync, writeFileSync } from 'fs';
 import { join } from 'path';
 
-import * as deployMod from '../../src/cli/commands/deploy/index';
-import { mockStartFuelCore } from '../utils/mockAutoStartFuelCore';
+import * as deployMod from '../../src/cli/commands/deploy/index.js';
+import { mockStartFuelCore } from '../utils/mockAutoStartFuelCore.js';
 import {
   bootstrapProject,
   resetConfigAndMocks,
   resetDiskAndMocks,
   runBuild,
   runInit,
-} from '../utils/runCommands';
+} from '../utils/runCommands.js';
 
 /**
  * @group node

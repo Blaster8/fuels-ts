@@ -1,6 +1,6 @@
-import type { StructType } from '../../abi/types/StructType';
-import { TargetEnum } from '../../types/enums/TargetEnum';
-import type { IType } from '../../types/interfaces/IType';
+import type { StructType } from '../../abi/types/StructType.js';
+import { TargetEnum } from '../../types/enums/TargetEnum.js';
+import type { IType } from '../../types/interfaces/IType.js';
 
 export function formatStructs(params: { types: IType[] }) {
   const { types } = params;

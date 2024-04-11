@@ -2,7 +2,7 @@ import { safeExec } from '@fuel-ts/errors/test-utils';
 import { mkdirSync, rmSync, writeFileSync } from 'fs';
 import { join } from 'path';
 
-import { findBinPath } from './findBinPath';
+import { findBinPath } from './findBinPath.js';
 
 /**
  * @group node

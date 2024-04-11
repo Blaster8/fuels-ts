@@ -1,6 +1,6 @@
-import type { IRawAbiTypeRoot } from '../types/interfaces/IRawAbiType';
+import type { IRawAbiTypeRoot } from '../types/interfaces/IRawAbiType.js';
 
-import { parseTypes } from './parseTypes';
+import { parseTypes } from './parseTypes.js';
 
 /**
  * @group node

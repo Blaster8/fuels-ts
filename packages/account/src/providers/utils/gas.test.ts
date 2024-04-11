@@ -2,21 +2,21 @@ import { BN, bn } from '@fuel-ts/math';
 import { ReceiptType, type InputCoin, type InputMessage } from '@fuel-ts/transactions';
 import { arrayify } from '@fuel-ts/utils';
 
-import { MOCK_CHAIN } from '../../../test/fixtures/chain';
+import { MOCK_CHAIN } from '../../../test/fixtures/chain.js';
 import {
   MOCK_COIN_INPUT,
   MOCK_MESSAGE_INPUT,
   MOCK_REQUEST_COIN_INPUT,
   MOCK_REQUEST_MESSAGE_INPUT,
   MOCK_REQUEST_PREDICATE_INPUT,
-} from '../../../test/fixtures/inputs-and-outputs';
-import type { GqlDependentCost } from '../__generated__/operations';
+} from '../../../test/fixtures/inputs-and-outputs.js';
+import type { GqlDependentCost } from '../__generated__/operations.js';
 import type {
   CoinTransactionRequestInput,
   MessageTransactionRequestInput,
   TransactionRequestInput,
-} from '../transaction-request';
-import type { TransactionResultReceipt } from '../transaction-response';
+} from '../transaction-request/index.js';
+import type { TransactionResultReceipt } from '../transaction-response/index.js';
 
 import {
   calculateMetadataGasForTxCreate,
@@ -27,7 +27,7 @@ import {
   getMaxGas,
   getMinGas,
   resolveGasDependentCosts,
-} from './gas';
+} from './gas.js';
 
 /**
  * @group node

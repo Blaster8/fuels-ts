@@ -1,8 +1,8 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import { type BNInput, type BN, toBytes, bn } from '@fuel-ts/math';
 
-import { WORD_SIZE } from '../../../utils/constants';
-import { Coder } from '../AbstractCoder';
+import { WORD_SIZE } from '../../../utils/constants.js';
+import { Coder } from '../AbstractCoder.js';
 
 type BigNumberCoderType = 'u64' | 'u256';
 

@@ -1,12 +1,12 @@
 import { program } from 'commander';
 
-import { fuelsConfig } from '../../../test/fixtures/fuels.config';
-import { mockLogger } from '../../../test/utils/mockLogger';
-import * as loadConfigMod from '../config/loadConfig';
-import type { FuelsConfig } from '../types';
-import { Commands } from '../types';
+import { fuelsConfig } from '../../../test/fixtures/fuels.config.js';
+import { mockLogger } from '../../../test/utils/mockLogger.js';
+import * as loadConfigMod from '../config/loadConfig.js';
+import type { FuelsConfig } from '../types.js';
+import { Commands } from '../types.js';
 
-import { withConfig } from './withConfig';
+import { withConfig } from './withConfig.js';
 
 /**
  * @group node

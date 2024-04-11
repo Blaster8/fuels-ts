@@ -1,5 +1,5 @@
-import { U32Type } from './U32Type';
-import { U64Type } from './U64Type';
+import { U32Type } from './U32Type.js';
+import { U64Type } from './U64Type.js';
 
 /**
  * @group node

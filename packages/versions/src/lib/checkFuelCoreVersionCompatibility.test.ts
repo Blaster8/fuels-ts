@@ -1,5 +1,5 @@
-import { checkFuelCoreVersionCompatibility } from './checkFuelCoreVersionCompatibility';
-import * as getBuiltinVersionsMod from './getBuiltinVersions';
+import { checkFuelCoreVersionCompatibility } from './checkFuelCoreVersionCompatibility.js';
+import * as getBuiltinVersionsMod from './getBuiltinVersions.js';
 
 /**
  * @group node

@@ -1,4 +1,4 @@
-import { encryptJsonWalletData, decryptJsonWalletData, randomBytes } from '..';
+import { encryptJsonWalletData, decryptJsonWalletData, randomBytes } from '../src/index.js';
 /**
  * @group node
  * @group browser

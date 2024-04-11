@@ -3,17 +3,17 @@ import { safeExec } from '@fuel-ts/errors/test-utils';
 import {
   AbiTypegenProjectsEnum,
   getTypegenForcProject,
-} from '../../test/fixtures/forc-projects/index';
-import { ProgramTypeEnum } from '../types/enums/ProgramTypeEnum';
-import type { IRawAbiTypeRoot } from '../types/interfaces/IRawAbiType';
-import * as parseConfigurablesMod from '../utils/parseConfigurables';
-import * as parseFunctionsMod from '../utils/parseFunctions';
-import * as parseTypesMod from '../utils/parseTypes';
+} from '../../test/fixtures/forc-projects/index.js';
+import { ProgramTypeEnum } from '../types/enums/ProgramTypeEnum.js';
+import type { IRawAbiTypeRoot } from '../types/interfaces/IRawAbiType.js';
+import * as parseConfigurablesMod from '../utils/parseConfigurables.js';
+import * as parseFunctionsMod from '../utils/parseFunctions.js';
+import * as parseTypesMod from '../utils/parseTypes.js';
 
-import { Abi } from './Abi';
-import { EnumType } from './types/EnumType';
-import { OptionType } from './types/OptionType';
-import { VectorType } from './types/VectorType';
+import { Abi } from './Abi.js';
+import { EnumType } from './types/EnumType.js';
+import { OptionType } from './types/OptionType.js';
+import { VectorType } from './types/VectorType.js';
 
 /**
  * @group node

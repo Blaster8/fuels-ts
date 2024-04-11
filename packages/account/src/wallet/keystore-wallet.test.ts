@@ -1,7 +1,11 @@
 import { Address } from '@fuel-ts/address';
 import { safeExec } from '@fuel-ts/errors/test-utils';
 
-import { decryptKeystoreWallet, encryptKeystoreWallet, removeHexPrefix } from './keystore-wallet';
+import {
+  decryptKeystoreWallet,
+  encryptKeystoreWallet,
+  removeHexPrefix,
+} from './keystore-wallet.js';
 
 /**
  * @group node

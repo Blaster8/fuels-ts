@@ -2,9 +2,9 @@ import { generateTestWallet } from '@fuel-ts/account/test-utils';
 import type { BigNumberish } from 'fuels';
 import { Provider, bn, Script, BaseAssetId, FUEL_NETWORK_URL } from 'fuels';
 
-import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../test/fixtures';
+import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../test/fixtures/index.js';
 
-import { getScript } from './utils';
+import { getScript } from './utils.js';
 
 const setup = async (balance = 500_000) => {
   const provider = await Provider.create(FUEL_NETWORK_URL);

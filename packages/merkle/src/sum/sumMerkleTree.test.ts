@@ -1,7 +1,7 @@
 import { toHex } from '@fuel-ts/math';
 
-import { calcRoot, constructTree, getProof } from './sumMerkleTree';
-import Proof from './types/proof';
+import { calcRoot, constructTree, getProof } from './sumMerkleTree.js';
+import Proof from './types/proof.js';
 
 /**
  * @group node

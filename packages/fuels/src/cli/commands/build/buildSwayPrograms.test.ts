@@ -1,8 +1,8 @@
-import { fuelsConfig } from '../../../../test/fixtures/fuels.config';
-import { mockLogger } from '../../../../test/utils/mockLogger';
+import { fuelsConfig } from '../../../../test/fixtures/fuels.config.js';
+import { mockLogger } from '../../../../test/utils/mockLogger.js';
 
-import * as buildSwayProgramMod from './buildSwayProgram';
-import { buildSwayPrograms } from './buildSwayPrograms';
+import * as buildSwayProgramMod from './buildSwayProgram.js';
+import { buildSwayPrograms } from './buildSwayPrograms.js';
 
 /**
  * @group node

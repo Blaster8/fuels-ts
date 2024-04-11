@@ -2,8 +2,8 @@ import { FuelError } from '@fuel-ts/errors';
 import { expectToThrowFuelError } from '@fuel-ts/errors/test-utils';
 import type { AssetId, B256AddressEvm, Bech32Address, EvmAddress } from '@fuel-ts/interfaces';
 
-import Address from './address';
-import * as utils from './utils';
+import Address from './address.js';
+import * as utils from './utils.js';
 
 const PUBLIC_KEY =
   '0x2f34bc0df4db0ec391792cedb05768832b49b1aa3a2dd8c30054d1af00f67d00b74b7acbbf3087c8e0b1a4c343db50aa471d21f278ff5ce09f07795d541fb47e';

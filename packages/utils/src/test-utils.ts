@@ -1,3 +1,3 @@
-export * from './test-utils/getForcProject';
-export * from './test-utils/expectToBeInRange';
-export * from './test-utils/constants';
+export * from './test-utils/getForcProject.js';
+export * from './test-utils/expectToBeInRange.js';
+export * from './test-utils/constants.js';

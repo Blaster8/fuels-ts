@@ -1,8 +1,8 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 
-import { ResolvedAbiType } from '../../ResolvedAbiType';
-import type { EncodingOptions } from '../../types/EncodingOptions';
-import type { GetCoderFn } from '../../types/GetCoder';
+import { ResolvedAbiType } from '../../ResolvedAbiType.js';
+import type { EncodingOptions } from '../../types/EncodingOptions.js';
+import type { GetCoderFn } from '../../types/GetCoder.js';
 import {
   B256_CODER_TYPE,
   B512_CODER_TYPE,
@@ -25,26 +25,26 @@ import {
   stringRegEx,
   structRegEx,
   tupleRegEx,
-} from '../../utils/constants';
-import { findVectorBufferArgument } from '../../utils/json-abi';
-import type { Coder } from '../coders/AbstractCoder';
-import { ArrayCoder } from '../coders/v0/ArrayCoder';
-import { B256Coder } from '../coders/v0/B256Coder';
-import { B512Coder } from '../coders/v0/B512Coder';
-import { BigNumberCoder } from '../coders/v0/BigNumberCoder';
-import { BooleanCoder } from '../coders/v0/BooleanCoder';
-import { ByteCoder } from '../coders/v0/ByteCoder';
-import { EnumCoder } from '../coders/v0/EnumCoder';
-import { NumberCoder } from '../coders/v0/NumberCoder';
-import { OptionCoder } from '../coders/v0/OptionCoder';
-import { RawSliceCoder } from '../coders/v0/RawSliceCoder';
-import { StdStringCoder } from '../coders/v0/StdStringCoder';
-import { StringCoder } from '../coders/v0/StringCoder';
-import { StructCoder } from '../coders/v0/StructCoder';
-import { TupleCoder } from '../coders/v0/TupleCoder';
-import { VecCoder } from '../coders/v0/VecCoder';
+} from '../../utils/constants.js';
+import { findVectorBufferArgument } from '../../utils/json-abi.js';
+import type { Coder } from '../coders/AbstractCoder.js';
+import { ArrayCoder } from '../coders/v0/ArrayCoder.js';
+import { B256Coder } from '../coders/v0/B256Coder.js';
+import { B512Coder } from '../coders/v0/B512Coder.js';
+import { BigNumberCoder } from '../coders/v0/BigNumberCoder.js';
+import { BooleanCoder } from '../coders/v0/BooleanCoder.js';
+import { ByteCoder } from '../coders/v0/ByteCoder.js';
+import { EnumCoder } from '../coders/v0/EnumCoder.js';
+import { NumberCoder } from '../coders/v0/NumberCoder.js';
+import { OptionCoder } from '../coders/v0/OptionCoder.js';
+import { RawSliceCoder } from '../coders/v0/RawSliceCoder.js';
+import { StdStringCoder } from '../coders/v0/StdStringCoder.js';
+import { StringCoder } from '../coders/v0/StringCoder.js';
+import { StructCoder } from '../coders/v0/StructCoder.js';
+import { TupleCoder } from '../coders/v0/TupleCoder.js';
+import { VecCoder } from '../coders/v0/VecCoder.js';
 
-import { getCoders } from './getCoders';
+import { getCoders } from './getCoders.js';
 
 /**
  * Retrieves coders that adhere to the v0 spec.

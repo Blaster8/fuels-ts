@@ -15,19 +15,19 @@ import {
   messageStatusResponse,
   MESSAGE_PROOF_RAW_RESPONSE,
   MESSAGE_PROOF,
-} from '../../test/fixtures';
+} from '../../test/fixtures/index.js';
 
-import type { ChainInfo, NodeInfo } from './provider';
-import Provider from './provider';
+import type { ChainInfo, NodeInfo } from './provider.js';
+import Provider from './provider.js';
+import { ScriptTransactionRequest, CreateTransactionRequest } from './transaction-request/index.js';
 import type {
   CoinTransactionRequestInput,
   MessageTransactionRequestInput,
-} from './transaction-request';
-import { ScriptTransactionRequest, CreateTransactionRequest } from './transaction-request';
-import { TransactionResponse } from './transaction-response';
-import type { SubmittedStatus } from './transaction-summary/types';
-import { sleep } from './utils';
-import * as gasMod from './utils/gas';
+} from './transaction-request/index.js';
+import { TransactionResponse } from './transaction-response/index.js';
+import type { SubmittedStatus } from './transaction-summary/types.js';
+import * as gasMod from './utils/gas.js';
+import { sleep } from './utils/index.js';
 
 afterEach(() => {
   vi.restoreAllMocks();

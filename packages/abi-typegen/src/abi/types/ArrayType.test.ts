@@ -1,14 +1,14 @@
 import {
   AbiTypegenProjectsEnum,
   getTypegenForcProject,
-} from '../../../test/fixtures/forc-projects';
-import type { IRawAbiTypeRoot } from '../../types/interfaces/IRawAbiType';
-import { findType } from '../../utils/findType';
-import { makeType } from '../../utils/makeType';
-import * as parseTypeArgumentsMod from '../../utils/parseTypeArguments';
+} from '../../../test/fixtures/forc-projects/index.js';
+import type { IRawAbiTypeRoot } from '../../types/interfaces/IRawAbiType.js';
+import { findType } from '../../utils/findType.js';
+import { makeType } from '../../utils/makeType.js';
+import * as parseTypeArgumentsMod from '../../utils/parseTypeArguments.js';
 
-import { ArrayType } from './ArrayType';
-import { TupleType } from './TupleType';
+import { ArrayType } from './ArrayType.js';
+import { TupleType } from './TupleType.js';
 
 /**
  * @group node

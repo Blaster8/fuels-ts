@@ -23,7 +23,7 @@ import type { ReceiptScriptResult } from '@fuel-ts/transactions';
 import { ReceiptType } from '@fuel-ts/transactions';
 import { arrayify } from '@fuel-ts/utils';
 
-import type { CallConfig } from './types';
+import type { CallConfig } from './types.js';
 
 export const calculateScriptDataBaseOffset = (maxInputs: number) =>
   SCRIPT_FIXED_SIZE + calculateVmTxMemory({ maxInputs });

@@ -1,4 +1,4 @@
-import { supportedTypes } from './supportedTypes';
+import { supportedTypes } from './supportedTypes.js';
 
 /**
  * @group node

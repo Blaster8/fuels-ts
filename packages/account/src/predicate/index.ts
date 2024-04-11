@@ -1,2 +1,2 @@
-export * from './predicate';
-export * from './utils/getPredicateRoot';
+export * from './predicate.js';
+export * from './utils/getPredicateRoot.js';

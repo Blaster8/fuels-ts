@@ -16,12 +16,17 @@ import { bn, toNumber } from '@fuel-ts/math';
 import { InputType, TransactionType } from '@fuel-ts/transactions';
 import * as asm from '@fuels/vm-asm';
 
-import { getContractCallScript } from '../contract-call-script';
-import { POINTER_DATA_OFFSET } from '../script-request';
-import type { ContractCall, InvocationScopeLike, TransactionCostOptions, TxParams } from '../types';
-import { assert, getAbisFromAllCalls } from '../utils';
+import { getContractCallScript } from '../contract-call-script.js';
+import { POINTER_DATA_OFFSET } from '../script-request.js';
+import type {
+  ContractCall,
+  InvocationScopeLike,
+  TransactionCostOptions,
+  TxParams,
+} from '../types.js';
+import { assert, getAbisFromAllCalls } from '../utils.js';
 
-import { InvocationCallResult, FunctionInvocationResult } from './invocation-results';
+import { InvocationCallResult, FunctionInvocationResult } from './invocation-results.js';
 
 /**
  * Creates a contract call object based on the provided invocation scope.

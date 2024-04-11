@@ -1,4 +1,4 @@
-import { error } from '../../utils/logger';
+import { error } from '../../utils/logger.js';
 
 type OnResultFn = () => void;
 type OnErrorFn = (reason?: number | Error) => void;

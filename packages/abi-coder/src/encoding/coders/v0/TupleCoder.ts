@@ -5,9 +5,9 @@ import {
   getWordSizePadding,
   isMultipleOfWordSize,
   rightPadToWordSize,
-} from '../../../utils/utilities';
-import type { TypesOfCoder } from '../AbstractCoder';
-import { Coder } from '../AbstractCoder';
+} from '../../../utils/utilities.js';
+import type { TypesOfCoder } from '../AbstractCoder.js';
+import { Coder } from '../AbstractCoder.js';
 
 type InputValueOf<TCoders extends Coder[]> = {
   [P in keyof TCoders]: TypesOfCoder<TCoders[P]>['Input'];

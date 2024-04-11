@@ -1,10 +1,10 @@
 import {
   AbiTypegenProjectsEnum,
   getTypegenForcProject,
-} from '../../../test/fixtures/forc-projects/index';
-import { parseTypes } from '../../utils/parseTypes';
+} from '../../../test/fixtures/forc-projects/index.js';
+import { parseTypes } from '../../utils/parseTypes.js';
 
-import { Function } from './Function';
+import { Function } from './Function.js';
 
 /**
  * @group node

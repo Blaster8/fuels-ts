@@ -1,5 +1,5 @@
-import { BoolType } from './BoolType';
-import { StrType } from './StrType';
+import { BoolType } from './BoolType.js';
+import { StrType } from './StrType.js';
 
 /**
  * @group node

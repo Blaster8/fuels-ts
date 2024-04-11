@@ -1,4 +1,4 @@
-import type { UserFuelsConfig } from '../types';
+import type { UserFuelsConfig } from '../types.js';
 
 export function createConfig(config: UserFuelsConfig) {
   return config;

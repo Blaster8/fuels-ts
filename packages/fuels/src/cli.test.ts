@@ -1,9 +1,9 @@
 import { Command } from 'commander';
 
-import * as cliMod from './cli';
-import { Commands } from './cli/types';
-import * as loggingMod from './cli/utils/logger';
-import { run } from './run';
+import { Commands } from './cli/types.js';
+import * as loggingMod from './cli/utils/logger.js';
+import * as cliMod from './cli.js';
+import { run } from './run.js';
 
 /**
  * @group node

@@ -1,4 +1,4 @@
-import * as fuels from './index';
+import * as fuels from './index.js';
 
 /**
  * @group node

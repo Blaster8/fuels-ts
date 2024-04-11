@@ -3,7 +3,7 @@ import type { Contract, JsonAbi } from 'fuels';
 import { bn, ContractFactory } from 'fuels';
 import { join } from 'path';
 
-import { getSetupContract, createWallet } from './utils';
+import { getSetupContract, createWallet } from './utils.js';
 
 /**
  * @group node

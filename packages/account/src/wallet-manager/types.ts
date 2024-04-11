@@ -2,7 +2,7 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import type { AbstractAddress } from '@fuel-ts/interfaces';
 
-import type { WalletUnlocked } from '../wallet';
+import type { WalletUnlocked } from '../wallet/index.js';
 
 export type WalletManagerAccount = {
   address: AbstractAddress;

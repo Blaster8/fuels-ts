@@ -1,8 +1,8 @@
 import { ZeroBytes32 } from '@fuel-ts/address/configs';
 import { arrayify, hexlify } from '@fuel-ts/utils';
 
-import type { StorageSlot } from './storage-slot';
-import { StorageSlotCoder } from './storage-slot';
+import type { StorageSlot } from './storage-slot.js';
+import { StorageSlotCoder } from './storage-slot.js';
 
 /**
  * @group node

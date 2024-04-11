@@ -2,11 +2,11 @@ import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import { arrayify } from '@fuel-ts/utils';
 import { pbkdf2 } from 'ethers';
 
-import type { CryptoApi, Keystore } from '../types';
+import type { CryptoApi, Keystore } from '../types.js';
 
-import { bufferFromString } from './bufferFromString';
-import { randomBytes } from './randomBytes';
-import { stringFromBuffer } from './stringFromBuffer';
+import { bufferFromString } from './bufferFromString.js';
+import { randomBytes } from './randomBytes.js';
+import { stringFromBuffer } from './stringFromBuffer.js';
 
 const ALGORITHM = 'AES-CTR';
 

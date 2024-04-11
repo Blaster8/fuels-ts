@@ -11,10 +11,10 @@ import {
   FUEL_NETWORK_URL,
 } from 'fuels';
 
-import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../../test/fixtures';
-import type { Validation } from '../types/predicate';
+import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../../test/fixtures/index.js';
+import type { Validation } from '../types/predicate/index.js';
 
-import { fundPredicate, setupContractWithConfig } from './utils/predicate';
+import { fundPredicate, setupContractWithConfig } from './utils/predicate/index.js';
 
 /**
  * @group node

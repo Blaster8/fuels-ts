@@ -1,11 +1,11 @@
 import {
   AbiTypegenProjectsEnum,
   getTypegenForcProject,
-} from '../../../test/fixtures/forc-projects';
+} from '../../../test/fixtures/forc-projects/index.js';
 import bytecodeTemplate from '../../../test/fixtures/templates/contract/bytecode.hbs';
-import { mockVersions } from '../../../test/utils/mockVersions';
+import { mockVersions } from '../../../test/utils/mockVersions.js';
 
-import { renderBytecodeTemplate } from './bytecode';
+import { renderBytecodeTemplate } from './bytecode.js';
 
 /**
  * @group node

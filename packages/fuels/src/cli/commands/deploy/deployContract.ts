@@ -3,7 +3,7 @@ import { ContractFactory } from '@fuel-ts/contract';
 import type { DeployContractOptions } from '@fuel-ts/contract';
 import { existsSync, readFileSync } from 'fs';
 
-import { debug } from '../../utils/logger';
+import { debug } from '../../utils/logger.js';
 
 export async function deployContract(
   wallet: WalletUnlocked,

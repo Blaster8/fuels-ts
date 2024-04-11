@@ -1,6 +1,6 @@
-import type { Assets } from '../types';
+import type { Assets } from '../types.js';
 
-import { urlJoin } from './url';
+import { urlJoin } from './url.js';
 
 /**
  * Returns the list of assets with the icon paths 'resolved'. eg. `./eth.svg` -> `https://some-url.com/eth.svg`

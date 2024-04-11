@@ -1,6 +1,6 @@
 import { createHash } from 'crypto';
 
-import { english } from './english';
+import { english } from './english.js';
 
 const checksum = (wordlists: string[]) =>
   createHash('sha256')

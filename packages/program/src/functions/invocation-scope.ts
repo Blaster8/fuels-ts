@@ -5,9 +5,9 @@ import { coinQuantityfy } from '@fuel-ts/account';
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import type { AbstractProgram } from '@fuel-ts/interfaces';
 
-import type { CallConfig, CallParams } from '../types';
+import type { CallConfig, CallParams } from '../types.js';
 
-import { BaseInvocationScope } from './base-invocation-scope';
+import { BaseInvocationScope } from './base-invocation-scope.js';
 
 /**
  * Represents a scope for invoking a function.

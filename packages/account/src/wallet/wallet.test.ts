@@ -3,13 +3,13 @@ import { safeExec } from '@fuel-ts/errors/test-utils';
 import type { BN } from '@fuel-ts/math';
 import { bn } from '@fuel-ts/math';
 
-import { FUEL_NETWORK_URL } from '../configs';
-import { transactionRequestify, Provider } from '../providers';
-import type { TransactionRequestLike, TransactionResponse } from '../providers';
-import { generateTestWallet } from '../test-utils/generateTestWallet';
+import { FUEL_NETWORK_URL } from '../configs.js';
+import { transactionRequestify, Provider } from '../providers/index.js';
+import type { TransactionRequestLike, TransactionResponse } from '../providers/index.js';
+import { generateTestWallet } from '../test-utils/generateTestWallet.js';
 
-import { Wallet } from './wallet';
-import { WalletLocked, WalletUnlocked } from './wallets';
+import { Wallet } from './wallet.js';
+import { WalletLocked, WalletUnlocked } from './wallets.js';
 
 /**
  * @group node

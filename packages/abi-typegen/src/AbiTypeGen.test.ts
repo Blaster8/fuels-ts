@@ -1,11 +1,11 @@
 import { safeExec } from '@fuel-ts/errors/test-utils';
 
-import { getNewAbiTypegen } from '../test/utils/getNewAbiTypegen';
+import { getNewAbiTypegen } from '../test/utils/getNewAbiTypegen.js';
 
-import { ProgramTypeEnum } from './types/enums/ProgramTypeEnum';
-import * as assembleContractsMod from './utils/assembleContracts';
-import * as assemblePredicatesMod from './utils/assemblePredicates';
-import * as assembleScriptsMod from './utils/assembleScripts';
+import { ProgramTypeEnum } from './types/enums/ProgramTypeEnum.js';
+import * as assembleContractsMod from './utils/assembleContracts.js';
+import * as assemblePredicatesMod from './utils/assemblePredicates.js';
+import * as assembleScriptsMod from './utils/assembleScripts.js';
 
 /**
  * @group node

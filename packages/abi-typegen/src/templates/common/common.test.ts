@@ -1,6 +1,6 @@
-import { mockVersions } from '../../../test/utils/mockVersions';
+import { mockVersions } from '../../../test/utils/mockVersions.js';
 
-import { renderCommonTemplate } from './common';
+import { renderCommonTemplate } from './common.js';
 
 /**
  * @group node

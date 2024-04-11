@@ -1,9 +1,9 @@
 import { safeExec } from '@fuel-ts/errors/test-utils';
 
-import type { ArrayType } from '../abi/types/ArrayType';
-import type { IRawAbiTypeRoot } from '../types/interfaces/IRawAbiType';
+import type { ArrayType } from '../abi/types/ArrayType.js';
+import type { IRawAbiTypeRoot } from '../types/interfaces/IRawAbiType.js';
 
-import { makeType } from './makeType';
+import { makeType } from './makeType.js';
 
 /**
  * @group node

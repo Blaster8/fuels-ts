@@ -18,10 +18,10 @@ import { ScriptRequest } from '@fuel-ts/program';
 import { ReceiptType } from '@fuel-ts/transactions';
 import { arrayify } from '@fuel-ts/utils';
 
-import { getScriptForcProject, ScriptProjectsEnum } from '../test/fixtures';
-import { jsonAbiMock, jsonAbiFragmentMock } from '../test/mocks';
+import { getScriptForcProject, ScriptProjectsEnum } from '../test/fixtures/index.js';
+import { jsonAbiMock, jsonAbiFragmentMock } from '../test/mocks.js';
 
-import { Script } from './index';
+import { Script } from './index.js';
 
 const { abiContents: scriptJsonAbi, binHexlified: scriptBin } = getScriptForcProject(
   ScriptProjectsEnum.CALL_TEST_SCRIPT

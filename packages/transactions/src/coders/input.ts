@@ -6,9 +6,9 @@ import type { BytesLike } from '@fuel-ts/interfaces';
 import type { BN } from '@fuel-ts/math';
 import { concat, arrayify } from '@fuel-ts/utils';
 
-import { ByteArrayCoder } from './byte-array';
-import type { TxPointer } from './tx-pointer';
-import { TxPointerCoder } from './tx-pointer';
+import { ByteArrayCoder } from './byte-array.js';
+import type { TxPointer } from './tx-pointer.js';
+import { TxPointerCoder } from './tx-pointer.js';
 
 export enum InputType {
   Coin = 0,

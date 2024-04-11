@@ -1,6 +1,6 @@
 import { FuelError, ErrorCode } from '@fuel-ts/errors';
 import fs from 'fs';
-import { IMPORT_REGEXP, IMPORT_START_REGEXP } from '../snippetPlugin';
+import { IMPORT_REGEXP, IMPORT_START_REGEXP } from '../snippetPlugin.js';
 
 /**
  * Constant used to prefix type imports.

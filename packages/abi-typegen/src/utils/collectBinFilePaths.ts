@@ -1,10 +1,10 @@
 import { hexlify } from '@fuel-ts/utils';
 import { existsSync, readFileSync } from 'fs';
 
-import type { ProgramTypeEnum } from '../types/enums/ProgramTypeEnum';
-import type { IFile } from '../types/interfaces/IFile';
+import type { ProgramTypeEnum } from '../types/enums/ProgramTypeEnum.js';
+import type { IFile } from '../types/interfaces/IFile.js';
 
-import { validateBinFile } from './validateBinFile';
+import { validateBinFile } from './validateBinFile.js';
 
 export const collectBinFilepaths = (params: {
   filepaths: string[];

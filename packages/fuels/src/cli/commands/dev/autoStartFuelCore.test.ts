@@ -2,11 +2,11 @@ import * as testUtilsMod from '@fuel-ts/account/test-utils';
 import { existsSync, rmSync } from 'fs';
 import { join } from 'path';
 
-import { fuelsConfig } from '../../../../test/fixtures/fuels.config';
-import type { FuelsConfig } from '../../types';
+import { fuelsConfig } from '../../../../test/fixtures/fuels.config.js';
+import type { FuelsConfig } from '../../types.js';
 
-import type { FuelCoreNode } from './autoStartFuelCore';
-import { autoStartFuelCore } from './autoStartFuelCore';
+import type { FuelCoreNode } from './autoStartFuelCore.js';
+import { autoStartFuelCore } from './autoStartFuelCore.js';
 
 /**
  * @group node

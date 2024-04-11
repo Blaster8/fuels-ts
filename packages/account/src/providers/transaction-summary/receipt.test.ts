@@ -5,10 +5,10 @@ import type {
   TransactionResultBurnReceipt,
   TransactionResultMintReceipt,
   TransactionResultReceipt,
-} from '../transaction-response';
+} from '../transaction-response/index.js';
 
-import { extractBurnedAssetsFromReceipts, extractMintedAssetsFromReceipts } from './receipt';
-import type { MintedAsset, BurnedAsset } from './types';
+import { extractBurnedAssetsFromReceipts, extractMintedAssetsFromReceipts } from './receipt.js';
+import type { MintedAsset, BurnedAsset } from './types.js';
 
 /**
  * @group node

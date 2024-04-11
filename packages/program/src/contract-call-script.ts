@@ -22,15 +22,15 @@ import { ReceiptType } from '@fuel-ts/transactions';
 import { concat, arrayify } from '@fuel-ts/utils';
 import * as asm from '@fuels/vm-asm';
 
-import { InstructionSet } from './instruction-set';
-import type { EncodedScriptCall, ScriptResult } from './script-request';
+import { InstructionSet } from './instruction-set.js';
 import {
   decodeCallResult,
   ScriptRequest,
   POINTER_DATA_OFFSET,
   calculateScriptDataBaseOffset,
-} from './script-request';
-import type { ContractCall, InvocationScopeLike } from './types';
+} from './script-request.js';
+import type { EncodedScriptCall, ScriptResult } from './script-request.js';
+import type { ContractCall, InvocationScopeLike } from './types.js';
 
 type CallOpcodeParamsOffset = {
   callDataOffset: number;

@@ -14,9 +14,9 @@ import type { BigNumberish } from '@fuel-ts/math';
 import { ByteArrayCoder, InputType } from '@fuel-ts/transactions';
 import { arrayify, hexlify } from '@fuel-ts/utils';
 
-import { Account } from '../account';
-import type { TxParamsType } from '../account';
-import { transactionRequestify, BaseTransactionRequest } from '../providers';
+import { Account } from '../account.js';
+import type { TxParamsType } from '../account.js';
+import { transactionRequestify, BaseTransactionRequest } from '../providers/index.js';
 import type {
   CallResult,
   Provider,
@@ -25,9 +25,9 @@ import type {
   TransactionRequestInput,
   TransactionRequestLike,
   TransactionResponse,
-} from '../providers';
+} from '../providers/index.js';
 
-import { getPredicateRoot } from './utils';
+import { getPredicateRoot } from './utils/index.js';
 
 export type PredicateParams<T = InputValue[]> = {
   bytecode: BytesLike;

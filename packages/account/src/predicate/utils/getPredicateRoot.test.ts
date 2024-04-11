@@ -1,6 +1,6 @@
 import { arrayify } from '@fuel-ts/utils';
 
-import { getPredicateRoot } from './getPredicateRoot';
+import { getPredicateRoot } from './getPredicateRoot.js';
 
 /**
  * @group node

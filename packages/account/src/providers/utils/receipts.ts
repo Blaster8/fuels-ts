@@ -25,9 +25,9 @@ import {
 import { FAILED_TRANSFER_TO_ADDRESS_SIGNAL } from '@fuel-ts/transactions/configs';
 import { arrayify } from '@fuel-ts/utils';
 
-import type { GqlReceiptFragmentFragment } from '../__generated__/operations';
-import { GqlReceiptType } from '../__generated__/operations';
-import type { TransactionResultReceipt } from '../transaction-response';
+import type { GqlReceiptFragmentFragment } from '../__generated__/operations.js';
+import { GqlReceiptType } from '../__generated__/operations.js';
+import type { TransactionResultReceipt } from '../transaction-response/index.js';
 
 /** @hidden */
 const doesReceiptHaveMissingOutputVariables = (

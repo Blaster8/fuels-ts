@@ -1,6 +1,6 @@
-import { arrayify } from '../index';
+import { arrayify } from '../index.js';
 
-import { chunkAndPadBytes } from './chunkAndPadBytes';
+import { chunkAndPadBytes } from './chunkAndPadBytes.js';
 
 /**
  * @group node

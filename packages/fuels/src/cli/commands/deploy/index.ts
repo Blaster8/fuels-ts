@@ -4,14 +4,14 @@ import {
   getContractName,
   getContractCamelCase,
   getStorageSlotsPath,
-} from '../../config/forcUtils';
-import type { FuelsConfig, DeployedContract } from '../../types';
-import { debug, log } from '../../utils/logger';
+} from '../../config/forcUtils.js';
+import type { FuelsConfig, DeployedContract } from '../../types.js';
+import { debug, log } from '../../utils/logger.js';
 
-import { createWallet } from './createWallet';
-import { deployContract } from './deployContract';
-import { getDeployConfig } from './getDeployConfig';
-import { saveContractIds } from './saveContractIds';
+import { createWallet } from './createWallet.js';
+import { deployContract } from './deployContract.js';
+import { getDeployConfig } from './getDeployConfig.js';
+import { saveContractIds } from './saveContractIds.js';
 
 export async function deploy(config: FuelsConfig) {
   const contracts: DeployedContract[] = [];

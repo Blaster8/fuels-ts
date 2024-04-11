@@ -3,10 +3,10 @@ import { toNumber } from '@fuel-ts/math';
 import { concat } from '@fuel-ts/utils';
 import type { RequireExactlyOne } from 'type-fest';
 
-import { WORD_SIZE } from '../../../utils/constants';
-import type { TypesOfCoder } from '../AbstractCoder';
-import { Coder } from '../AbstractCoder';
-import { BigNumberCoder } from '../v0/BigNumberCoder';
+import { WORD_SIZE } from '../../../utils/constants.js';
+import type { TypesOfCoder } from '../AbstractCoder.js';
+import { Coder } from '../AbstractCoder.js';
+import { BigNumberCoder } from '../v0/BigNumberCoder.js';
 
 export type InputValueOf<TCoders extends Record<string, Coder>> = RequireExactlyOne<{
   [P in keyof TCoders]: TypesOfCoder<TCoders[P]>['Input'];

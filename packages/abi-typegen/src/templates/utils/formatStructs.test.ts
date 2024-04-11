@@ -1,11 +1,11 @@
 import {
   AbiTypegenProjectsEnum,
   getTypegenForcProject,
-} from '../../../test/fixtures/forc-projects/index';
-import { Abi } from '../../abi/Abi';
-import { ProgramTypeEnum } from '../../types/enums/ProgramTypeEnum';
+} from '../../../test/fixtures/forc-projects/index.js';
+import { Abi } from '../../abi/Abi.js';
+import { ProgramTypeEnum } from '../../types/enums/ProgramTypeEnum.js';
 
-import { formatStructs } from './formatStructs';
+import { formatStructs } from './formatStructs.js';
 
 /**
  * @group node

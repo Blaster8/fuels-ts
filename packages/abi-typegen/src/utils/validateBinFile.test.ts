@@ -1,6 +1,6 @@
-import { ProgramTypeEnum } from '../types/enums/ProgramTypeEnum';
+import { ProgramTypeEnum } from '../types/enums/ProgramTypeEnum.js';
 
-import { validateBinFile } from './validateBinFile';
+import { validateBinFile } from './validateBinFile.js';
 
 /**
  * @group node

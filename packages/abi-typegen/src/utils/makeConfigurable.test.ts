@@ -1,6 +1,6 @@
-import { Configurable } from '../abi/configurable/Configurable';
+import { Configurable } from '../abi/configurable/Configurable.js';
 
-import { makeConfigurable } from './makeConfigurable';
+import { makeConfigurable } from './makeConfigurable.js';
 
 /**
  * @group node

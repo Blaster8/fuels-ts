@@ -1,9 +1,9 @@
 import { bn } from '@fuel-ts/math';
 import { ASSET_A, ASSET_B } from '@fuel-ts/utils/test-utils';
 
-import type { CoinQuantity } from '../coin-quantity';
+import type { CoinQuantity } from '../coin-quantity.js';
 
-import { mergeQuantities } from './merge-quantities';
+import { mergeQuantities } from './merge-quantities.js';
 
 /**
  * @group node

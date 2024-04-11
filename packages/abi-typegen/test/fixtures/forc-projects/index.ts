@@ -1,7 +1,7 @@
 import { getForcProject } from '@fuel-ts/utils/test-utils';
 import { join } from 'path';
 
-import type { IRawAbi } from '../../../src/index';
+import type { IRawAbi } from '../../../src/index.js';
 
 export enum AbiTypegenProjectsEnum {
   ARRAY_OF_ENUMS = 'array-of-enums',

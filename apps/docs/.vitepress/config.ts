@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress';
-import { codeInContextPlugin } from './plugins/codeInContextPlugin';
-import { snippetPlugin } from './plugins/snippetPlugin';
+import { codeInContextPlugin } from './plugins/codeInContextPlugin.js';
+import { snippetPlugin } from './plugins/snippetPlugin.js';
 import apiLinks from '../.typedoc/api-links.json';
 
 export default defineConfig({

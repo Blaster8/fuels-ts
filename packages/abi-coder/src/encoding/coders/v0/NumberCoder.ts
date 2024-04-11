@@ -1,8 +1,8 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import { toNumber, toBytes } from '@fuel-ts/math';
 
-import type { EncodingOptions } from '../../../types/EncodingOptions';
-import { Coder } from '../AbstractCoder';
+import type { EncodingOptions } from '../../../types/EncodingOptions.js';
+import { Coder } from '../AbstractCoder.js';
 
 type NumberCoderType = 'u8' | 'u16' | 'u32';
 

@@ -1,5 +1,5 @@
-import { BoolType } from './BoolType';
-import { U16Type } from './U16Type';
+import { BoolType } from './BoolType.js';
+import { U16Type } from './U16Type.js';
 
 /**
  * @group node

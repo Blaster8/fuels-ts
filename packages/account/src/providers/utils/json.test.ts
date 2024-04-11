@@ -1,7 +1,7 @@
 import { Address } from '@fuel-ts/address';
 import { BN, bn } from '@fuel-ts/math';
 
-import { normalizeJSON } from './json';
+import { normalizeJSON } from './json.js';
 
 /**
  * @group node

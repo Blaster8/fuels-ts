@@ -1,6 +1,6 @@
 import type { BytesLike } from '@fuel-ts/interfaces';
 
-import { arrayify } from './arrayify';
+import { arrayify } from './arrayify.js';
 
 /**
  * Concatenates multiple Uint8Arrays into a single Uint8Array.

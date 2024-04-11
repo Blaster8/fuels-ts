@@ -1,7 +1,7 @@
 import { FuelError, ErrorCode } from '@fuel-ts/errors';
 import { expectToThrowFuelError } from '@fuel-ts/errors/test-utils';
 
-import { ByteCoder } from './ByteCoder';
+import { ByteCoder } from './ByteCoder.js';
 
 /**
  * @group node

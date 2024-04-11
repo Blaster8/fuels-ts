@@ -1,7 +1,7 @@
 import {
   GqlMessageState,
   type GqlGetMessageStatusQuery,
-} from '../../src/providers/__generated__/operations';
+} from '../../src/providers/__generated__/operations.js';
 
 export const messageStatusResponse: Omit<GqlGetMessageStatusQuery['messageStatus'], '__typename'> =
   {

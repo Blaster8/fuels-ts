@@ -2,9 +2,9 @@ import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import { bn } from '@fuel-ts/math';
 import { toUtf8Bytes, toUtf8String } from 'ethers';
 
-import { WORD_SIZE } from '../../../utils/constants';
-import { Coder } from '../AbstractCoder';
-import { BigNumberCoder } from '../v0/BigNumberCoder';
+import { WORD_SIZE } from '../../../utils/constants.js';
+import { Coder } from '../AbstractCoder.js';
+import { BigNumberCoder } from '../v0/BigNumberCoder.js';
 
 export class StdStringCoder extends Coder<string, string> {
   static memorySize = 1;

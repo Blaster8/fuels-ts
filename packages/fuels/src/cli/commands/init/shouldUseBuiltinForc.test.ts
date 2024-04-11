@@ -1,8 +1,8 @@
 import * as getSystemFuelCoreMod from '@fuel-ts/versions/cli';
 
-import { mockLogger } from '../../../../test/utils/mockLogger';
+import { mockLogger } from '../../../../test/utils/mockLogger.js';
 
-import { shouldUseBuiltinFuelCore } from './shouldUseBuiltinFuelCore';
+import { shouldUseBuiltinFuelCore } from './shouldUseBuiltinFuelCore.js';
 
 vi.mock('prompts', async () => {
   const mod = await vi.importActual('prompts');

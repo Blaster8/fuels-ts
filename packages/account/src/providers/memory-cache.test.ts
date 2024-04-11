@@ -2,7 +2,7 @@ import { randomBytes } from '@fuel-ts/crypto';
 import type { BytesLike } from '@fuel-ts/interfaces';
 import { hexlify } from '@fuel-ts/utils';
 
-import { MemoryCache } from './memory-cache';
+import { MemoryCache } from './memory-cache.js';
 
 const CACHE_ITEMS = [hexlify(randomBytes(8)), randomBytes(8), randomBytes(8)];
 

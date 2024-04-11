@@ -1,7 +1,7 @@
-import { bufferFromString } from '..';
-import type { IScryptParams } from '../types';
+import { bufferFromString } from '../index.js';
+import type { IScryptParams } from '../types.js';
 
-import { scrypt } from './scrypt';
+import { scrypt } from './scrypt.js';
 
 const data = bufferFromString('hashedKey');
 

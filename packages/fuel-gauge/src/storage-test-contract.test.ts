@@ -2,7 +2,7 @@ import { generateTestWallet } from '@fuel-ts/account/test-utils';
 import type { BN } from 'fuels';
 import { toHex, Provider, ContractFactory, BaseAssetId, FUEL_NETWORK_URL } from 'fuels';
 
-import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../test/fixtures';
+import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../test/fixtures/index.js';
 
 const {
   binHexlified: bytecode,

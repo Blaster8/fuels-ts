@@ -14,11 +14,11 @@ import {
 
 import storageSlots from '../contract/out/release/demo-contract-storage_slots.json';
 
-import { DemoContractAbi__factory } from './contract-types';
 import bytecode from './contract-types/DemoContractAbi.hex';
-import type { PredicateAbiInputs } from './predicate-types';
-import { PredicateAbi__factory } from './predicate-types';
-import { ScriptAbi__factory } from './script-types';
+import { DemoContractAbi__factory } from './contract-types/index.js';
+import type { PredicateAbiInputs } from './predicate-types/index.js';
+import { PredicateAbi__factory } from './predicate-types/index.js';
+import { ScriptAbi__factory } from './script-types/index.js';
 
 let gasPrice: BN;
 
@@ -62,7 +62,7 @@ describe('ExampleContract', () => {
 
     // You can also make a call using the factory
     // #region typegen-demo-contract-factory-connect
-    // #context import { DemoContractAbi__factory } from './types';
+    // #context import { DemoContractAbi__factory } from './types.js';
 
     const contractInstance = DemoContractAbi__factory.connect(contractId, wallet);
     const { value: v2 } = await contractInstance.functions.return_input(1337).call();
@@ -75,7 +75,7 @@ describe('ExampleContract', () => {
     const wallet = await generateTestWallet(provider, [[500_000, BaseAssetId]]);
 
     // #region typegen-demo-contract-factory-deploy
-    // #context import { DemoContractAbi__factory } from './types';
+    // #context import { DemoContractAbi__factory } from './types.js';
     // #context import bytecode from './types/DemoContractAbi.hex';
 
     // Deploy
@@ -122,7 +122,7 @@ test('Example script', async () => {
   const wallet = await generateTestWallet(provider, [[500_000, BaseAssetId]]);
 
   // #region typegen-demo-script
-  // #context import { ScriptAbi__factory } from './types';
+  // #context import { ScriptAbi__factory } from './types.js';
 
   const script = ScriptAbi__factory.createInstance(wallet);
   const { value } = await script.functions.main().call();
@@ -133,8 +133,8 @@ test('Example script', async () => {
 
 test('Example predicate', async () => {
   // #region typegen-demo-predicate
-  // #context import type { PredicateAbiInputs } from './types';
-  // #context import { PredicateAbi__factory } from './types';
+  // #context import type { PredicateAbiInputs } from './types.js';
+  // #context import { PredicateAbi__factory } from './types.js';
 
   // In this exchange, we are first transferring some coins to the predicate
   const provider = await Provider.create(FUEL_NETWORK_URL);

@@ -1,6 +1,6 @@
 import { BN } from '@fuel-ts/math';
 
-import { coinQuantityfy } from './coin-quantity';
+import { coinQuantityfy } from './coin-quantity.js';
 
 /**
  * @group node

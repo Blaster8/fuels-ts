@@ -1,4 +1,4 @@
-import { buildBlockExplorerUrl } from './block-explorer';
+import { buildBlockExplorerUrl } from './block-explorer.js';
 
 const DEFAULT_BLOCK_EXPLORER_URL = 'https://fuellabs.github.io/block-explorer-v2';
 const trimSlashes = /^\/|\/$/gm;

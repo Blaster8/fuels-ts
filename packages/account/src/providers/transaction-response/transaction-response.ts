@@ -20,14 +20,14 @@ import type {
 import { TransactionCoder } from '@fuel-ts/transactions';
 import { arrayify } from '@fuel-ts/utils';
 
-import type Provider from '../provider';
-import type { JsonAbisFromAllCalls } from '../transaction-request';
-import { assembleTransactionSummary } from '../transaction-summary/assemble-transaction-summary';
-import { processGqlReceipt } from '../transaction-summary/receipt';
-import type { TransactionSummary, GqlTransaction, AbiMap } from '../transaction-summary/types';
-import { extractTxError } from '../utils';
+import type Provider from '../provider.js';
+import type { JsonAbisFromAllCalls } from '../transaction-request/index.js';
+import { assembleTransactionSummary } from '../transaction-summary/assemble-transaction-summary.js';
+import { processGqlReceipt } from '../transaction-summary/receipt.js';
+import type { TransactionSummary, GqlTransaction, AbiMap } from '../transaction-summary/types.js';
+import { extractTxError } from '../utils/index.js';
 
-import { getDecodedLogs } from './getDecodedLogs';
+import { getDecodedLogs } from './getDecodedLogs.js';
 
 /** @hidden */
 export type TransactionResultCallReceipt = ReceiptCall;

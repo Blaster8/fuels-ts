@@ -3,8 +3,8 @@ import { existsSync, writeFileSync } from 'fs';
 import { globSync } from 'glob';
 import { join, relative, resolve } from 'path';
 
-import { renderFuelsConfigTemplate } from '../../templates/fuels.config';
-import { log } from '../../utils/logger';
+import { renderFuelsConfigTemplate } from '../../templates/fuels.config.js';
+import { log } from '../../utils/logger.js';
 
 export function init(program: Command) {
   const options = program.opts();

@@ -5,14 +5,14 @@
 /* eslint-disable max-classes-per-file */
 import type { BytesLike } from '@fuel-ts/interfaces';
 
-import { Account } from '../account';
-import { HDWallet } from '../hdwallet';
-import { Mnemonic } from '../mnemonic';
-import type { Provider } from '../providers';
-import { Signer } from '../signer';
+import { Account } from '../account.js';
+import { HDWallet } from '../hdwallet/index.js';
+import { Mnemonic } from '../mnemonic/index.js';
+import type { Provider } from '../providers/index.js';
+import { Signer } from '../signer/index.js';
 
-import { BaseWalletUnlocked } from './base-wallet-unlocked';
-import { decryptKeystoreWallet } from './keystore-wallet';
+import { BaseWalletUnlocked } from './base-wallet-unlocked.js';
+import { decryptKeystoreWallet } from './keystore-wallet.js';
 
 export interface GenerateOptions {
   /** Additional entropy for the random bytes */

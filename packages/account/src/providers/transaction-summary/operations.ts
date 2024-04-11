@@ -10,23 +10,22 @@ import type {
   TransactionResultMessageOutReceipt,
   TransactionResultTransferOutReceipt,
   TransactionResultTransferReceipt,
-} from '../transaction-response';
+} from '../transaction-response/index.js';
 
-import { getFunctionCall } from './call';
+import { getFunctionCall } from './call.js';
 import {
   getInputFromAssetId,
   getInputAccountAddress,
   getInputContractFromIndex,
   getInputsContract,
   getInputsCoinAndMessage,
-} from './input';
+} from './input.js';
 import {
   getOutputsChange,
   getOutputsCoin,
   getOutputsContract,
   getOutputsContractCreated,
-} from './output';
-import { AddressType, ChainName, OperationName, TransactionTypeName } from './types';
+} from './output.js';
 import type {
   InputOutputParam,
   InputParam,
@@ -36,7 +35,8 @@ import type {
   Operation,
   GetOperationParams,
   GetTransferOperationsParams,
-} from './types';
+} from './types.js';
+import { AddressType, ChainName, OperationName, TransactionTypeName } from './types.js';
 
 /** @hidden */
 export function getReceiptsByType<T = TransactionResultReceipt>(

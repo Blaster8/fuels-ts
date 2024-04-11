@@ -1,11 +1,11 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 
-import type { Abi } from '../../abi/Abi';
-import { renderHbsTemplate } from '../renderHbsTemplate';
-import { formatConfigurables } from '../utils/formatConfigurables';
-import { formatEnums } from '../utils/formatEnums';
-import { formatImports } from '../utils/formatImports';
-import { formatStructs } from '../utils/formatStructs';
+import type { Abi } from '../../abi/Abi.js';
+import { renderHbsTemplate } from '../renderHbsTemplate.js';
+import { formatConfigurables } from '../utils/formatConfigurables.js';
+import { formatEnums } from '../utils/formatEnums.js';
+import { formatImports } from '../utils/formatImports.js';
+import { formatStructs } from '../utils/formatStructs.js';
 
 import factoryTemplate from './factory.hbs';
 

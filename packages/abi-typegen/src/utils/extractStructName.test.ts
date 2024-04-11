@@ -1,9 +1,9 @@
-import { EnumType } from '../abi/types/EnumType';
-import { GenericType } from '../abi/types/GenericType';
-import { StructType } from '../abi/types/StructType';
-import type { IRawAbiTypeRoot } from '../types/interfaces/IRawAbiType';
+import { EnumType } from '../abi/types/EnumType.js';
+import { GenericType } from '../abi/types/GenericType.js';
+import { StructType } from '../abi/types/StructType.js';
+import type { IRawAbiTypeRoot } from '../types/interfaces/IRawAbiType.js';
 
-import { extractStructName } from './extractStructName';
+import { extractStructName } from './extractStructName.js';
 
 /**
  * @group node

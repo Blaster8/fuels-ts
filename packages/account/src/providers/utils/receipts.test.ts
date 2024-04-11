@@ -20,10 +20,10 @@ import { arrayify } from '@fuel-ts/utils';
 import {
   MOCK_GQL_RECEIPT_FRAGMENT,
   MOCK_GQL_RECEIPT_FRAGMENT_TO_ADDRESS,
-} from '../../../test/fixtures/receipts';
-import { GqlReceiptType } from '../__generated__/operations';
+} from '../../../test/fixtures/receipts.js';
+import { GqlReceiptType } from '../__generated__/operations.js';
 
-import { assembleReceiptByType } from './receipts';
+import { assembleReceiptByType } from './receipts.js';
 
 /**
  * @group node

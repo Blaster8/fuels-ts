@@ -13,14 +13,14 @@ import {
   MOCK_FAILURE_STATUS,
   MOCK_SUBMITTED_STATUS,
   MOCK_SQUEEZEDOUT_STATUS,
-} from '../../../test/fixtures/transaction-summary';
-import type { GqlGasCosts } from '../__generated__/operations';
-import Provider from '../provider';
-import type { TransactionResultReceipt } from '../transaction-response';
+} from '../../../test/fixtures/transaction-summary.js';
+import type { GqlGasCosts } from '../__generated__/operations.js';
+import Provider from '../provider.js';
+import type { TransactionResultReceipt } from '../transaction-response/index.js';
 
-import { assembleTransactionSummary } from './assemble-transaction-summary';
-import * as calculateTransactionFeeMod from './calculate-transaction-fee';
-import type { GraphqlTransactionStatus, Operation } from './types';
+import { assembleTransactionSummary } from './assemble-transaction-summary.js';
+import * as calculateTransactionFeeMod from './calculate-transaction-fee.js';
+import type { GraphqlTransactionStatus, Operation } from './types.js';
 
 /**
  * @group node

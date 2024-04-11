@@ -1,23 +1,23 @@
 import { safeExec } from '@fuel-ts/errors/test-utils';
 import type { FSWatcher } from 'chokidar';
 
-import { fuelsConfig } from '../../../../test/fixtures/fuels.config';
-import { mockStartFuelCore } from '../../../../test/utils/mockAutoStartFuelCore';
-import { mockLogger } from '../../../../test/utils/mockLogger';
-import * as loadConfigMod from '../../config/loadConfig';
-import type { FuelsConfig } from '../../types';
-import * as buildMod from '../build';
-import * as deployMod from '../deploy';
-import * as withConfigMod from '../withConfig';
+import { fuelsConfig } from '../../../../test/fixtures/fuels.config.js';
+import { mockStartFuelCore } from '../../../../test/utils/mockAutoStartFuelCore.js';
+import { mockLogger } from '../../../../test/utils/mockLogger.js';
+import * as loadConfigMod from '../../config/loadConfig.js';
+import type { FuelsConfig } from '../../types.js';
+import * as buildMod from '../build/index.js';
+import * as deployMod from '../deploy/index.js';
+import * as withConfigMod from '../withConfig.js';
 
-// import * as indexMod from './index';
+// import * as indexMod from './index.js';
 import {
   closeAllFileHandlers,
   configFileChanged,
   dev,
   getConfigFilepathsToWatch,
   workspaceFileChanged,
-} from '.';
+} from './index.js';
 
 /**
  * @group node

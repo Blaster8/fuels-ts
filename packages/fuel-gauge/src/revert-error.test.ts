@@ -4,7 +4,7 @@ import { expectToThrowFuelError } from '@fuel-ts/errors/test-utils';
 import type { BN, Contract, WalletUnlocked, TransactionResultReceipt } from 'fuels';
 import { bn, ContractFactory, Provider, BaseAssetId, FUEL_NETWORK_URL, getRandomB256 } from 'fuels';
 
-import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../test/fixtures';
+import { FuelGaugeProjectsEnum, getFuelGaugeForcProject } from '../test/fixtures/index.js';
 
 let contractInstance: Contract;
 let wallet: WalletUnlocked;

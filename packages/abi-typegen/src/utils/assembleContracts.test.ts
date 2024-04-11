@@ -1,11 +1,11 @@
-import { getNewAbiTypegen } from '../../test/utils/getNewAbiTypegen';
-import * as renderCommonTemplateMod from '../templates/common/common';
-import * as renderIndexTemplateMod from '../templates/common/index';
-import * as renderBytecodeTemplateMod from '../templates/contract/bytecode';
-import * as renderFactoryTemplateMod from '../templates/contract/factory';
-import { ProgramTypeEnum } from '../types/enums/ProgramTypeEnum';
+import { getNewAbiTypegen } from '../../test/utils/getNewAbiTypegen.js';
+import * as renderCommonTemplateMod from '../templates/common/common.js';
+import * as renderIndexTemplateMod from '../templates/common/index.js';
+import * as renderBytecodeTemplateMod from '../templates/contract/bytecode.js';
+import * as renderFactoryTemplateMod from '../templates/contract/factory.js';
+import { ProgramTypeEnum } from '../types/enums/ProgramTypeEnum.js';
 
-import { assembleContracts } from './assembleContracts';
+import { assembleContracts } from './assembleContracts.js';
 
 /**
  * @group node

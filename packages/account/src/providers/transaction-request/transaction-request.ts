@@ -16,35 +16,35 @@ import {
 } from '@fuel-ts/transactions';
 import { concat, hexlify } from '@fuel-ts/utils';
 
-import type { Account } from '../../account';
-import type { Predicate } from '../../predicate';
-import type { GqlGasCosts } from '../__generated__/operations';
-import type { Coin } from '../coin';
-import type { CoinQuantity, CoinQuantityLike } from '../coin-quantity';
-import { coinQuantityfy } from '../coin-quantity';
-import type { MessageCoin } from '../message';
-import type { ChainInfo } from '../provider';
-import type { Resource } from '../resource';
-import { isCoin } from '../resource';
-import { normalizeJSON } from '../utils';
-import { getMaxGas, getMinGas } from '../utils/gas';
+import type { Account } from '../../account.js';
+import type { Predicate } from '../../predicate/index.js';
+import type { GqlGasCosts } from '../__generated__/operations.js';
+import type { CoinQuantity, CoinQuantityLike } from '../coin-quantity.js';
+import { coinQuantityfy } from '../coin-quantity.js';
+import type { Coin } from '../coin.js';
+import type { MessageCoin } from '../message.js';
+import type { ChainInfo } from '../provider.js';
+import type { Resource } from '../resource.js';
+import { isCoin } from '../resource.js';
+import { getMaxGas, getMinGas } from '../utils/gas.js';
+import { normalizeJSON } from '../utils/index.js';
 
-import { NoWitnessAtIndexError } from './errors';
+import { NoWitnessAtIndexError } from './errors.js';
 import type {
   TransactionRequestInput,
   CoinTransactionRequestInput,
   MessageTransactionRequestInput,
-} from './input';
-import { inputify } from './input';
+} from './input.js';
+import { inputify } from './input.js';
 import type {
   TransactionRequestOutput,
   ChangeTransactionRequestOutput,
   CoinTransactionRequestOutput,
-} from './output';
-import { outputify } from './output';
-import type { TransactionRequestLike } from './types';
-import type { TransactionRequestWitness } from './witness';
-import { witnessify } from './witness';
+} from './output.js';
+import { outputify } from './output.js';
+import type { TransactionRequestLike } from './types.js';
+import type { TransactionRequestWitness } from './witness.js';
+import { witnessify } from './witness.js';
 
 export {
   /**

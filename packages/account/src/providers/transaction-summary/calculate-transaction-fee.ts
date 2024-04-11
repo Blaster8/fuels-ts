@@ -4,14 +4,14 @@ import type { TransactionCreate, TransactionScript } from '@fuel-ts/transactions
 import { PolicyType, TransactionCoder, TransactionType } from '@fuel-ts/transactions';
 import { arrayify } from '@fuel-ts/utils';
 
-import type { GqlConsensusParameters, GqlFeeParameters } from '../__generated__/operations';
-import { calculatePriceWithFactor } from '../utils';
+import type { GqlConsensusParameters, GqlFeeParameters } from '../__generated__/operations.js';
 import {
   calculateMetadataGasForTxCreate,
   calculateMetadataGasForTxScript,
   getMaxGas,
   getMinGas,
-} from '../utils/gas';
+} from '../utils/gas.js';
+import { calculatePriceWithFactor } from '../utils/index.js';
 
 type FeeParams =
   | Pick<GqlFeeParameters, 'gasPerByte' | 'gasPriceFactor'>

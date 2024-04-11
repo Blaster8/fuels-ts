@@ -1,4 +1,4 @@
-import { encrypt, decrypt } from '..';
+import { encrypt, decrypt } from '../src/index.js';
 
 /**
  * @group node

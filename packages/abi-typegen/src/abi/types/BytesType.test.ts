@@ -1,5 +1,5 @@
-import { BytesType } from './BytesType';
-import { StructType } from './StructType';
+import { BytesType } from './BytesType.js';
+import { StructType } from './StructType.js';
 
 /**
  * @group node

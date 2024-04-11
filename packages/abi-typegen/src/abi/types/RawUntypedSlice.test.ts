@@ -1,5 +1,5 @@
-import { RawUntypedSlice } from './RawUntypedSlice';
-import { StructType } from './StructType';
+import { RawUntypedSlice } from './RawUntypedSlice.js';
+import { StructType } from './StructType.js';
 
 /**
  * @group node

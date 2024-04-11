@@ -5,12 +5,12 @@ import type { BuildOptions } from 'esbuild';
 import JoyCon from 'joycon';
 import { resolve, parse } from 'path';
 
-import { shouldUseBuiltinForc } from '../commands/init/shouldUseBuiltinForc';
-import { shouldUseBuiltinFuelCore } from '../commands/init/shouldUseBuiltinFuelCore';
-import type { FuelsConfig, UserFuelsConfig } from '../types';
+import { shouldUseBuiltinForc } from '../commands/init/shouldUseBuiltinForc.js';
+import { shouldUseBuiltinFuelCore } from '../commands/init/shouldUseBuiltinFuelCore.js';
+import type { FuelsConfig, UserFuelsConfig } from '../types.js';
 
-import { readForcToml, readSwayType } from './forcUtils';
-import { validateConfig } from './validateConfig';
+import { readForcToml, readSwayType } from './forcUtils.js';
+import { validateConfig } from './validateConfig.js';
 
 export async function loadConfig(cwd: string): Promise<FuelsConfig> {
   const configJoycon = new JoyCon();

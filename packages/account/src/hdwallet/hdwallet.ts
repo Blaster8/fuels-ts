@@ -5,8 +5,8 @@ import { bn, toBytes, toHex } from '@fuel-ts/math';
 import { arrayify, hexlify, concat } from '@fuel-ts/utils';
 import { toBeHex, dataSlice, encodeBase58, decodeBase58, computeHmac, ripemd160 } from 'ethers';
 
-import { Mnemonic } from '../mnemonic';
-import { Signer } from '../signer';
+import { Mnemonic } from '../mnemonic/index.js';
+import { Signer } from '../signer/index.js';
 
 // "Bitcoin seed"
 const HARDENED_INDEX = 0x80000000;

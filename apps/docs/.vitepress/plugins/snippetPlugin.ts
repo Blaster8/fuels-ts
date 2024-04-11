@@ -3,7 +3,7 @@ import path from 'path';
 import fs from 'fs';
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import { RuleBlock } from 'markdown-it/lib/parser_block';
-import { extractImports, validateSnippetContent } from './utils/extractImports';
+import { extractImports, validateSnippetContent } from './utils/extractImports.js';
 
 // Regex to match import comments
 export const IMPORT_REGEXP = /\/\/ #import \{(.+)\};$/;

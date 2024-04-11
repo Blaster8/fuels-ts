@@ -3,8 +3,8 @@ import { ASSET_A } from '@fuel-ts/utils/test-utils';
 import type { Contract } from 'fuels';
 import { BaseAssetId, FUEL_NETWORK_URL, Provider, Wallet } from 'fuels';
 
-import { DocSnippetProjectsEnum } from '../../../test/fixtures/forc-projects';
-import { createAndDeployContractFromProject } from '../../utils';
+import { DocSnippetProjectsEnum } from '../../../test/fixtures/forc-projects/index.js';
+import { createAndDeployContractFromProject } from '../../utils.js';
 
 /**
  * @group node

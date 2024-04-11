@@ -1,5 +1,5 @@
-import { B512Type } from './B512Type';
-import { BoolType } from './BoolType';
+import { B512Type } from './B512Type.js';
+import { BoolType } from './BoolType.js';
 
 /**
  * @group node

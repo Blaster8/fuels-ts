@@ -1,5 +1,5 @@
-import type { IRawAbiTypeRoot } from '../../types/interfaces/IRawAbiType';
-import type { ITypeAttributes } from '../../types/interfaces/IType';
+import type { IRawAbiTypeRoot } from '../../types/interfaces/IRawAbiType.js';
+import type { ITypeAttributes } from '../../types/interfaces/IType.js';
 
 export class AType {
   public rawAbiType: IRawAbiTypeRoot;

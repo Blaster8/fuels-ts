@@ -1,6 +1,6 @@
-import type { IType } from '../../types/interfaces/IType';
+import type { IType } from '../../types/interfaces/IType.js';
 
-import { AType } from './AType';
+import { AType } from './AType.js';
 
 export class EvmAddressType extends AType implements IType {
   public static swayType = 'struct EvmAddress';

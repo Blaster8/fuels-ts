@@ -1,4 +1,4 @@
-import { StrType } from './StrType';
+import { StrType } from './StrType.js';
 
 export class B256Type extends StrType {
   public static swayType = 'b256';

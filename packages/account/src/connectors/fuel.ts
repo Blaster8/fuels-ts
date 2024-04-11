@@ -1,20 +1,20 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import type { AbstractAddress } from '@fuel-ts/interfaces';
 
-import { Account } from '../account';
-import { Provider } from '../providers';
-import type { StorageAbstract } from '../wallet-manager';
+import { Account } from '../account.js';
+import { Provider } from '../providers/index.js';
+import type { StorageAbstract } from '../wallet-manager/index.js';
 
-import { FuelConnector } from './fuel-connector';
+import { FuelConnector } from './fuel-connector.js';
+import type { Network, FuelConnectorEventsType, TargetObject } from './types/index.js';
 import {
   FuelConnectorMethods,
   FuelConnectorEventTypes,
   FuelConnectorEventType,
   LocalStorage,
-} from './types';
-import type { Network, FuelConnectorEventsType, TargetObject } from './types';
-import type { CacheFor } from './utils';
-import { cacheFor, deferPromise, withTimeout } from './utils';
+} from './types/index.js';
+import type { CacheFor } from './utils/index.js';
+import { cacheFor, deferPromise, withTimeout } from './utils/index.js';
 
 // This is the time to wait for the connector
 // to be available before returning false for hasConnector.

@@ -1,11 +1,11 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import { expectToThrowFuelError } from '@fuel-ts/errors/test-utils';
 
-import { U32_MAX } from '../../../../test/utils/constants';
+import { U32_MAX } from '../../../../test/utils/constants.js';
 
-import { BooleanCoder } from './BooleanCoder';
-import { NumberCoder } from './NumberCoder';
-import { VecCoder } from './VecCoder';
+import { BooleanCoder } from './BooleanCoder.js';
+import { NumberCoder } from './NumberCoder.js';
+import { VecCoder } from './VecCoder.js';
 
 /**
  * @group node

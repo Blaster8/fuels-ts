@@ -1,7 +1,7 @@
 import type { BytesLike } from '@fuel-ts/interfaces';
 
-import type { Coin } from './coin';
-import type { MessageCoin } from './message';
+import type { Coin } from './coin.js';
+import type { MessageCoin } from './message.js';
 
 export type RawCoin = {
   utxoId: string;

@@ -3,14 +3,14 @@ import { safeExec } from '@fuel-ts/errors/test-utils';
 import {
   AbiTypegenProjectsEnum,
   getTypegenForcProject,
-} from '../../../test/fixtures/forc-projects/index';
+} from '../../../test/fixtures/forc-projects/index.js';
 import factoryTemplate from '../../../test/fixtures/templates/predicate/factory.hbs';
 import factoryWithConfigurablesTemplate from '../../../test/fixtures/templates/predicate-with-configurable/factory.hbs';
-import { mockVersions } from '../../../test/utils/mockVersions';
-import { Abi } from '../../abi/Abi';
-import { ProgramTypeEnum } from '../../types/enums/ProgramTypeEnum';
+import { mockVersions } from '../../../test/utils/mockVersions.js';
+import { Abi } from '../../abi/Abi.js';
+import { ProgramTypeEnum } from '../../types/enums/ProgramTypeEnum.js';
 
-import { renderFactoryTemplate } from './factory';
+import { renderFactoryTemplate } from './factory.js';
 
 /**
  * @group node

@@ -1,6 +1,6 @@
-import type { BNInput } from './bn';
-import { bn } from './bn';
-import type { FormatConfig } from './types';
+import type { BNInput } from './bn.js';
+import { bn } from './bn.js';
+import type { FormatConfig } from './types.js';
 
 /**
  * Functional shortcuts

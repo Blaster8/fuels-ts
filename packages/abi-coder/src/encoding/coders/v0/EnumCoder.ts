@@ -3,11 +3,11 @@ import { toNumber } from '@fuel-ts/math';
 import { concat } from '@fuel-ts/utils';
 import type { RequireExactlyOne } from 'type-fest';
 
-import { concatWithDynamicData } from '../../../utils/utilities';
-import type { TypesOfCoder } from '../AbstractCoder';
-import { Coder } from '../AbstractCoder';
+import { concatWithDynamicData } from '../../../utils/utilities.js';
+import type { TypesOfCoder } from '../AbstractCoder.js';
+import { Coder } from '../AbstractCoder.js';
 
-import { BigNumberCoder } from './BigNumberCoder';
+import { BigNumberCoder } from './BigNumberCoder.js';
 
 export type InputValueOf<TCoders extends Record<string, Coder>> = RequireExactlyOne<{
   [P in keyof TCoders]: TypesOfCoder<TCoders[P]>['Input'];

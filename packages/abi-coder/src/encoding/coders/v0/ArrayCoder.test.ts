@@ -1,13 +1,13 @@
 import { FuelError, ErrorCode } from '@fuel-ts/errors';
 import { expectToThrowFuelError } from '@fuel-ts/errors/test-utils';
 
-import { U32_MAX, U8_MAX } from '../../../../test/utils/constants';
-import type { EncodingOptions } from '../../../types/EncodingOptions';
+import { U32_MAX, U8_MAX } from '../../../../test/utils/constants.js';
+import type { EncodingOptions } from '../../../types/EncodingOptions.js';
 
-import { ArrayCoder } from './ArrayCoder';
-import { BooleanCoder } from './BooleanCoder';
-import { EnumCoder } from './EnumCoder';
-import { NumberCoder } from './NumberCoder';
+import { ArrayCoder } from './ArrayCoder.js';
+import { BooleanCoder } from './BooleanCoder.js';
+import { EnumCoder } from './EnumCoder.js';
+import { NumberCoder } from './NumberCoder.js';
 
 /**
  * @group node

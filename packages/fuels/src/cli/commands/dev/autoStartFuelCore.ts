@@ -3,9 +3,9 @@ import { defaultConsensusKey } from '@fuel-ts/utils';
 import type { ChildProcessWithoutNullStreams } from 'child_process';
 import { getPortPromise } from 'portfinder';
 
-import type { FuelsConfig } from '../../types';
-import { getBinarySource } from '../../utils/getBinarySource';
-import { log, loggingConfig } from '../../utils/logger';
+import type { FuelsConfig } from '../../types.js';
+import { getBinarySource } from '../../utils/getBinarySource.js';
+import { log, loggingConfig } from '../../utils/logger.js';
 
 export type FuelCoreNode = {
   bindIp: string;

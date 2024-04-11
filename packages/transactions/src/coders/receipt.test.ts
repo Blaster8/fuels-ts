@@ -2,8 +2,8 @@ import { sha256 } from '@fuel-ts/hasher';
 import { bn } from '@fuel-ts/math';
 import { arrayify, hexlify, concat } from '@fuel-ts/utils';
 
-import type { Receipt } from './receipt';
-import { ReceiptCoder, ReceiptMessageOutCoder, ReceiptType } from './receipt';
+import type { Receipt } from './receipt.js';
+import { ReceiptCoder, ReceiptMessageOutCoder, ReceiptType } from './receipt.js';
 
 const B256 = '0xd5579c46dfcc7f18207013e65b44e4cb4e2c2298f4ac457ba8f82743f31e930b';
 const B256_ALT1 = '0x750f560d912ec02d826af8ba3be90a9481fb6d3bc6b4e7f01a89f245cf0a7059';

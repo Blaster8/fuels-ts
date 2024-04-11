@@ -1,5 +1,5 @@
-import { shouldSkipAbiType } from './shouldSkipAbiType';
-import { supportedTypes } from './supportedTypes';
+import { shouldSkipAbiType } from './shouldSkipAbiType.js';
+import { supportedTypes } from './supportedTypes.js';
 
 /**
  * @group node

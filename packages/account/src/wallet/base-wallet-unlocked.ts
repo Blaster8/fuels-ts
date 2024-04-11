@@ -2,8 +2,8 @@ import { hashMessage } from '@fuel-ts/hasher';
 import type { BytesLike } from '@fuel-ts/interfaces';
 import { hexlify } from '@fuel-ts/utils';
 
-import { Account } from '../account';
-import { transactionRequestify } from '../providers';
+import { Account } from '../account.js';
+import { transactionRequestify } from '../providers/index.js';
 import type {
   TransactionResponse,
   TransactionRequestLike,
@@ -11,10 +11,10 @@ import type {
   Provider,
   ProviderSendTxParams,
   EstimateTransactionParams,
-} from '../providers';
-import { Signer } from '../signer';
+} from '../providers/index.js';
+import { Signer } from '../signer/index.js';
 
-import { encryptKeystoreWallet } from './keystore-wallet';
+import { encryptKeystoreWallet } from './keystore-wallet.js';
 
 /**
  * `BaseWalletUnlocked` provides the base functionalities for an unlocked wallet.

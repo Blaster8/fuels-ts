@@ -1,6 +1,6 @@
 import { uniq } from 'ramda';
 
-import type { IType } from '../../types/interfaces/IType';
+import type { IType } from '../../types/interfaces/IType.js';
 
 const caseInsensitiveSort = (a: string, b: string) =>
   a.toLowerCase().localeCompare(b.toLowerCase());

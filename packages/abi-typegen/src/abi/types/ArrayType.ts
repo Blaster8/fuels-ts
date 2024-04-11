@@ -1,9 +1,9 @@
-import { TargetEnum } from '../../types/enums/TargetEnum';
-import type { IType } from '../../types/interfaces/IType';
-import { findType } from '../../utils/findType';
-import { parseTypeArguments } from '../../utils/parseTypeArguments';
+import { TargetEnum } from '../../types/enums/TargetEnum.js';
+import type { IType } from '../../types/interfaces/IType.js';
+import { findType } from '../../utils/findType.js';
+import { parseTypeArguments } from '../../utils/parseTypeArguments.js';
 
-import { AType } from './AType';
+import { AType } from './AType.js';
 
 export class ArrayType extends AType implements IType {
   // Note: the array length expressed in '; 2]' could be any length

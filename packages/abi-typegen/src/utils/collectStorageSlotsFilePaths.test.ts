@@ -1,7 +1,10 @@
-import { AbiTypegenProjectsEnum, getTypegenForcProject } from '../../test/fixtures/forc-projects';
-import { ProgramTypeEnum } from '../types/enums/ProgramTypeEnum';
+import {
+  AbiTypegenProjectsEnum,
+  getTypegenForcProject,
+} from '../../test/fixtures/forc-projects/index.js';
+import { ProgramTypeEnum } from '../types/enums/ProgramTypeEnum.js';
 
-import { collectStorageSlotsFilepaths } from './collectStorageSlotsFilePaths';
+import { collectStorageSlotsFilepaths } from './collectStorageSlotsFilePaths.js';
 
 /**
  * @group node

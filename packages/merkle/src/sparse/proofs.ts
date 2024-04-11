@@ -1,9 +1,9 @@
 import { hash } from '@fuel-ts/hasher';
 
-import { hashLeaf, hashNode, parseLeaf } from './treeHasher';
-import SparseCompactMerkleProof from './types/sparseCompactMerkleProof';
-import SparseMerkleProof from './types/sparseMerkleProof';
-import { getBitAtFromMSB, ZERO } from './utils';
+import { hashLeaf, hashNode, parseLeaf } from './treeHasher.js';
+import SparseCompactMerkleProof from './types/sparseCompactMerkleProof.js';
+import SparseMerkleProof from './types/sparseMerkleProof.js';
+import { getBitAtFromMSB, ZERO } from './utils.js';
 
 /**
  * Verify a merkle proof

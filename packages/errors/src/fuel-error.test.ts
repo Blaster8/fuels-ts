@@ -1,7 +1,7 @@
 import { versions } from '@fuel-ts/versions';
 
-import { FuelError, ErrorCode } from '.';
-import { expectToThrowFuelError } from './test-utils/expect-to-throw-fuel-error';
+import { FuelError, ErrorCode } from './index.js';
+import { expectToThrowFuelError } from './test-utils/expect-to-throw-fuel-error.js';
 
 /**
  * @group node

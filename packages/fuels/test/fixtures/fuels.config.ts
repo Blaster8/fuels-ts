@@ -1,7 +1,7 @@
 import { FUEL_NETWORK_URL } from '@fuel-ts/account/configs';
 import { join } from 'path';
 
-import type { FuelsConfig } from '../../src';
+import type { FuelsConfig } from '../../src/index.js';
 
 const projectPath = join(__dirname, 'workspace');
 

@@ -1,15 +1,15 @@
 import chalk from 'chalk';
 import { existsSync, readFileSync } from 'fs';
 
-import { Commands } from '../../src';
-import { mockLogger } from '../utils/mockLogger';
+import { Commands } from '../../src/index.js';
+import { mockLogger } from '../utils/mockLogger.js';
 import {
   bootstrapProject,
   runCommand,
   runInit,
   resetDiskAndMocks,
   resetConfigAndMocks,
-} from '../utils/runCommands';
+} from '../utils/runCommands.js';
 
 /**
  * @group node

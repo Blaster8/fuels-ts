@@ -2,9 +2,9 @@ import { Address } from '@fuel-ts/address';
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import type { AbstractAddress } from '@fuel-ts/interfaces';
 
-import type { WalletUnlocked } from '../../wallet';
-import { Wallet } from '../../wallet';
-import type { WalletManagerAccount, Vault } from '../types';
+import type { WalletUnlocked } from '../../wallet/index.js';
+import { Wallet } from '../../wallet/index.js';
+import type { WalletManagerAccount, Vault } from '../types.js';
 
 export interface PkVaultOptions {
   secret?: string;

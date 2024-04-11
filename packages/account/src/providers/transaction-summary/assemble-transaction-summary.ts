@@ -2,21 +2,21 @@ import { type BN } from '@fuel-ts/math';
 import { type Transaction } from '@fuel-ts/transactions';
 import { DateTime, hexlify } from '@fuel-ts/utils';
 
-import type { GqlGasCosts } from '../__generated__/operations';
-import type { TransactionResultReceipt } from '../transaction-response';
-import { getGasUsedFromReceipts } from '../utils';
+import type { GqlGasCosts } from '../__generated__/operations.js';
+import type { TransactionResultReceipt } from '../transaction-response/index.js';
+import { getGasUsedFromReceipts } from '../utils/index.js';
 
-import { calculateTransactionFee } from './calculate-transaction-fee';
+import { calculateTransactionFee } from './calculate-transaction-fee.js';
 import {
   getOperations,
   getTransactionTypeName,
   isTypeMint,
   isTypeCreate,
   isTypeScript,
-} from './operations';
-import { extractBurnedAssetsFromReceipts, extractMintedAssetsFromReceipts } from './receipt';
-import { processGraphqlStatus } from './status';
-import type { AbiMap, GraphqlTransactionStatus, TransactionSummary } from './types';
+} from './operations.js';
+import { extractBurnedAssetsFromReceipts, extractMintedAssetsFromReceipts } from './receipt.js';
+import { processGraphqlStatus } from './status.js';
+import type { AbiMap, GraphqlTransactionStatus, TransactionSummary } from './types.js';
 
 export interface AssembleTransactionSummaryParams {
   gasPerByte: BN;

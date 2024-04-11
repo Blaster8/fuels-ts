@@ -1,5 +1,5 @@
-import type { FuelConnector } from '../fuel-connector';
-import { FuelConnectorEventType } from '../types';
+import type { FuelConnector } from '../fuel-connector.js';
+import { FuelConnectorEventType } from '../types/index.js';
 
 /**
  * Fuel Connector Event is a custom event that can be used by the connector to

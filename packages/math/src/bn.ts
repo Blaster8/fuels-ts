@@ -1,9 +1,9 @@
 import { ErrorCode, FuelError } from '@fuel-ts/errors';
 import BnJs from 'bn.js';
 
-import { DEFAULT_DECIMAL_UNITS, DEFAULT_MIN_PRECISION, DEFAULT_PRECISION } from './configs';
-import { toFixed } from './decimal';
-import type { FormatConfig } from './types';
+import { DEFAULT_DECIMAL_UNITS, DEFAULT_MIN_PRECISION, DEFAULT_PRECISION } from './configs.js';
+import { toFixed } from './decimal.js';
+import type { FormatConfig } from './types.js';
 
 type CompareResult = -1 | 0 | 1;
 export type BNInput = number | string | number[] | Uint8Array | Buffer | BnJs;

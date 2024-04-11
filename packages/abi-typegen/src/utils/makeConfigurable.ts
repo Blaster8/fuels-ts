@@ -1,6 +1,6 @@
-import { Configurable } from '../abi/configurable/Configurable';
-import type { IRawAbiConfigurable } from '../types/interfaces/IRawAbiConfigurable';
-import type { IType } from '../types/interfaces/IType';
+import { Configurable } from '../abi/configurable/Configurable.js';
+import type { IRawAbiConfigurable } from '../types/interfaces/IRawAbiConfigurable.js';
+import type { IType } from '../types/interfaces/IType.js';
 
 export function makeConfigurable(params: {
   types: IType[];

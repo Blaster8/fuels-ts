@@ -2,7 +2,7 @@ import type { JsonAbi } from '@fuel-ts/abi-coder';
 import { Interface, BigNumberCoder } from '@fuel-ts/abi-coder';
 import { ReceiptType } from '@fuel-ts/transactions';
 
-import type { TransactionResultReceipt } from './transaction-response';
+import type { TransactionResultReceipt } from './transaction-response.js';
 
 /** @hidden */
 export function getDecodedLogs<T = unknown>(

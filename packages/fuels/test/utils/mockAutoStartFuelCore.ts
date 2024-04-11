@@ -1,6 +1,6 @@
 import type { SpyInstance } from 'vitest';
 
-import * as autoStartFuelCoreMod from '../../src/cli/commands/dev/autoStartFuelCore';
+import * as autoStartFuelCoreMod from '../../src/cli/commands/dev/autoStartFuelCore.js';
 
 export const mockStartFuelCore = (): {
   killChildProcess: SpyInstance;

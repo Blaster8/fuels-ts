@@ -1,11 +1,11 @@
-import { scrypt, keccak256 } from '../shared';
-import type { CryptoApi } from '../types';
+import { scrypt, keccak256 } from '../shared/index.js';
+import type { CryptoApi } from '../types.js';
 
-import { decrypt, encrypt, keyFromPassword } from './aes-ctr';
-import { bufferFromString } from './bufferFromString';
-import { decryptJsonWalletData, encryptJsonWalletData } from './encryptJsonWalletData';
-import { randomBytes } from './randomBytes';
-import { stringFromBuffer } from './stringFromBuffer';
+import { decrypt, encrypt, keyFromPassword } from './aes-ctr.js';
+import { bufferFromString } from './bufferFromString.js';
+import { decryptJsonWalletData, encryptJsonWalletData } from './encryptJsonWalletData.js';
+import { randomBytes } from './randomBytes.js';
+import { stringFromBuffer } from './stringFromBuffer.js';
 
 const api: CryptoApi = {
   bufferFromString,

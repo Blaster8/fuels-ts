@@ -1,4 +1,4 @@
-import { hexlify } from './hexlify';
+import { hexlify } from './hexlify.js';
 
 /**
  * @group node

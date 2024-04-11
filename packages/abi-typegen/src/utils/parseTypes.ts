@@ -1,8 +1,8 @@
-import type { IRawAbiTypeRoot } from '../types/interfaces/IRawAbiType';
-import type { IType } from '../types/interfaces/IType';
+import type { IRawAbiTypeRoot } from '../types/interfaces/IRawAbiType.js';
+import type { IType } from '../types/interfaces/IType.js';
 
-import { makeType } from './makeType';
-import { shouldSkipAbiType } from './shouldSkipAbiType';
+import { makeType } from './makeType.js';
+import { shouldSkipAbiType } from './shouldSkipAbiType.js';
 
 export function parseTypes(params: { rawAbiTypes: IRawAbiTypeRoot[] }) {
   const types: IType[] = [];

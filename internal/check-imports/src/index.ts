@@ -1,2 +1,2 @@
-import './references';
-import './imports';
+import './references.js';
+import './imports.js';

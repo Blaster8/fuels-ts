@@ -1,7 +1,7 @@
-import type { IConfigurable } from '../../types/interfaces/IConfigurable';
-import type { IRawAbiConfigurable } from '../../types/interfaces/IRawAbiConfigurable';
-import type { IType } from '../../types/interfaces/IType';
-import { findType } from '../../utils/findType';
+import type { IConfigurable } from '../../types/interfaces/IConfigurable.js';
+import type { IRawAbiConfigurable } from '../../types/interfaces/IRawAbiConfigurable.js';
+import type { IType } from '../../types/interfaces/IType.js';
+import { findType } from '../../utils/findType.js';
 
 export class Configurable implements IConfigurable {
   public name: string;

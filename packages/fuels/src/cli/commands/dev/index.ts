@@ -2,15 +2,15 @@ import type { FSWatcher } from 'chokidar';
 import { watch } from 'chokidar';
 import { globSync } from 'glob';
 
-import { loadConfig } from '../../config/loadConfig';
-import type { FuelsConfig } from '../../types';
-import { error, log } from '../../utils/logger';
-import { build } from '../build';
-import { deploy } from '../deploy';
-import { withConfigErrorHandler } from '../withConfig';
+import { loadConfig } from '../../config/loadConfig.js';
+import type { FuelsConfig } from '../../types.js';
+import { error, log } from '../../utils/logger.js';
+import { build } from '../build/index.js';
+import { deploy } from '../deploy/index.js';
+import { withConfigErrorHandler } from '../withConfig.js';
 
-import type { FuelCoreNode } from './autoStartFuelCore';
-import { autoStartFuelCore } from './autoStartFuelCore';
+import type { FuelCoreNode } from './autoStartFuelCore.js';
+import { autoStartFuelCore } from './autoStartFuelCore.js';
 
 export const closeAllFileHandlers = (handlers: FSWatcher[]) => {
   handlers.forEach((h) => h.close());

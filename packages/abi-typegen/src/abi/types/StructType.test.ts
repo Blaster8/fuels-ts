@@ -1,18 +1,18 @@
 import {
   AbiTypegenProjectsEnum,
   getTypegenForcProject,
-} from '../../../test/fixtures/forc-projects/index';
-import type { IRawAbiTypeRoot } from '../../index';
-import { TargetEnum } from '../../types/enums/TargetEnum';
-import { findType } from '../../utils/findType';
-import { makeType } from '../../utils/makeType';
-import * as parseTypeArgumentsMod from '../../utils/parseTypeArguments';
+} from '../../../test/fixtures/forc-projects/index.js';
+import type { IRawAbiTypeRoot } from '../../index.js';
+import { TargetEnum } from '../../types/enums/TargetEnum.js';
+import { findType } from '../../utils/findType.js';
+import { makeType } from '../../utils/makeType.js';
+import * as parseTypeArgumentsMod from '../../utils/parseTypeArguments.js';
 
-import { BytesType } from './BytesType';
-import { EvmAddressType } from './EvmAddressType';
-import { StdStringType } from './StdStringType';
-import { StructType } from './StructType';
-import { U16Type } from './U16Type';
+import { BytesType } from './BytesType.js';
+import { EvmAddressType } from './EvmAddressType.js';
+import { StdStringType } from './StdStringType.js';
+import { StructType } from './StructType.js';
+import { U16Type } from './U16Type.js';
 
 /**
  * @group node

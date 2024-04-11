@@ -1,5 +1,5 @@
-import type { IRawAbiFunction } from './IRawAbiFunction';
-import type { IType } from './IType';
+import type { IRawAbiFunction } from './IRawAbiFunction.js';
+import type { IType } from './IType.js';
 
 export interface IFunctionAttributes {
   inputs: string;

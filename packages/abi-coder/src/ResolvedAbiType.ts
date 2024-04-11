@@ -1,6 +1,12 @@
-import type { JsonAbi, JsonAbiArgument } from './types/JsonAbi';
-import { arrayRegEx, enumRegEx, genericRegEx, stringRegEx, structRegEx } from './utils/constants';
-import { findTypeById } from './utils/json-abi';
+import type { JsonAbi, JsonAbiArgument } from './types/JsonAbi.js';
+import {
+  arrayRegEx,
+  enumRegEx,
+  genericRegEx,
+  stringRegEx,
+  structRegEx,
+} from './utils/constants.js';
+import { findTypeById } from './utils/json-abi.js';
 
 export class ResolvedAbiType {
   readonly abi: JsonAbi;
