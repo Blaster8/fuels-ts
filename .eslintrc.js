@@ -44,8 +44,8 @@ module.exports = {
       {
         js: 'ignorePackages',
         json: 'always',
-        hex: 'never',
-      },
+        hex: 'never'
+      }
     ],
     '@typescript-eslint/lines-between-class-members': [
       'error',
