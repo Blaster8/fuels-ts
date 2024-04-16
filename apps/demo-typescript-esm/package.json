@@ -1,0 +1,21 @@
+{
+  "private": true,
+  "name": "demo-typescript-esm",
+  "description": "Simple Typescript demo using ESM modules",
+  "author": "Fuel Labs <contact@fuel.sh> (https://fuel.network/)",
+  "type": "module",
+  "license": "Apache-2.0",
+  "scripts": {
+    "build": "tsc",
+    "test:node": "node ./dist/index.mjs",
+    "test:bun": "bun run ./dist/index.mjs",
+    "test:deno": "deno run --allow-net --allow-read ./dist/index.mjs"
+  },
+  "dependencies": {
+    "fuels": "workspace:*"
+  },
+  "version": null,
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4"
+  }
+}
