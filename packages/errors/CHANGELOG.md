@@ -1,5 +1,23 @@
 # @fuel-ts/errors
 
+## 0.81.0
+
+### Patch Changes
+
+- 37743e8: chore: add initial `depcheck` using knip
+- Updated dependencies [1d92ce7]
+  - @fuel-ts/versions@0.81.0
+
+## 0.80.0
+
+### Minor Changes
+
+- 29d5303: chore: remove redundant error codes
+
+### Patch Changes
+
+- @fuel-ts/versions@0.80.0
+
 ## 0.79.0
 
 ### Patch Changes

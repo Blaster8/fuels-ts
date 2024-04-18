@@ -1,5 +1,57 @@
 # Change Log
 
+## 0.81.0
+
+### Patch Changes
+
+- 37743e8: chore: add initial `depcheck` using knip
+- 3c0aacc: feat: generalize subscription event parsing
+- Updated dependencies [1d92ce7]
+- Updated dependencies [37743e8]
+- Updated dependencies [124099b]
+  - @fuel-ts/versions@0.81.0
+  - @fuel-ts/abi-coder@0.81.0
+  - @fuel-ts/address@0.81.0
+  - @fuel-ts/errors@0.81.0
+  - @fuel-ts/hasher@0.81.0
+  - @fuel-ts/merkle@0.81.0
+  - @fuel-ts/utils@0.81.0
+  - @fuel-ts/math@0.81.0
+  - @fuel-ts/transactions@0.81.0
+  - @fuel-ts/crypto@0.81.0
+  - @fuel-ts/interfaces@0.81.0
+
+## 0.80.0
+
+### Minor Changes
+
+- 29d5303: chore!: enhance TX error handling and message formatting
+- 29d5303: fix!: fee estimation for multicall
+- 29d5303: chore: removed `predicateDataBytes` from the `Predicate` class
+- 29d5303: docs: upgrade testnet documentation
+
+### Patch Changes
+
+- Updated dependencies [29d5303]
+- Updated dependencies [29d5303]
+- Updated dependencies [29d5303]
+- Updated dependencies [29d5303]
+- Updated dependencies [29d5303]
+- Updated dependencies [29d5303]
+- Updated dependencies [29d5303]
+  - @fuel-ts/abi-coder@0.80.0
+  - @fuel-ts/transactions@0.80.0
+  - @fuel-ts/errors@0.80.0
+  - @fuel-ts/address@0.80.0
+  - @fuel-ts/crypto@0.80.0
+  - @fuel-ts/math@0.80.0
+  - @fuel-ts/utils@0.80.0
+  - @fuel-ts/hasher@0.80.0
+  - @fuel-ts/merkle@0.80.0
+  - @fuel-ts/fuel-core@0.80.0
+  - @fuel-ts/interfaces@0.80.0
+  - @fuel-ts/versions@0.80.0
+
 ## 0.79.0
 
 ### Minor Changes
