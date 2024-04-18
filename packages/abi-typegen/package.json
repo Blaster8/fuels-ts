@@ -6,36 +6,49 @@
   "bin": {
     "fuels-typegen": "typegen.js"
   },
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
   "engines": {
     "node": "^18.18.2 || ^20.0.0"
   },
   "exports": {
+    "./package.json": "./package.json",
     ".": {
-      "require": "./dist/index.js",
-      "import": "./dist/index.mjs",
-      "types": "./dist/index.d.ts"
+      "import": {
+        "types": "./dist/esm/index.d.ts",
+        "default": "./dist/esm/index.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/index.d.ts",
+        "default": "./dist/commonjs/index.js"
+      }
     },
     "./cli": {
-      "require": "./dist/cli.js",
-      "import": "./dist/cli.mjs",
-      "types": "./dist/cli.d.ts"
+      "import": {
+        "types": "./dist/esm/cli.d.ts",
+        "default": "./dist/esm/cli.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/cli.d.ts",
+        "default": "./dist/commonjs/cli.js"
+      }
     },
     "./runTypegen": {
-      "require": "./dist/runTypegen.js",
-      "import": "./dist/runTypegen.mjs",
-      "types": "./dist/runTypegen.d.ts"
+      "import": {
+        "types": "./dist/esm/runTypegen.d.ts",
+        "default": "./dist/esm/runTypegen.js"
+      },
+      "require": {
+        "types": "./dist/commonjs/runTypegen.d.ts",
+        "default": "./dist/commonjs/runTypegen.js"
+      }
     }
   },
   "typesVersions": {
     "*": {
       "cli": [
-        "./dist/cli.d.ts"
+        "./dist/commonjs/cli.d.ts"
       ],
       "runTypegen": [
-        "./dist/runTypegen.d.ts"
+        "./dist/commonjs/runTypegen.d.ts"
       ]
     }
   },
@@ -66,5 +79,26 @@
     "@types/mkdirp": "^1.0.2",
     "@types/ramda": "^0.29.3",
     "@types/rimraf": "^3.0.2"
-  }
+  },
+  "tshy": {
+    "exclude": [
+      "**/*.test.ts"
+    ],
+    "include": [
+      "**/*.hbs"
+    ],
+    "dialects": [
+      "esm",
+      "commonjs"
+    ],
+    "exports": {
+      "./package.json": "./package.json",
+      ".": "./src/index.ts",
+      "./cli": "./src/cli.ts",
+      "./runTypegen": "./src/runTypegen.ts"
+    }
+  },
+  "main": "./dist/commonjs/index.js",
+  "types": "./dist/commonjs/index.d.ts",
+  "type": "module"
 }

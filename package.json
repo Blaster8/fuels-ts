@@ -101,6 +101,7 @@
     "textlint": "^13.3.2",
     "textlint-rule-no-dead-link": "^5.1.2",
     "ts-generator": "^0.1.1",
+    "tshy": "^1.14.0",
     "tsup": "^6.7.0",
     "tsx": "^4.7.0",
     "turbo": "^1.8.8",
